@@ -31,8 +31,8 @@
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
-\use_geometry false
+\papersize a4paper
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -50,17 +50,24 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
+\justification false
 \use_refstyle 1
 \use_minted 0
 \index Index
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
 \secnumdepth 3
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip smallskip
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style english
@@ -78,7 +85,13 @@
 \begin_body
 
 \begin_layout Section
-שאלה
+שאלה 
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+נתוך כי יש מאגר של
 \family roman
 \series medium
 \shape up
@@ -105,7 +118,636 @@
 \uwave default
 \noun default
 \color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלות.
+\end_layout
+
+\begin_layout Standard
+כמו כן, נתון כי תלמיד התכונן ל
+\numeric on
+60
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתוך ה
+\numeric on
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הללו.
+\end_layout
+
+\begin_layout Standard
+מבחן מורכב מ
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלות הנבחרות באקראי כאשר לכל בחירה יש הסתברות זהה.
+ נסמן את מרחב המדגם ב
+\begin_inset Formula $\Omega$
+\end_inset
+
+ כמובן.
+\end_layout
+
+\begin_layout Standard
+לכן, קיימות 
+\begin_inset Formula $\binom{100}{10}$
+\end_inset
+
+ בחינות אפשריות שונות )ומניחים שזה מרחב מדגם שווה הסתברויות(.
+ כלומר 
+\begin_inset Formula $\left|\Omega\right|=\binom{100}{10}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לעבור, צריך לענות על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלות לפחות.
+ כדי להצטיין, יש לענות לפחות על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאלות נכון.
+\end_layout
+
+\begin_layout Subsection
+ההסתברות שהתלמיד יעבור
+\end_layout
+
+\begin_layout Standard
+נבדוק כמה בחינות ניתן לבנות אותן התלמיד שלנו יעבור
+\begin_inset Formula 
+\[
+\sum_{n=6}^{10}\binom{60}{n}\binom{40}{10-n}
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $6\leq n\leq10$
+\end_inset
+
+ הוא מספר השאלות בבחינה עליהן התלמיד העצלן שלנו יודע לענות )
+\lang english
+no judgement
+\lang hebrew
+(.
+\end_layout
+
+\begin_layout Standard
+כיוון שמדובר במרחב מדגם שווה הסתברויות, הסיכוי שהתלמיד יעבור הינו
+\begin_inset Formula 
+\[
+\frac{\sum_{n=6}^{10}\binom{60}{n}\binom{40}{10-n}}{\binom{100}{10}}\approx0.63855\dots
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ההסתברות שתלמיד יצטיין
+\end_layout
+
+\begin_layout Standard
+בצורה דומה, רק עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ שמתחיל מ
+\begin_inset Formula $9$
+\end_inset
+
+, נקבל
+\begin_inset Formula 
+\[
+\frac{\sum_{n=9}^{10}\binom{60}{n}\binom{40}{10-n}}{\binom{100}{10}}=\frac{40\cdot\binom{60}{9}+\binom{60}{10}}{\binom{100}{10}}=\frac{\left(40\cdot\frac{10}{51}+1\right)\cdot\frac{60!}{10!\cdot50!}}{\frac{100!}{10!\cdot90!}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\left(40\cdot\frac{10}{51}+1\right)\cdot\prod_{n=51}^{60}n}{\prod_{n=91}^{100}n}=0.03852\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי הפייתון הגדול.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם שותים מיץ חדי קרן )או בשמו העממי 
+\begin_inset Quotes eld
+\end_inset
+
+רד בול
+\begin_inset Quotes erd
+\end_inset
+
+(
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אין כותב פתרון זה אחראי על תופעות הלוואי אשר נגרמות משתיית יתר של מיץ חדי
+ קרן.
+\end_layout
+
+\begin_layout Plain Layout
+תופעות לוואי כוללות אך אינן מוגבלות להילה בצעי הקשת, נפיחות באיזור המצח,
+ הפרשת ריח של חלומות ותקווה.
+ כמו כן, סיכוי בלתי מבוטל כי כוחות הרשע יירצו לשתות את הדם שלכם )מסוכן במיוחד
+ אם הדם כבר הפך לצבע כסף(.
+\end_layout
+
+\end_inset
+
+ מקבלים קוחות על וההסתברות לענות על 
+\begin_inset Formula $x$
+\end_inset
+
+ שאלות נכון במבחן היא 
+\begin_inset Formula $cx$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+מרחב מדגם
+\end_layout
+
+\begin_layout Standard
+הניסוי שלנו במקרה זה הינו היבחנות תחת השפעה של מיץ חדי קרן.
+ תוצאות הניסוי מובדלות לפי כמות השאלות עליהן השיבו נכונה.
+\end_layout
+
+\begin_layout Standard
+על כן, מרחב המדגם שלנו יהיה 
+\begin_inset Formula $\Omega=\left\{ 0,1,2,3,4,5,6,7,8,9,10\right\} $
+\end_inset
+
+ כמספר השאלות עליהן ניתן להשיב נכונה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הקבוע 
+\begin_inset Formula $c$
+\end_inset
+
+ ומידת ההסתברות
+\end_layout
+
+\begin_layout Standard
+כדי למצוא את הקבוע 
+\begin_inset Formula $c$
+\end_inset
+
+ עלינו להשוות את סכום ההסתברויות ל
+\numeric on
 1
+\numeric off
+
+\begin_inset Formula 
+\[
+0+c+2c+\dots+10c=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש
+\begin_inset Formula $c$
+\end_inset
+
+ אינה יכול להיות שווה ל
+\begin_inset Formula $0$
+\end_inset
+
+.
+ על כן, ניתן לחלק ב
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{1}{c}=\sum_{i=1}^{10}i=\frac{10\cdot11}{2}=55\Longrightarrow c=\frac{1}{55}\approx0.018\overline{18}
+\]
+
+\end_inset
+
+את מידת ההסתברות נגדיר כך.
+ תהא 
+\begin_inset Formula $E\in\Omega$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(E\right)=\sum_{\omega\in E}P\left(\left\{ \omega\right\} \right)=\sum_{\omega\in E}c\cdot\omega=c\sum_{\omega\in E}\omega
+\]
+
+\end_inset
+
+וכמובן קל לראות שהגדרה זו מתלכדת עם החישוב למעלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+האם עדיף מיץ חדי קרן או ללמוד כדי לעבור
+\end_layout
+
+\begin_layout Standard
+אז קודם כל, באופן כללי התשובה היא שעדיף מיץ חדי קרן.
+ מתמטיקאים לא יהיו מתמטיקאים אם לא היינו מוצאים דרך לקצר ומאותו רגע נשכח
+ את הדרך המקורית.
+\end_layout
+
+\begin_layout Standard
+עכשיו, הסיכוי לעבור בתור חד קרן את המבחן )כן, המיץ ממש משנה אותנו לחדי קרן(
+ הוא
+\begin_inset Formula 
+\[
+c\left(6+7+8+9+10\right)=0.018\overline{18}\cdot40=0.72\overline{72}
+\]
+
+\end_inset
+
+ניתן לראות שהסיכוי לעבור תחת השפעת מיץ חדי הקרן הינו גבוהה מהסיכוי לעבור
+ אם לומדים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+60%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהשאלות מהמאגר 
+\begin_inset Formula $0.63855\dots<0.72\overline{72}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+רואים שעדיף להיות חד קרן?
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+האם עדיף מיץ חדי קרן או ללמוד כדי להצטיין
+\end_layout
+
+\begin_layout Standard
+לאחר חישוב מסתבר שעדיף לשתות )נו טוב, סטודנטים בטכניון מתורגלים הרי בלשתות(
+\end_layout
+
+\begin_layout Standard
+עם זאת, כדי להצטיין צריך ללמוד.
+ אם חדי קרן )שהם סה
+\begin_inset Quotes erd
+\end_inset
+
+כ העתקה לינארית של חזירי בר כמובן( היו חכמים יותר מסטודנטים מצטיינים, אז
+ לא היה אפשר להתגאות.
+\end_layout
+
+\begin_layout Standard
+הסיכוי להצטיין תחת השפעת מיץ חדי קרן הינו
+\begin_inset Formula 
+\[
+c\left(9+10\right)=0.3454\overline{54}>0.03852\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולצעריינו, לשתות מיץ חדי קרן יותר יעיל מלמידה )אני רואה פה מוטיב חוזר, אתם
+ מנסים לרמוז שצריך ללמוד פחות?(.
+\end_layout
+
+\begin_layout Standard
+טוב, אז חדי הקרן יותר טובים מסטודנטים.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
