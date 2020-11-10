@@ -375,7 +375,7 @@
 \end_layout
 
 \begin_layout Subsection
-ההסתברות שהתלמיד יעבור
+סעיף א - ההסתברות שהתלמיד יעבור
 \end_layout
 
 \begin_layout Standard
@@ -419,7 +419,7 @@ no judgement
 \end_layout
 
 \begin_layout Subsection
-ההסתברות שתלמיד יצטיין
+סעיף ב - ההסתברות שתלמיד יצטיין
 \end_layout
 
 \begin_layout Standard
@@ -505,7 +505,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-מרחב מדגם
+סעיף ג - מרחב מדגם
 \end_layout
 
 \begin_layout Standard
@@ -533,7 +533,7 @@ status open
 \end_layout
 
 \begin_layout Subsection
-הקבוע 
+סעיף ד - הקבוע 
 \begin_inset Formula $c$
 \end_inset
 
@@ -610,7 +610,7 @@ P\left(E\right)=\sum_{\omega\in E}P\left(\left\{ \omega\right\} \right)=\sum_{\o
 \end_layout
 
 \begin_layout Subsection
-האם עדיף מיץ חדי קרן או ללמוד כדי לעבור
+סעיף ה - האם עדיף מיץ חדי קרן או ללמוד כדי לעבור
 \end_layout
 
 \begin_layout Standard
@@ -704,7 +704,7 @@ c\left(6+7+8+9+10\right)=0.018\overline{18}\cdot40=0.72\overline{72}
 \end_layout
 
 \begin_layout Subsection
-האם עדיף מיץ חדי קרן או ללמוד כדי להצטיין
+סעיף ו - האם עדיף מיץ חדי קרן או ללמוד כדי להצטיין
 \end_layout
 
 \begin_layout Standard
@@ -748,6 +748,1100 @@ c\left(9+10\right)=0.3454\overline{54}>0.03852\dots
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+תהא סדרה יורדת של מאורעות.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $P$
+\end_inset
+
+ מידת הסתברות מעל 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\Omega=\left\{ 0,1,2,3,\dots\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $P$
+\end_inset
+
+ מקיימת:
+\begin_inset Formula 
+\[
+P\left(k\right)=\frac{5}{k}P\left(k-1\right)
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $k\geq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נמצא נוסחה מפורשת ל
+\begin_inset Formula $P\left(k\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ננחש )על ידי הצבה של כמה ערכים עד שהמוח שלנו כבר רואה את התבנית( שהנוסחה
+ הישירה היא 
+\begin_inset Formula 
+\[
+P\left(k\right)=\frac{5^{k}}{k!}p_{0}
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $P\left(0\right)=p_{0}$
+\end_inset
+
+ )ניתן לראות שגם זה מתלכד עם הנוסחה(.
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה את נכונות הנוסחה.
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(0\right)=\frac{5^{0}}{0!}p_{0}=\frac{1}{1}p_{0}=p_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $P\left(k-1\right)=\frac{5^{k-1}}{\left(k-1\right)!}p_{0}$
+\end_inset
+
+ ונוכיח כי 
+\begin_inset Formula $P\left(k\right)=\frac{5^{k}}{k!}p_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי הנתון 
+\begin_inset Formula 
+\[
+P\left(k\right)=\frac{5}{k}P\left(k-1\right)=\frac{5}{k}\cdot\frac{5^{k-1}}{\left(k-1\right)!}p_{0}=\frac{5^{k}}{k!}p_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכך סיימנו את צעד האינדוקציה.
+\end_layout
+
+\begin_layout Standard
+נותר למצוא את 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+.
+ הכלי הכי שימושי בקורס מסתבר להיות שההסתברות של מרחב המדגם הינה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1$
+\end_inset
+
+.
+ אז אפשר לרשום
+\begin_inset Formula 
+\[
+\sum_{k=0}^{\infty}\frac{5^{k}}{k!}p_{0}=p_{0}\overset{Taylor\,Series\,for\,e^{5}}{\overbrace{\sum_{k=0}^{\infty}\frac{5^{k}}{k!}}}=p_{0}e^{5}=1\thinspace\thinspace\thinspace\Longrightarrow\thinspace\thinspace\thinspace p_{0}=\frac{1}{e^{5}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן הנוסחה הסופית הינה
+\begin_inset Formula 
+\[
+P\left(k\right)=\frac{5^{k}}{k!e^{5}}
+\]
+
+\end_inset
+
+לכל 
+\begin_inset Formula $k\in\Omega$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+מטילים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ק
+\numeric on
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)למביני ה
+\lang english
+D&D
+\lang hebrew
+( הוגנות בצבעים שונים: לבנה, שחורה ואדומה.
+\end_layout
+
+\begin_layout Subsection
+סעיף א - מרחב המדגם
+\end_layout
+
+\begin_layout Standard
+את מרחב המדגם ניתן לייצג בתור קבוצת השלשות הסדורות של מספרים בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\numeric on
+6
+\numeric off
+.
+ כלומר 
+\begin_inset Formula $\Omega=\left\{ \left(x,y,z\right)\mid x,y,z\in\left\{ 1,2,3,4,5,6\right\} \right\} $
+\end_inset
+
+ וכידוע לכל קומבינוטריקאי
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כן זו מילה.
+ כן, אני המצאתי עכשיו
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left|\Omega\right|=6^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ב - הסתברות לאי זוגי בשחורה
+\end_layout
+
+\begin_layout Standard
+לפי ההנחה, כל שלשת הטלות היא בעלת הסתברות שווה ולכן
+\begin_inset Formula 
+\[
+P\left(black\,is\,odd\right)=\frac{3\cdot6^{2}}{\left|\Omega\right|}=\frac{3\cdot6^{2}}{6\cdot6^{2}}=\frac{1}{2}
+\]
+
+\end_inset
+
+כי לשחורה יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשרויות שייתנו תוצאת ניסוי של הצלחה ועל שאר הקוביות אין הגבלה.
+ את המספר הזה מחלקים במספר התוצאות האפשריות סה
+\begin_inset Quotes erd
+\end_inset
+
+כ.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ג - ההסתברות לסכום של 
+\begin_inset Formula $5$
+\end_inset
+
+ באדומה ובלבנה
+\end_layout
+
+\begin_layout Standard
+כפי שראינו בהרצאה, הסיכוי לסכום של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשתי קוביות הינו 
+\begin_inset Formula $\frac{4}{36}=\frac{1}{9}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בפירוט, אלה הסכומים האפשריים השונים שנותנים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+: 
+\begin_inset Formula $\left\{ \left(x,1,4\right),\left(x,2,3\right),\left(x,3,2\right)\left(x,4,1\right)\right\} $
+\end_inset
+
+.
+ ומאותם שיקולים שהצגנו בסעיף הקודם, שהאפשרויות לקוביה השחורה יצטמצמו במונה
+ ובמכנה ה
+\numeric on
+6
+\numeric off
+.
+ נקבל לבסוף שהסיכוי המבוקש הינו 
+\begin_inset Formula 
+\[
+P\left(white\,and\,red\,sums\,to\,5\right)=\frac{1}{9}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ד - ההסתברות לסכום הקוביות הלבנה והשחורה, כפול מתוצאת הקוביה האדומה
+\end_layout
+
+\begin_layout Standard
+פעמיים תוצאת הקוביה האדומה הינן התוצאות הבאות 
+\begin_inset Formula $\left\{ 2,4,6,8,10,12\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה כמה סכומים אפשריים יש לקוביות הלבנה והשחורה שנותנות אחד מהסכומים האלה.
+\end_layout
+
+\begin_layout Standard
+שוב נשתמש ב
+\begin_inset CommandInset href
+LatexCommand href
+name "חצי דקה האחרונה של הרצאה 1"
+target "https://panoptotech.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=2bb23077-9a18-4b22-a3f2-ac5c010957d0"
+literal "false"
+
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+)סיכוי לסכום מסויים בשתי קוביות(:
+\begin_inset Formula 
+\[
+\left|2\cdot red=white+black\right|=\left|sum\,of\,2\right|+\left|sum\,of\,4\right|+\left|sum\,of\,6\right|+\left|sum\,of\,8\right|+\left|sum\,of\,10\right|+\left|sum\,of\,12\right|=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1+3+5+5+3+1=18
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר, יש לנו בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+18
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטלות אשר נחשבות לתוצאה מוצלחת.
+ כיוון שמדובר במרחב מדגם שווה הסתברויות, ניתן לחלק את המספר הזה בכמות התוצאות
+ האפשריות ונקבל
+\begin_inset Formula 
+\[
+P\left(2\cdot red=white+black\right)=\frac{valid\,throws}{total\,possible\,throws}=\frac{18}{6^{3}}=\frac{1}{12}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סעיף ה - ההסתברות שלפחות זוג אחד של קוביות עם סכום
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+הסיכוי שסכום של שתי קוביות יהיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו 
+\begin_inset Formula $\frac{5}{36}=\frac{30}{6^{3}}$
+\end_inset
+
+ לפי ההרצאה.
+ כמובן שאין זה משנה אם מה הצבעים של כל אחת מהקוביות בזוג.
+\end_layout
+
+\begin_layout Standard
+נשתמש בכלל ההכלה וההפרדה.
+\end_layout
+
+\begin_layout Standard
+התכונות שלנו 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ הינו שהשחורה-אדומה עם סכום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+, שהשחורה-לבנה עם סכום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ושאדומה-לבנה עם סכום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+ההסתברות לחיתוך בין שתי תכונות מסויימות )למשל 
+\begin_inset Formula $A\cap B$
+\end_inset
+
+( הינה
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)=\frac{5\cdot1\cdot1}{\left|\Omega\right|}=\frac{5}{6^{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדומה 
+\begin_inset Formula $P\left(A\cap C\right)=P\left(B\cap C\right)=\frac{5}{6^{3}}$
+\end_inset
+
+.
+ ולבסוף
+\begin_inset Formula 
+\[
+P\left(A\cap B\cap C\right)=\frac{1}{6^{3}}
+\]
+
+\end_inset
+
+שכן ההטלה היחידה האפשרית הינה 
+\begin_inset Formula $\left(3,3,3\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ועכשיו הו
+\begin_inset Quotes erd
+\end_inset
+
+ה:
+\begin_inset Formula 
+\[
+P\left(A\cup B\cup C\right)=\frac{30}{6^{3}}+\frac{30}{6^{3}}+\frac{30}{6^{3}}-\frac{5}{6^{3}}-\frac{5}{6^{3}}-\frac{5}{6^{3}}+\frac{1}{6^{3}}=\frac{3\cdot30-15+1}{6^{3}}=\frac{40}{6^{3}}\approx0.35185
+\]
+
+\end_inset
+
+וזהו ההסתברות המבוקשת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+ג
 \end_layout
 
 \end_body
