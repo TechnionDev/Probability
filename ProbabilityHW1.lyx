@@ -84,7 +84,7 @@
 
 \begin_body
 
-\begin_layout Section
+\begin_layout Section*
 שאלה 
 \numeric on
 1
@@ -374,7 +374,7 @@
 שאלות נכון.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף א - ההסתברות שהתלמיד יעבור
 \end_layout
 
@@ -418,7 +418,7 @@ no judgement
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ב - ההסתברות שתלמיד יצטיין
 \end_layout
 
@@ -504,7 +504,7 @@ status open
 .
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ג - מרחב מדגם
 \end_layout
 
@@ -532,7 +532,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ד - הקבוע 
 \begin_inset Formula $c$
 \end_inset
@@ -609,7 +609,7 @@ P\left(E\right)=\sum_{\omega\in E}P\left(\left\{ \omega\right\} \right)=\sum_{\o
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ה - האם עדיף מיץ חדי קרן או ללמוד כדי לעבור
 \end_layout
 
@@ -703,15 +703,16 @@ c\left(6+7+8+9+10\right)=0.018\overline{18}\cdot40=0.72\overline{72}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ו - האם עדיף מיץ חדי קרן או ללמוד כדי להצטיין
 \end_layout
 
 \begin_layout Standard
 לאחר חישוב מסתבר שעדיף לשתות )נו טוב, סטודנטים בטכניון מתורגלים הרי בלשתות(
-\end_layout
+\begin_inset Foot
+status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 עם זאת, כדי להצטיין צריך ללמוד.
  אם חדי קרן )שהם סה
 \begin_inset Quotes erd
@@ -719,6 +720,11 @@ c\left(6+7+8+9+10\right)=0.018\overline{18}\cdot40=0.72\overline{72}
 
 כ העתקה לינארית של חזירי בר כמובן( היו חכמים יותר מסטודנטים מצטיינים, אז
  לא היה אפשר להתגאות.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -748,9 +754,13 @@ c\left(9+10\right)=0.3454\overline{54}>0.03852\dots
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 שאלה
 \family roman
 \series bold
@@ -782,10 +792,126 @@ c\left(9+10\right)=0.3454\overline{54}>0.03852\dots
 \end_layout
 
 \begin_layout Standard
-תהא סדרה יורדת של מאורעות.
+תהא סדרה יורדת של מאורעות 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $A_{n}\supseteq A_{n+1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+.
 \end_layout
 
-\begin_layout Section
+\begin_layout Standard
+נוכיח כי 
+\begin_inset Formula 
+\[
+P\left(\bigcap_{n=1}^{\infty}A_{n}\right)=\lim_{n\rightarrow\infty}P\left(A_{n}\right)
+\]
+
+\end_inset
+
+לשם כך, נגדיר 
+\begin_inset Formula $B_{n}=A_{n}\backslash A_{n+1}$
+\end_inset
+
+.
+ כלומר, 
+\begin_inset Formula $B_{n}$
+\end_inset
+
+ היא קבוצת האיברים אשר מורידים במעבר בין 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ ל
+\begin_inset Formula $A_{n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בוודאי ש
+\begin_inset Formula $\left\{ B_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ היא סדרה של קבוצות זרות )אם היו 
+\begin_inset Formula $B_{k}\cap B_{n}=\left(A_{k}\backslash A_{k+1}\right)\cap\left(A_{n}\backslash A_{n+1}\right)=A_{k}\cap A_{n}\backslash\left(A_{k+1}\cup A_{n+1}\right)\neq\emptyset$
+\end_inset
+
+ אז בהכרח אם 
+\begin_inset Formula $n>k$
+\end_inset
+
+ נקבל 
+\begin_inset Formula $A_{k+1}\supseteq A_{n+1},\,A_{k}\supseteq A_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A_{k}\cap A_{n}\backslash\left(A_{k+1}\cup A_{n+1}\right)=A_{n}\backslash A_{k+1}$
+\end_inset
+
+ אבל גם 
+\begin_inset Formula $A_{k+1}\underset{k+1\leq n}{\supseteq}A_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A_{n}\backslash A_{k+1}=\emptyset$
+\end_inset
+
+ וזו כמובן סתירה(.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula 
+\[
+P\left(\bigcap_{n=1}^{\infty}A_{n}\right)=P\left(A_{1}\backslash\bigcup_{n=1}^{\infty}B_{n}\right)=P\left(A_{1}\right)-P\left(\bigcup_{n=1}^{\infty}B_{n}\right)\overset{disjoint\,sets}{=}P\left(A_{1}\right)-\sum_{n=1}^{\infty}P\left(B_{n}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=P\left(A_{1}\right)-\sum_{n=1}^{\infty}P\left(A_{n}\backslash A_{n+1}\right)=P\left(A_{1}\right)-\sum_{n=1}^{\infty}\left(P\left(A_{n}\right)-P\left(A_{n+1}\right)\right)=P\left(A_{1}\right)-\sum_{n=1}^{\infty}\left(P\left(A_{n}\right)-P\left(A_{n+1}\right)\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=P\left(A_{1}\right)-\left(P\left(A_{1}\right)-\lim_{n\rightarrow\infty}P\left(A_{n}\right)\right)=\lim_{n\rightarrow\infty}P\left(A_{n}\right)
+\]
+
+\end_inset
+
+ובזאת הוכחנו את המבוקש.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
 שאלה
 \family roman
 \series bold
@@ -994,9 +1120,13 @@ P\left(k\right)=\frac{5^{k}}{k!e^{5}}
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 שאלה
 \family roman
 \series bold
@@ -1093,7 +1223,7 @@ D&D
 ( הוגנות בצבעים שונים: לבנה, שחורה ואדומה.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף א - מרחב המדגם
 \end_layout
 
@@ -1183,7 +1313,18 @@ status open
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 סעיף ב - הסתברות לאי זוגי בשחורה
 \end_layout
 
@@ -1266,7 +1407,7 @@ P\left(black\,is\,odd\right)=\frac{3\cdot6^{2}}{\left|\Omega\right|}=\frac{3\cdo
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ג - ההסתברות לסכום של 
 \begin_inset Formula $5$
 \end_inset
@@ -1396,7 +1537,7 @@ P\left(white\,and\,red\,sums\,to\,5\right)=\frac{1}{9}
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ד - ההסתברות לסכום הקוביות הלבנה והשחורה, כפול מתוצאת הקוביה האדומה
 \end_layout
 
@@ -1530,7 +1671,7 @@ P\left(2\cdot red=white+black\right)=\frac{valid\,throws}{total\,possible\,throw
 
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Subsection*
 סעיף ה - ההסתברות שלפחות זוג אחד של קוביות עם סכום
 \family roman
 \series bold
@@ -1807,9 +1948,13 @@ P\left(A\cup B\cup C\right)=\frac{30}{6^{3}}+\frac{30}{6^{3}}+\frac{30}{6^{3}}-\
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
+\begin_layout Section*
 שאלה
 \family roman
 \series bold
@@ -1841,7 +1986,271 @@ P\left(A\cup B\cup C\right)=\frac{30}{6^{3}}+\frac{30}{6^{3}}+\frac{30}{6^{3}}-\
 \end_layout
 
 \begin_layout Standard
-ג
+הוזמנו 
+\begin_inset Formula $n$
+\end_inset
+
+ אורחים.
+ לכולם מגפיים שהוסרו בכניסה למסיבה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+איזה אורחים ממושמעים, ועוד במסיבה
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מרחב המדגם שלנו יהיה כל החלוקות האפשריות של שני מגפיים לכל אחד מ
+\begin_inset Formula $n$
+\end_inset
+
+ האורחים.
+ מדובר כמובן במרחב מדגם שווה הסתברויות )נתון בשאלה(.
+\end_layout
+
+\begin_layout Standard
+בהנחה שאף אורח לא הגיע עם שתי רגליים שמאליות )או שתיים ימניות(, נחשב את
+ גודל מרחב המדגם:
+\begin_inset Formula 
+\[
+\left|\Omega\right|=\frac{\left(2n\right)!}{2^{n}}
+\]
+
+\end_inset
+
+מדובר בבעיה קומבינטורית פשוטה.
+ תחילה ממספרים את כל האורחים.
+ לאחר מכן, מסדרים את כל 
+\begin_inset Formula $2n$
+\end_inset
+
+ המגפיים בשורה.
+ מניחים שהאורח ה
+\begin_inset Formula $\#1$
+\end_inset
+
+ מקבל את המגפיים הראשון והשני בסידור.
+ נותר לבטל את הסדר הפנימי בזוגות של המגפיים, יש כמובן 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגות ולכן מחלקים ב
+\begin_inset Formula $2^{n}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אנחנו אומנם מניחים פה שכל מגף ימני שונה מחברו אבל גם אם רואים את כל המגפיים
+ הימניים בתור מגפיים זהים, אז יהיה לנו בהמשך הצטמצמות של מונה ומכנה ועל
+ כן, אין זה משנה באמת
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עתה נפנה לחישוב האפשרויות שכל אורח ייקח זוג מגפיים, ימני ושמאלי )נסמן תוצאות
+ הצלחה של הניסוי ב
+\begin_inset Formula $A$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+\left|A\right|=n!n!
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גם זו בעיה פשוטה בקומבי, תחילה לכל אורח מחלקים מגף ימני, ואז לכל אורח מחלקים
+ מגף שמאלי.
+ לכל חלוקה כזו יש 
+\begin_inset Formula $n!$
+\end_inset
+
+ אפשרויות ומעקרון הכפל מקבלים את הגודל המבוקש של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ולכן נקבל שההסתברות הינה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+נזכור שמדובר במרחב שווה הסתברויות
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(A\right)=\frac{\left|A\right|}{\left|\Omega\right|}=\frac{n!n!}{\frac{\left(2n\right)!}{2^{n}}}=\frac{n!n!2^{n}}{\left(2n\right)!}
+\]
+
+\end_inset
+
+רק על מנת להמחיש כמה לא סביר זה אפילו עבור מספרים יחסית קטנים, כאשר מדובר
+ ב
+\begin_inset Formula $5$
+\end_inset
+
+ אורחים בלבד, מדובר בסיכוי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כ-
+\numeric on
+
+\begin_inset Formula $13\%$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם אנחנו מזמינים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $10$
+\end_inset
+
+ אורחים, הסיכוי כבר יורד לכ-
+\begin_inset Formula $0.5\%$
+\end_inset
+
+.
+ עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $25$
+\end_inset
+
+ אורחים, כבר עדיף להמר על זה שאסטרואיד ייפגע באחד האורחים, יהרוג אותו, ועם
+ הירושה שלו ייקנו זוגות מגפיים חדשים לכולם 
+\begin_inset Formula $\smiley$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body
