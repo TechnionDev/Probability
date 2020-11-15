@@ -1021,6 +1021,272 @@ P\left(B^{c}\mid A^{c}\right)=1-P\left(B\mid A^{c}\right)=1-\frac{P\left(A^{c}\m
 \end_layout
 
 \begin_layout Standard
+
+\series bold
+סטטיסטיקה:
+\end_layout
+
+\begin_layout Standard
+הסתברות שלמד 
+\begin_inset Formula $0.9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההסתברות שהצליח 
+\begin_inset Formula $0.85$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסתברות שלמד והצליח 
+\begin_inset Formula $0.8$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+חישוביות:
+\end_layout
+
+\begin_layout Standard
+ההסתברות שהצליח גדולה מ
+\numeric on
+0
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+מבני נתונים:
+\end_layout
+
+\begin_layout Standard
+ההסתברות שלמד והצליח 
+\begin_inset Formula $0.67$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההסתברות שלא למד והצליח 
+\begin_inset Formula $0.2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סטודנט לא יכול לקחת גם חישוביות וגם מבני נתונים )כלומר, לא יכול להצליח בשניהם(.
+\end_layout
+
+\begin_layout Subsection*
+א.
+ מה ההסתברות שסטודנט למד למבחן בסטטיסטיקה בהינתן שהוא הצליח בו?
+\end_layout
+
+\begin_layout Standard
+נסמן למד ב
+\begin_inset Formula $L$
+\end_inset
+
+ והצליח ב
+\begin_inset Formula $S$
+\end_inset
+
+ )בסטטיסטיקה(.
+ כלומר, יש לחשב
+\begin_inset Formula 
+\[
+P\left(L\mid S\right)=\frac{P\left(L\cap S\right)}{P\left(S\right)}=\frac{0.8}{0.85}\approx0.94118
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ מה ההסתברות שסטודנט הצליח במבחן במבני נתונים?
+\end_layout
+
+\begin_layout Standard
+נסמן למד ב
+\begin_inset Formula $L$
+\end_inset
+
+ והצליח ב
+\begin_inset Formula $S$
+\end_inset
+
+ )במבני נתונים(.
+ כלומר, יש לחשב
+\begin_inset Formula 
+\[
+P\left(S\right)=P\left(S\cap L\right)+P\left(S\cap L'\right)=0.67+0.2=0.87
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ג.
+ האם המאורע שהסטודנט הצליח במבחן בחישוביות והמאורע שהצליח במבחן במבני נתונים
+ באותו הסמסטר ב
+\begin_inset Quotes erd
+\end_inset
+
+ת?
+\end_layout
+
+\begin_layout Standard
+נתון כי לא אפשרי להצליח בשני הקורסים באותו סמסטר )שכן לא ניתן לקחת את שניהם(.
+ לכן המאורעות זרים.
+ כמו כן, חישבנו + נתון כי הסתברות כל מאורע הינה חיובית )ממש(.
+ לכן, מאורעות זרים עם הסתברות חיובית ממש, בהכרח תלויים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקום הנתון לעיל, נניח כי אין תלות בין ההצלחות של סטודנט בכל אחד מהמבחנים.
+\end_layout
+
+\begin_layout Subsection*
+ד.
+ בהינתן שהסטודנט הצליח במבחן בסטטיסטיקה, האם המאורע שהצליח במבחן במבני נתונים
+ והמאורע שהצליח במבחן בחישוביות, תלויים?
+\end_layout
+
+\begin_layout Standard
+כמובן שהמאורעות הינם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת )אני גם די בטוח שאמרו את זה בהרצאה, שמאורעות בלתי תלויים מוכל בתוך אי
+ תלות בזוגות(.
+ נבדוק לפי הנוסחה ישירות )הצלחות בקורסים מסומנות ב
+\begin_inset Formula $S_{D},S_{S},S_{C}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+P\left(S_{D}\cap S_{C}\mid S_{S}\right)=\frac{P\left(\left(S_{D}\cap S_{C}\right)\cap S_{S}\right)}{P\left(S_{S}\right)}=\frac{P\left(S_{D}\cap S_{C}\cap S_{S}\right)}{P\left(S_{S}\right)}=\frac{P\left(S_{D}\right)\cdot P\left(S_{C}\right)\cdot P\left(S_{S}\right)}{P\left(S_{S}\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{P\left(S_{D}\right)\cdot P\left(S_{S}\right)}{P\left(S_{S}\right)}\cdot\frac{P\left(S_{C}\right)\cdot P\left(S_{S}\right)}{P\left(S_{S}\right)}=P\left(S_{D}\mid S_{S}\right)\cdot P\left(S_{C}\mid S_{S}\right)
+\]
+
+\end_inset
+
+כלומר, אלה ב
+\begin_inset Quotes erd
+\end_inset
+
+ת לפי הגדרה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ה.
+ נגדיר מאורע: סטודנט הצליח בסטטיסטיקה והצליח במבני.
+ האם מאורע זה והמאורע שהסטודנט הצליח בחישוביות בלתי תלויים?
+\end_layout
+
+\begin_layout Standard
+התשובה היא כמובן
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אפילו שבפועל כמובן שיש תלות.
+ הרי סטודנט מוצלח, סביר שיצליח כיותר מקורס אחד, וסטודנט שלא מוצלח, כנראה
+ שלא מוצלח בכמה קורסים.
+ בנוסף, עניין של מוטיבציה.
+ אם סטודנט יקבל נכשל אחרי שלמד, כנראה שהמוטיבציה שלו ללמוד למבחן הבא תהיה
+ נמוכה יותר אז כנראה שלא יצליח גם בו.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי משפט מההרצאה.
+ אם המאורעות 
+\begin_inset Formula $S_{D},S_{S},S_{C}$
+\end_inset
+
+ בלתי תלויים, אז קבוצה של מאורעות המתקבלים על ידי איחודים/חיתוכים של מאורעות
+ אלה )כך שכל מאורע בקבוצה החדשה מופיע בביטוי חיתוך/איחוד אחד בלבד לכל היותר(
+ אז הקבוצה החדשה של המאורעות גם היא קבוצה של מאורעות בלתי תלויים.
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו, 
+\begin_inset Formula $\left\{ S_{D}\cap S_{S},S_{C}\right\} $
+\end_inset
+
+ הינה קבוצה של מאורעות בלתי תלויים.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -1056,6 +1322,108 @@ P\left(B^{c}\mid A^{c}\right)=1-P\left(B\mid A^{c}\right)=1-\frac{P\left(A^{c}\m
 \noun default
 \color inherit
 4
+\end_layout
+
+\begin_layout Standard
+נתונים 
+\begin_inset Formula $N+1$
+\end_inset
+
+ כדים הממוספרים 
+\begin_inset Formula $0,1,2,\dots,N$
+\end_inset
+
+.
+ בכד ה
+\begin_inset Formula $i$
+\end_inset
+
+ ישנם 
+\begin_inset Formula $i$
+\end_inset
+
+ כדורים שחורים ו
+\begin_inset Formula $N-i$
+\end_inset
+
+ כדורים לבנים )בלומר בכל כד יש 
+\begin_inset Formula $N$
+\end_inset
+
+ כדורים בדיוק(.
+\end_layout
+
+\begin_layout Standard
+מוציאים כדור מכד באקראי, רושמים את צבעו ומחזירים אותו לכד.
+ לאחר מכן, מוציעים כדור מאותו הכד, רושמים את צבעו, מחזירים אותו לכד וכן
+ הלאה.
+\end_layout
+
+\begin_layout Subsection*
+א.
+ עבור 
+\begin_inset Formula $i=0,1,\dots,N$
+\end_inset
+
+, בהינתן שב
+\begin_inset Formula $n$
+\end_inset
+
+ ההוצאות הראשונות הוצאו רק כדורים שחורים, מה ההסתברות שבחרנו בכד 
+\begin_inset Formula $i$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+//הסיכוי לבחור את הכד ה
+\begin_inset Formula $i$
+\end_inset
+
+ הינו 
+\begin_inset Formula $P\left(i\right)=\frac{1}{N+1}$
+\end_inset
+
+.
+ אם מוציאים כדור, 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים ומחזירים מכד 
+\begin_inset Formula $i$
+\end_inset
+
+, הסיכוי לקבל רק שחורים הינו 
+\begin_inset Formula $P\left(blacks\,only\right)=\left(\frac{i}{N}\right)^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי בייס 
+\begin_inset Formula 
+\[
+P\left(i\mid blacks\,only\right)=\frac{P\left(blacks\,only\mid i\right)\cdot P\left(i\right)}{P\left(blacks\,only\right)}=\frac{\left(\frac{i}{N}\right)^{n}\cdot\frac{1}{N+1}}{\sum_{j=0}^{N}\frac{1}{N+1}\left(\frac{j}{N}\right)^{n}}=\frac{\left(\frac{i}{N}\right)^{n}\cdot\cancel{\frac{1}{N+1}}}{\cancel{\frac{1}{N+1}}\cdot\sum_{j=0}^{N}\frac{j^{n}}{N^{n}}}=\frac{\frac{i^{n}}{\cancel{N^{n}}}}{\cancel{\frac{1}{N^{n}}}\cdot\sum_{j=0}^{N}j^{n}}=\frac{i^{n}}{\sum_{j=0}^{N}j^{n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ בהינתן 
 \end_layout
 
 \begin_layout Standard
