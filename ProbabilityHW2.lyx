@@ -862,6 +862,127 @@ P\left(at\,least\,one\,girl\mid a\,boy\,was\,chosen\right)=\frac{\frac{3}{8}}{\f
 \end_layout
 
 \begin_layout Standard
+יהיו שני מאורעות 
+\begin_inset Formula $A,B$
+\end_inset
+
+ עבורם מתקיים 
+\begin_inset Formula $P\left(A\mid B\right)>P\left(A\right)$
+\end_inset
+
+
+\begin_inset script superscript
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+
+.
+ צריך להוכיח:
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+1
+\numeric off
+.
+ 
+\begin_inset Formula $P\left(B\mid A\right)>P\left(B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בבייס
+\begin_inset Formula 
+\[
+P\left(B\mid A\right)\underset{bayes}{=}\frac{P\left(A\mid B\right)P\left(B\right)}{P\left(A\right)}\underset{\left(1\right)}{>}\frac{\cancel{P\left(A\right)}P\left(B\right)}{\cancel{P\left(A\right)}}=P\left(B\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+2
+\numeric off
+.
+ 
+\begin_inset Formula $P\left(B^{c}\mid A\right)<P\left(B^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(B^{c}\mid A\right)=1-P\left(B\mid A\right)<1-P\left(B\right)=P\left(B^{c}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+
+\numeric on
+3
+\numeric off
+.
+ 
+\begin_inset Formula $P\left(B^{c}\mid A^{c}\right)>P\left(B^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(B^{c}\mid A^{c}\right)=1-P\left(B\mid A^{c}\right)=1-\frac{P\left(A^{c}\mid B\right)P\left(B\right)}{P\left(A^{c}\right)}=1-\frac{\left(1-P\left(A\mid B\right)\right)P\left(B\right)}{1-P\left(A\right)}>1-\frac{\cancel{\left(1-P\left(A\right)\right)}P\left(B\right)}{\cancel{1-P\left(A\right)}}=1-P\left(B\right)=P\left(B^{c}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
