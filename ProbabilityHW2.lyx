@@ -1423,7 +1423,39 @@ P\left(i\mid blacks\,only\right)=\frac{P\left(blacks\,only\mid i\right)\cdot P\l
 
 \begin_layout Subsection*
 ב.
- בהינתן 
+ בהינתן שב
+\begin_inset Formula $n$
+\end_inset
+
+ ההוצאות הראשונות הוצאו רק כדורים שחורים, מה ההסתברות שהכדור הבא יהיה שחור?
+\end_layout
+
+\begin_layout Standard
+נשתמש בסכימה כדי לקבל את ההסתברות המבוקשת )נסמן 
+\begin_inset Formula $B$
+\end_inset
+
+ - יצאו עד עכשיו רק שחורים וב
+\begin_inset Formula $A$
+\end_inset
+
+ הבא יהיה גם שחור(.
+\begin_inset Formula 
+\[
+P\left(A\mid B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}=\frac{\cancel{\frac{1}{N+1}}\sum_{j=0}^{N}\left(\frac{j}{N}\right)^{n+1}}{\cancel{\frac{1}{N+1}}\sum_{j=0}^{N}\left(\frac{j}{N}\right)^{n}}=\frac{\frac{1}{N^{\cancel{n+1}}}\sum_{j=0}^{N}j^{n+1}}{\cancel{\frac{1}{N^{n}}}\sum_{j=0}^{N}j^{n}}=\frac{\sum_{j=0}^{N}j^{n+1}}{N\sum_{j=0}^{N}j^{n}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
