@@ -1563,5 +1563,283 @@ P\left(wounded\,from\,i-th\mid died\,from\,n-th\right)=\frac{0.75\cdot0.25^{5-1}
 ובזאת הוכחנו כי הסיפור רקע מזעזע וצריך לחשוב על סיפור מוצלח יותר.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+מיוצר בהונגריה - 
+\begin_inset Formula $P\left(H\right)=0.6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מיוצר בסין - 
+\begin_inset Formula $P\left(C\right)=0.4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיכוי להצלחה בחיוג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(S\mid H\right)=0.98$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(S\mid C\right)=0.97$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+א.
+ ב
+\numeric on
+10
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניסויים, המשתמש טעה פעמיים.
+ מה ההסתברות שהמכשיר יוצר בהונגריה?
+\end_layout
+
+\begin_layout Standard
+תחילה נאמר שמדובר בטעות של המשתמש ולכן יש הסתברות של 
+\begin_inset Formula $0.6$
+\end_inset
+
+ שהטלפון יוצר בהונגריה )שכן אין באמת קשר בין מקום הייצור לטעות משתמש(.
+\end_layout
+
+\begin_layout Standard
+נניח עתה כי מדובר במכשיר שנכשל בחיוג ולא בטעות משתמש.
+\end_layout
+
+\begin_layout Standard
+צריך לחשב
+\begin_inset Formula 
+\[
+P\left(H\mid2\,failures\,out\,of\,10\right)=\frac{P\left(H\cap2\,failures\,out\,of\,10\right)}{P\left(2\,failures\,out\,of\,10\right)}
+\]
+
+\end_inset
+
+נחשב את ההסתברויות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל
+\begin_inset Formula 
+\[
+P\left(H\cap2\,failures\,out\,of\,10\right)=0.6\cdot\binom{10}{2}\cdot0.02^{2}\cdot0.98^{8}\approx0.00918824064388328448
+\]
+
+\end_inset
+
+וכן
+\begin_inset Formula 
+\[
+P\left(2\,failures\,out\,of\,10\right)=P\left(H\cap2\,failures\,out\,of\,10\right)+P\left(H'\cap2\,failures\,out\,of\,10\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=0.6\cdot\binom{10}{2}\cdot0.02^{2}\cdot0.98^{8}+0.4\cdot\binom{10}{2}\cdot0.03^{2}\cdot0.97^{8}\approx0.0218848830667739613
+\]
+
+\end_inset
+
+כלומר
+\begin_inset Formula 
+\[
+\frac{P\left(H\cap2\,failures\,out\,of\,10\right)}{P\left(2\,failures\,out\,of\,10\right)}=\frac{0.00918824064388328448}{0.0218848830667739613}\approx
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\approx0.4198441735260191194507695003319981253548771554264596277393623635
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+P\left(H\mid2\,failures\,out\,of\,10\right)\approx0.419844173526
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ ב
+\numeric on
+10
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+החיובים הראשונים, *המכשיר* נכשל בחיוג פעם אחת בלבד.
+ מה ההסתברות שהוא ייכשל בחיוג הבא?
+\end_layout
+
+\begin_layout Standard
+כלומר, עלינו לחשב
+\begin_inset Formula 
+\[
+P\left(fail\,in\,11-th\mid failed\,once\,in\,10\,tests\right)=\frac{P\left(fail\,in\,11-th\cap failed\,once\,in\,10\,tests\right)}{P\left(failed\,once\,in\,10\,tests\right)}
+\]
+
+\end_inset
+
+בדומה לקודם, נחשב
+\begin_inset Formula 
+\[
+P\left(failed\,once\,in\,10\,tests\right)=0.6\cdot10\cdot0.02\cdot0.98^{9}+0.4\cdot10\cdot0.03\cdot0.97^{9}\approx0.1912774584941658126
+\]
+
+\end_inset
+
+וגם
+\begin_inset Formula 
+\[
+P\left(fail\,in\,11-th\cap failed\,once\,in\,10\,tests\right)=\left(0.6\cdot10\cdot0.02^{2}\cdot0.98^{9}+0.4\cdot10\cdot0.03^{2}\cdot0.97^{9}\right)
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\frac{P\left(fail\,in\,11-th\cap failed\,once\,in\,10\,tests\right)}{P\left(failed\,once\,in\,10\,tests\right)}\approx\frac{0.0047378264402687945124}{0.1912774584941658126}
+\]
+
+\end_inset
+
+ולכן נקבל
+\begin_inset Formula 
+\[
+P\left(fail\,in\,11-th\mid failed\,once\,in\,10\,tests\right)\mathbf{\approx0.02476939247085042062004964579381523845824593}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
