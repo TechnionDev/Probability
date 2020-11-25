@@ -1084,9 +1084,9 @@ P\left(A\right)\cdot P\left(B\right)=\frac{9}{20}\cdot\frac{9}{20}=\frac{81}{400
 \begin_inset Formula $0.5$
 \end_inset
 
- בכל הטלה, ללא קשר מה יצא בהטל)ר(ה הקודמת.
+ בכל הטלה, ללא קשר מה יצא בהטל)ר(ה הקודמת
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 בונוס
@@ -1226,6 +1226,341 @@ P\left(A\cap B\mid C\right)=\frac{P\left(A\cap B\cap C\right)}{P\left(C\right)}=
 \noun default
 \color inherit
 4
+\end_layout
+
+\begin_layout Standard
+זיו וגילי חוזרים מקורס זריקת אבנים על חיות בית.
+ הם קיבלו מטלת בית לתרגל.
+ למזלם, יש להם בבית סט אבנים מיוחד )אשר השאילה להם 
+\begin_inset Quotes eld
+\end_inset
+
+יד לאלימות
+\begin_inset Quotes erd
+\end_inset
+
+, המכללה בה הם לומדים(.
+\end_layout
+
+\begin_layout Standard
+משימת הבית של זיו וגילי היא לתרגל על חתולי רחוב שהם מוצאים על מרפסות של
+ אנשים ברחבי העיר.
+\end_layout
+
+\begin_layout Standard
+לכל זריקה של השניים יש את התפלגות הסיכויים הבאה:
+\end_layout
+
+\begin_layout Standard
+סיכוי של 
+\begin_inset Formula $0.25$
+\end_inset
+
+ לפצוע את החתול.
+\end_layout
+
+\begin_layout Standard
+סיכוי של 
+\begin_inset Formula $0.5$
+\end_inset
+
+ להרוג את החתול.
+\end_layout
+
+\begin_layout Standard
+סיכוי של 
+\begin_inset Formula $0.25$
+\end_inset
+
+ לפגוע בבעל הבית 
+\series bold
+במקום
+\series default
+ בחתול.
+\end_layout
+
+\begin_layout Standard
+ידוע גם כי חתול אשר נפצע פעמיים, נהרג.
+\end_layout
+
+\begin_layout Standard
+כמו כן, חתול אשר נפגע, יכול להתחמק באותה רמת יכולת )כלומר, הריסוסים ב
+\begin_inset Quotes erd
+\end_inset
+
+ת(.
+\end_layout
+
+\begin_layout Subsection*
+א.
+ גילי זורק שתי אבנים מהר מבלי לחכות לראות אם הראשונה פגעה )למקרה שהראשונה
+ תפגע בבעלים וכדי להספיק להרוג את החתול(.
+ מה הסיכוי לתמותה של החתול?
+\end_layout
+
+\begin_layout Standard
+המאורעות בהם החתול המסכן ימות הינם: פציעה ולא לפגוע בבעלים, הריגה בזריקה
+ הראשונה או פגיעה בבעלים ואז הריגה בזריקה השניה.
+ כמובן שמדובר במאורעות זרים )מובדלים בהשלכות הזריקה הראשונה(:
+\begin_inset Formula 
+\[
+P\left(wound\right)\cdot P\left(hit\,owner'\right)+P\left(kill\right)+P\left(hit\,owner\right)\cdot P\left(kill\right)=0.25\cdot0.75+0.5+0.25\cdot0.5=0.8125
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לצערו של החתול, זורקי האבנים שלנו כנראה יצליחו להרוג אותו.
+\end_layout
+
+\begin_layout Standard
+הסיכוי של החתול למות
+\series bold
+
+\begin_inset Formula 
+\[
+\mathbf{P\left(die\right)=0.8125}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ בהינתן שהחתול מת לאחר 
+\begin_inset Formula $n$
+\end_inset
+
+ אבנים.
+ מה ההסתברות שהחתול מת רק באבן ה
+\begin_inset Formula $n$
+\end_inset
+
+ית?
+\end_layout
+
+\begin_layout Standard
+כלומר, החתול צריך לא להפגע מ
+\begin_inset Formula $n-2$
+\end_inset
+
+ פגיעות לפחות מבין 
+\begin_inset Formula $n-1$
+\end_inset
+
+ הפגיעות הראשונות, לזה יש סיכוי של 
+\begin_inset Formula 
+\[
+\binom{n-1}{1}\cdot0.25^{n-2}=\left(n-1\right)\cdot0.25^{n-2}
+\]
+
+\end_inset
+
+הזריקה הראשונה תפצע והשניה תפצע או תהרוג.
+ בחישוב דומה לסעיף הקודם נקבל
+\begin_inset Formula 
+\[
+P\left(wound\right)\cdot\left(P\left(wound\right)+P\left(kill\right)\right)=0.25\cdot0.75=0.1875
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן, קיימת האפשרות שהחתול יישרוד 
+\begin_inset Formula $n-1$
+\end_inset
+
+ אבנים אבל ימות באחרונה, הסיכוי למקרה זה הינו )כמובן שלא ספרנו את המקרה
+ עדיין(
+\begin_inset Formula 
+\[
+P\left(kill\right)\cdot0.25^{n-1}=0.5\cdot0.25^{n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סה
+\begin_inset Quotes erd
+\end_inset
+
+כ הסיכוי שהחתול ימות רק מהאבן האחרונה הינו
+\begin_inset Formula 
+\[
+P\left(died\,from\,n-th\right)=\left(n-1\right)\cdot0.25^{n-2}\cdot0.1875+0.5\cdot0.25^{n-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נותר לחשב את הסיכוי שהחתול ימות לנו 
+\begin_inset Quotes eld
+\end_inset
+
+מתישהו
+\begin_inset Quotes erd
+\end_inset
+
+ ב
+\begin_inset Formula $n$
+\end_inset
+
+ זריקות
+\begin_inset Formula 
+\[
+P\left(died\right)=1-P\left(survived\right)=1-\left(\underset{all\,misses}{\underbrace{0.25^{n}}}+\underset{choose\,place\,for\,wound}{\underbrace{\binom{n}{1}}}\cdot\underset{misses}{\underbrace{0.25^{n-1}}}\cdot\underset{wound}{\underbrace{0.25}}\right)
+\]
+
+\end_inset
+
+ולכן בהינתן שהחתול מת, הסיכוי שהוא מת מהאבן האחרונה
+\begin_inset Formula 
+\[
+P\left(died\,from\,n-th\mid died\right)=\frac{P\left(died\,from\,n-th\cap died\right)}{P\left(died\right)}=\frac{P\left(died\,from\,n-th\right)}{P\left(died\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\left(n-1\right)\cdot0.25^{n-2}\cdot0.1875+0.5\cdot0.25^{n-1}}{1-\left(0.25^{n}+\binom{n}{1}\cdot0.25^{n-1}\cdot0.25\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+וזה הסיכוי שהחתול ימות מהאבן ה
+\begin_inset Formula $n$
+\end_inset
+
+ית.
+\end_layout
+
+\begin_layout Standard
+נחשב במפורש עבור 
+\begin_inset Formula $n=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{4\cdot0.25^{3}\cdot0.1875+0.5\cdot0.25^{4}}{1-\left(0.25^{5}+5\cdot0.25^{4}\cdot0.25\right)}=\frac{0.013671875}{0.994140625}\approx0.0137524558
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ג.
+ בהינתן שהחתול מת מהאבן ה
+\begin_inset Formula $n$
+\end_inset
+
+.
+ מה הסיכוי שהוא נפצע מהאבן ה
+\begin_inset Formula $i$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נחשב
+\begin_inset Formula 
+\[
+P\left(wounded\,from\,i-th\mid died\,from\,n-th\right)=\frac{\overset{first\,n-1\,missed\,except\,i}{\overbrace{0.25^{n-2}}}\cdot\overset{wounded\,in\,i-th}{\overbrace{0.25}}\cdot\left(\overset{wounded\,from\,last}{\overbrace{0.25}}+\overset{killed\,in\,last}{\overbrace{0.5}}\right)}{P\left(died\,from\,n-th\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{0.75\cdot0.25^{n-1}}{\left(n-1\right)\cdot0.25^{n-2}\cdot0.1875+0.5\cdot0.25^{n-1}}=\frac{0.75\cdot0.25}{0.1875\cdot\left(n-1\right)+0.5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=5,i=3$
+\end_inset
+
+ נקבל
+\begin_inset Formula 
+\[
+P\left(wounded\,from\,i-th\mid died\,from\,n-th\right)=\frac{0.75\cdot0.25^{5-1}}{0.013671875}=0.2142857143
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הבחנה מעניינת היא שהביטוי כלל לא תלוי ב
+\begin_inset Formula $i$
+\end_inset
+
+.
+ זה כמובן הגיוני שכן אין סיבה לסיכוי גבוהה יותר לפציעה של החתול בזריקה כזו
+ על פני אחרת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובזאת הוכחנו כי הסיפור רקע מזעזע וצריך לחשוב על סיפור מוצלח יותר.
 \end_layout
 
 \end_body
