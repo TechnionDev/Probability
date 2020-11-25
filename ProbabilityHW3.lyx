@@ -859,7 +859,12 @@ P\left(end\,at\,k\right)=\begin{cases}
 \end_layout
 
 \begin_layout Standard
-נוכיח לפי נוסחה של אי תלות
+נוכיח לפי נוסחה של אי תלות בעזרת הנוסחה להסתברות מותנית והעובדה כי המאורעות
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת
 \begin_inset Formula 
 \[
 P\left(A\mid C\right)\cdot P\left(B\mid C\right)=\frac{P\left(A\cap C\right)}{P\left(C\right)}\cdot\frac{P\left(B\cap C\right)}{P\left(C\right)}=\frac{P\left(A\cap C\right)\cdot P\left(B\cap C\right)}{P\left(C\right)^{2}}=\frac{P\left(A\right)\cdot P\left(B\right)\cdot P\left(C\right)\cdot\cancel{P\left(C\right)}}{P\left(C\right)^{\cancel{2}}}=
@@ -996,7 +1001,7 @@ P\left(A\mid C\right)\cdot P\left(B\mid C\right)=\frac{P\left(A\cap C\right)}{P\
 
 \begin_layout Standard
 התשובה היא לא.
- אינטואיציה, אם התקבל בהטלה הראשונה 
+ אינטואיציה: אם התקבל בהטלה הראשונה 
 \begin_inset Formula $H$
 \end_inset
 
@@ -1042,6 +1047,139 @@ P\left(A\right)\cdot P\left(B\right)=\frac{9}{20}\cdot\frac{9}{20}=\frac{81}{400
 \end_inset
 
 ת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+2
+\numeric off
+.
+ האם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת בהינתן 
+\begin_inset Formula $C$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+התשובה היא כן.
+ אינטואיציה: אם ידוע כי מדובר במטבע א אז ידוע כי הסיכוי שווה ל
+\begin_inset Formula $0.5$
+\end_inset
+
+ בכל הטלה, ללא קשר מה יצא בהטל)ר(ה הקודמת.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+בונוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות בציון הסופי לבודק שמזהה מאיזה ספר הציטוט )זה בסדר גם אם לא, אבל אם
+ יש לכם ילדים, שווה להכיר את הספר(:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Quotes eld
+\end_inset
+
+ובארץ צ'ומבליה, בעיר הבירה ננדי-מה, בתוך ארמון שיש ורד, חי לו מלך צ'ומבליה
+ )המלך מדהל ה-
+\numeric on
+1
+\numeric off
+( והוא זקן, זקן, זקן עד מאד.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+אתם בטח שואלים את עצמכם מה הקשר בין הציטוט למטלה.
+ אז אם אתם מוצאים את הקשר, עדכנו אותי, כי גם אני לא יודע.
+\end_layout
+
+\end_inset
+
+.
+ נוכיח:
+\begin_inset Formula 
+\[
+P\left(A\cap B\mid C\right)=\frac{P\left(A\cap B\cap C\right)}{P\left(C\right)}=\frac{P\left(A\right)\cdot P\left(B\right)\cdot P\left(C\right)}{P\left(C\right)}=\frac{P\left(A\right)\cdot P\left(C\right)}{P\left(C\right)}\cdot\frac{P\left(B\right)\cdot P\left(C\right)}{P\left(C\right)}=\frac{P\left(A\cap C\right)}{P\left(C\right)}\cdot\frac{P\left(B\cap C\right)}{P\left(C\right)}=P\left(A\mid C\right)\cdot P\left(B\mid C\right)
+\]
+
+\end_inset
+
+ 
 \begin_inset Formula 
 \[
 \blacksquare
