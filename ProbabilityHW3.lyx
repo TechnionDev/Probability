@@ -1,0 +1,1078 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Comic Sans MS"
+\font_typewriter "default" "Linux Libertine Mono O"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics xetex
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הסתברות מ -
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+094412
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HW3
+\end_layout
+
+\begin_layout Author
+גור תלם -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+206631848
+\end_layout
+
+\begin_layout Date
+\begin_inset Formula 
+\[
+25.11.2020
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה 
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $A=Approved$
+\end_inset
+
+.
+ 
+\begin_inset Formula $B=Valid$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אחוז הפגומים 
+\begin_inset Formula $5\%$
+\end_inset
+
+.
+ 
+\begin_inset Formula $P\left(B\right)=0.95$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כל מוצר נבדל על ידי 
+\begin_inset Formula $n$
+\end_inset
+
+ בודקים ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Standard
+הסתברות שבודק יאשר תקין 
+\begin_inset Formula $p_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $P\left(A\mid B\right)=p_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הסתברות שבודק יאשר לא תקין 
+\begin_inset Formula $p_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $P\left(A\mid B'\right)=p_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+א.
+ נתון כי פריט אושר על ידי הבודק הראשון.
+ מה ההסתברות שהפריט תקין?
+\end_layout
+
+\begin_layout Standard
+כלומר, יש לחשב 
+\begin_inset Formula $P\left(B\mid A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי הנוסחה להסתברות מותנית
+\begin_inset Formula 
+\[
+P\left(A\mid B\right)\cdot P\left(B\right)=0.95p_{1}=P\left(A\cap B\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן, ניתן לחשב
+\begin_inset Formula 
+\[
+P\left(A\mid B'\right)\cdot P\left(B'\right)=0.05p_{2}=P\left(A\cap B'\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן
+\begin_inset Formula 
+\[
+P\left(A\right)=P\left(\left(A\cap B\right)\cup\left(A\cap B'\right)\right)=P\left(A\cap B\right)+P\left(A\cap B'\right)=0.95p_{1}+0.05p_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי נוסחה להסתברות מותנית
+\begin_inset Formula 
+\[
+P\left(B\mid A\right)=\frac{P\left(A\cap B\right)}{P\left(A\right)}=\frac{0.95p_{1}}{0.95p_{1}+0.05p_{2}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ נתון כי פריט עבר בדיקה אצל כל 
+\begin_inset Formula $n$
+\end_inset
+
+ הבודקים.
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ מהבודקים אישרו את תקינות הפריט והשאר דחו אותו.
+ מה ההסתברות כי הפריט תקין?
+\end_layout
+
+\begin_layout Standard
+נחשב תחילה את ההסתברות שהפריט יקבל את התוצאות האלה מהבודקים
+\begin_inset Formula 
+\[
+P\left(A\,by\,k\right)=\binom{n}{k}P\left(A\mid B\right)^{k}P\left(A'\mid B\right)^{n-k}\cdot P\left(B\right)+\binom{n}{k}P\left(A\mid B'\right)^{k}P\left(A'\mid B'\right)^{n-k}\cdot P\left(B'\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\binom{n}{k}\left(p_{1}^{k}\left(1-p_{1}\right)^{n-k}\cdot0.95+p_{2}^{k}\left(1-p_{2}\right)^{n-k}\cdot0.05\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן לפי נוסחת בייס
+\begin_inset Formula 
+\[
+P\left(B\mid A\,by\,k\right)=\frac{P\left(A\,by\,k\mid B\right)\cdot P\left(B\right)}{P\left(A\,by\,k\right)}=\frac{0.95\cdot\cancel{\binom{n}{k}}p_{1}^{k}\left(1-p_{1}\right)^{n-k}}{\cancel{\binom{n}{k}}\left(p_{1}^{k}\left(1-p_{1}\right)^{n-k}\cdot0.95+p_{2}^{k}\left(1-p_{2}\right)^{n-k}\cdot0.05\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\mathbf{\frac{0.95\cdot p_{1}^{k}\left(1-p_{1}\right)^{n-k}}{p_{1}^{k}\left(1-p_{1}\right)^{n-k}\cdot0.95+p_{2}^{k}\left(1-p_{2}\right)^{n-k}\cdot0.05}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ג.
+ איזה אחוז מהמוצרים יגיעו לשוק אם נזרוש שכל הבודקים יאשרו?
+\end_layout
+
+\begin_layout Standard
+אז כבר הגדרנו שההסתברות שמוצר יאושר על ידי בדיוק 
+\begin_inset Formula $k$
+\end_inset
+
+ בודקים הינה
+\begin_inset Formula 
+\[
+P\left(A\,by\,k\right)=\binom{n}{k}\left(p_{1}^{k}\left(1-p_{1}\right)^{n-k}\cdot0.95+p_{2}^{k}\left(1-p_{2}\right)^{n-k}\cdot0.05\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז צריך רק להציב 
+\begin_inset Formula $k=n$
+\end_inset
+
+ ולקבל שההסתברות שמוצר יאושר על ידי כל הבודקים
+\begin_inset Formula 
+\[
+P\left(A\,by\,all\right)=\binom{n}{n}\left(p_{1}^{n}\left(1-p_{1}\right)^{n-n}\cdot0.95+p_{2}^{n}\left(1-p_{2}\right)^{n-n}\cdot0.05\right)=0.95p_{1}^{n}+0.05p_{2}^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל כדי להמין לאחוזים צריך להכפיל ב
+\numeric on
+100
+\numeric off
+.
+ ולכן האחוז של המוצרים שישוחררו לשוק הינו
+\begin_inset Formula 
+\[
+\mathbf{95p_{1}^{n}+5p_{2}^{n}\,\%}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סיבובי שח ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Standard
+אריק מנצח בסיבוב 
+\begin_inset Formula $P\left(A\right)=0.4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בנץ מנצח בסיבוב 
+\begin_inset Formula $P\left(B\right)=0.3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תיקו 
+\begin_inset Formula $P\left(D\right)=0.3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הזוכה הוא הראשון שמנצח בסיבוב כלשהו.
+\end_layout
+
+\begin_layout Subsection*
+א.
+ מה ההסתברות שאריק ינצח במשחק?
+\end_layout
+
+\begin_layout Standard
+כלומר, סכום ההסתברויות לתיקו עד הסיבוב ה
+\begin_inset Formula $i$
+\end_inset
+
+ וניצחון בסיבוב ה
+\begin_inset Formula $i+1$
+\end_inset
+
+ של אריק
+\begin_inset Formula 
+\[
+\sum_{i=0}^{9}P\left(D\right)^{i}P\left(A\right)=P\left(A\right)\sum_{i=0}^{9}P\left(D\right)^{i}=0.4\sum_{i=0}^{9}0.3^{i}=\mathbf{0.571425}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+ מה ההסתברות שהמשחק יסתיים בסיבוב ה
+\begin_inset Formula $k$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+במידה ו
+\begin_inset Formula $k<10$
+\end_inset
+
+ אז המשמעות שאחד מהשחקנים ינצח בסיבוב ה
+\begin_inset Formula $k$
+\end_inset
+
+.
+ נחשב בדומה לסעיף הקודם שבנץ ינצח בסיבוב ה
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{i=0}^{k+1}P\left(D\right)^{i}P\left(B\right)=\sum_{i=0}^{k+1}0.3^{i+1}
+\]
+
+\end_inset
+
+אריק ינצח בסיבוב ה
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sum_{i=0}^{k+1}P\left(D\right)^{i}P\left(A\right)=0.4\sum_{i=0}^{k+1}0.3^{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסיכוי שכל המשחק יסתיים בתיקו הינו 
+\begin_inset Formula $0.3^{10}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן הסיכוי שהמשחק יסתיים בסיבוב ה
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הינו
+\begin_inset Formula 
+\[
+0.3^{10}+0.3\cdot0.3^{9}+0.4\cdot0.3^{9}=\underset{=1}{\underbrace{\left(0.3+0.4+0.3\right)}}\cdot0.3^{9}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן, הסיכוי שהמשחק יסתיים בסיבוב ה
+\begin_inset Formula $k$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(end\,at\,k\right)=\begin{cases}
+0.3^{9} & k=10\\
+0.7\sum_{i=0}^{k+1}0.3^{i} & 1\leq k<10
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection*
+א.
+ נתונים 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת וההסתברות של 
+\begin_inset Formula $C$
+\end_inset
+
+ אינה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ צריך להוכיח כי בהינתן 
+\begin_inset Formula $C$
+\end_inset
+
+, 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Standard
+נוכיח לפי נוסחה של אי תלות
+\begin_inset Formula 
+\[
+P\left(A\mid C\right)\cdot P\left(B\mid C\right)=\frac{P\left(A\cap C\right)}{P\left(C\right)}\cdot\frac{P\left(B\cap C\right)}{P\left(C\right)}=\frac{P\left(A\cap C\right)\cdot P\left(B\cap C\right)}{P\left(C\right)^{2}}=\frac{P\left(A\right)\cdot P\left(B\right)\cdot P\left(C\right)\cdot\cancel{P\left(C\right)}}{P\left(C\right)^{\cancel{2}}}=
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+=\frac{P\left(A\cap B\cap C\right)}{P\left(C\right)}=\frac{P\left(\left(A\cap B\right)\cap C\right)}{P\left(C\right)}=P\left(A\cap B\mid C\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ב.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מטבעות.
+ מטבע א עם הסתברות 
+\begin_inset Formula $0.5$
+\end_inset
+
+ לקבל 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מטבע ב עם הסתברות 
+\begin_inset Formula $\frac{2}{5}$
+\end_inset
+
+ לקבל 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בוחרים באקראי מטבע אחד ומטילים אותו פעמיים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C$
+\end_inset
+
+ - נבחר מטבע א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ - 
+\begin_inset Formula $H$
+\end_inset
+
+ בהטלה הראשונה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ - 
+\begin_inset Formula $H$
+\end_inset
+
+ בהטלה השניה
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+1
+\numeric off
+.
+ האם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת?
+\end_layout
+
+\begin_layout Standard
+התשובה היא לא.
+ אינטואיציה, אם התקבל בהטלה הראשונה 
+\begin_inset Formula $H$
+\end_inset
+
+ אז סביר יותר כי מדובר במטבע א וכך סיכוי גבוהה יותר לקבל 
+\begin_inset Formula $H$
+\end_inset
+
+ גם בהטלה השניה על פני אם היה מדובר במטבע ב.
+ עתה נוכיח:
+\begin_inset Formula 
+\[
+P\left(A\right)=P\left(A\mid C\right)\cdot P\left(C\right)+P\left(A\mid C'\right)\cdot P\left(C'\right)=\frac{1}{2}\cdot\frac{1}{2}+\frac{2}{5}\cdot\frac{1}{2}=\frac{9}{20}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(B\right)=P\left(B\mid C\right)\cdot P\left(C\right)+P\left(B\mid C'\right)\cdot P\left(C'\right)=\frac{1}{2}\cdot\frac{1}{2}+\frac{2}{5}\cdot\frac{1}{2}=\frac{9}{20}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(A\cap B\right)=P\left(A\cap B\mid C\right)\cdot P\left(C\right)+P\left(A\cap B\mid C'\right)\cdot P\left(C\right)=\frac{1}{2}\cdot\frac{1}{2}\cdot\frac{1}{2}+\frac{1}{2}\cdot\frac{2}{5}\cdot\frac{2}{5}=\frac{1}{8}+\frac{4}{50}=0.205
+\]
+
+\end_inset
+
+לעומת זאת
+\begin_inset Formula 
+\[
+P\left(A\right)\cdot P\left(B\right)=\frac{9}{20}\cdot\frac{9}{20}=\frac{81}{400}=0.2025\neq0.205
+\]
+
+\end_inset
+
+ולכן המאורעות אינם ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\end_body
+\end_document
