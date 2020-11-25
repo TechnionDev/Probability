@@ -1841,5 +1841,160 @@ P\left(fail\,in\,11-th\mid failed\,once\,in\,10\,tests\right)\mathbf{\approx0.02
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+קונים עוד ועוד כרטיסים מהגרלה, עד שזוכים, אז מחליפים הגרלה וחוזרים על התהליך.
+\end_layout
+
+\begin_layout Standard
+סיכוי כרטיס לזכור בהגרלה א - 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סיכוי כרטיס לזכור בהגרלה ב - 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נמצא נוסחה רקורסיבית עבור 
+\begin_inset Formula $p\left(n\right)$
+\end_inset
+
+ ההסתברות שהכרטיס ה
+\begin_inset Formula $n$
+\end_inset
+
+ הוא מהגרלה א.
+\end_layout
+
+\begin_layout Standard
+נבדוק
+\begin_inset Formula 
+\[
+p\left(1\right)=1
+\]
+
+\end_inset
+
+שכן הכרטיס הראשון תמיד מהגרלה א.
+\end_layout
+
+\begin_layout Standard
+למען הנוחות, נגדיר 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ מאורע שהכרטיס ה
+\begin_inset Formula $i$
+\end_inset
+
+ הוא מהגרלה א )
+\begin_inset Formula $A$
+\end_inset
+
+ מסמל 
+\begin_inset Formula $Aleph$
+\end_inset
+
+(.
+ בדומה 
+\begin_inset Formula $Z_{i}$
+\end_inset
+
+ שהכרטיס ה
+\begin_inset Formula $i$
+\end_inset
+
+ זכה )
+\begin_inset Formula $Zacha$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+נמשיך וננסה לנחש נוסחה
+\begin_inset Formula 
+\[
+p\left(2\right)=P\left(A_{2}\right)=P\left(A_{1}\cap Z_{1}'\right)+P\left(A_{1}'\cap Z_{1}\right)=1\cdot\left(1-P_{1}\right)+0=1-P_{1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p\left(3\right)=P\left(A_{3}\right)=P\left(A_{2}\cap Z_{2}'\right)+P\left(A_{2}'\cap Z_{2}\right)=P\left(A_{2}\right)\cdot\left(1-P_{1}\right)+P\left(A_{2}'\right)\cdot P_{2}
+\]
+
+\end_inset
+
+וכבר ניתן לראות כי באופן כללי )נוסחת הסתברות שלמה 
+\begin_inset Formula 
+\[
+p\left(n\right)=P\left(A_{n}\right)=P\left(A_{n-1}\cap Z_{n-1}'\right)+P\left(A_{n-1}'\cap Z_{n-1}\right)=p\left(n-1\right)\cdot\left(1-P_{1}\right)+\left(1-p\left(n-1\right)\right)\cdot P_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וזו הנוסחה הרקורסיבית המבוקשת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
