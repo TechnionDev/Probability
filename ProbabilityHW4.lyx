@@ -1,0 +1,1164 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Comic Sans MS"
+\font_typewriter "default" "Linux Libertine Mono O"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics xetex
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הסתברות מ -
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+094412
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HW4
+\end_layout
+
+\begin_layout Author
+גור תלם -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+206631848
+\end_layout
+
+\begin_layout Date
+\begin_inset Formula 
+\[
+2.12.2020
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה 
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+מתחרה א מהטכניון.
+ מתחרה ב מבן גוריון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ מספר הניסיונות של מתחרה א עד שיצליח בקפיצה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ מספר הניסיונות של מתחרה ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ מתחרה א מצליח.
+ 
+\begin_inset Formula $P\left(A\right)=0.8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B$
+\end_inset
+
+ּ מתחרה ב מצליח.
+ 
+\begin_inset Formula $P\left(B\right)=0.6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתון אי תלות.
+ 
+\begin_inset Formula $Z=min\left\{ X,Y\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מה ההתפלגות של 
+\begin_inset Formula $X$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+כלומר, ההסתברות שמתחרה א יצליח בקפיצה ה
+\begin_inset Formula $X$
+\end_inset
+
+.
+ וידוע מההרצאה כי זה
+\begin_inset Formula 
+\[
+P\left(X=x\right)=P\left(\omega\mid X\left(\omega\right)=x\right)=P\left(A\right)\cdot\left(1-P\left(A\right)\right)^{X-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סעיף ב - 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מטילים 
+\begin_inset Formula $n$
+\end_inset
+
+ מטבעות לא הוגנים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(H\right)=p,\,P\left(T\right)=1-p$
+\end_inset
+
+.
+ אין תלות בין המטבעות.
+\end_layout
+
+\begin_layout Standard
+מטילים שוב את המטבעות שיצאו 
+\begin_inset Formula $H$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+צ
+\begin_inset Quotes erd
+\end_inset
+
+ל פונקציית הסתברות ל
+\begin_inset Formula $H$
+\end_inset
+
+ אחרי ההתלה השניה.
+\end_layout
+
+\begin_layout Standard
+כיוון שאחרי ההטלה הראשונה, מטילים מחדש את כל ה
+\begin_inset Formula $H$
+\end_inset
+
+, נובע שמטבע יראה 
+\begin_inset Formula $H$
+\end_inset
+
+ אחרי ההטלה השניה אמ
+\begin_inset Quotes erd
+\end_inset
+
+מ התוצאה שלו יצאה 
+\begin_inset Formula $H$
+\end_inset
+
+ בהטלה השניה.
+\end_layout
+
+\begin_layout Standard
+כדי שהוא בכלל יוטל בשנים, עליו לקבל תוצאה של 
+\begin_inset Formula $H$
+\end_inset
+
+ גם בהטלה הראשונה.
+ לכן, אנחנו יכולים להמיר את השאלה לשאלה הבאה:
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+מטילים 
+\begin_inset Formula $n$
+\end_inset
+
+ מטבעות פעמיים )כל אחד פעמיים(.
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל פונקציית ההסתברות של מספר המטבעות שהוטלו פעמיים על 
+\begin_inset Formula $H$
+\end_inset
+
+ )כאשר מטבעות שקיבלו 
+\begin_inset Formula $T$
+\end_inset
+
+ בהטלה הראשונה לא מעניינים אותנו ולכן לא משנה לנו אם יוטלו שוב, כל עוד אנחנו
+ לא סופרים אותם כמובן(.
+\end_layout
+
+\begin_layout Standard
+הסיכוי של מטבע ליפול פעמיים על 
+\begin_inset Formula $H$
+\end_inset
+
+ הינו 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+ שכן אין תלות בין ההטלות )בשאלה החדשה(.
+ כל אפשרות אחרת, מוגדרת להיות אפשרות 
+\begin_inset Quotes eld
+\end_inset
+
+רעה
+\begin_inset Quotes erd
+\end_inset
+
+.
+ הסיכוי לאפשרות רעה היא כמובן המשלים ל
+\numeric on
+1
+\numeric off
+: 
+\begin_inset Formula $1-p^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X$
+\end_inset
+
+ - מספר המטבעות שיצאו פעמיים.
+\end_layout
+
+\begin_layout Standard
+לכן, כיוון שגם אין תלות בין המטבעות, ניתן להסיק התפלגות בינומית
+\begin_inset Formula 
+\[
+p_{X}\left(x\right)=P\left(X=x\right)=P\left(\left\{ \omega\mid X\left(\omega\right)=x\right\} \right)=\binom{n}{x}\left(p^{2}\right)^{x}\left(1-p^{2}\right)^{x}=\binom{n}{x}p^{2x}\left(1-p^{2}\right)^{n-x}
+\]
+
+\end_inset
+
+וזו פונקציית ההסתברות המבוקשת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection*
+סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+א - 
+\begin_inset Formula $E$
+\end_inset
+
+ פס תוקף 
+\begin_inset Formula $P\left(E\right)=0.01$
+\end_inset
+
+.
+ מה ההסתברות שמתוך
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+500
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קרטונים, יהיה לכל היותר בקבוק אחד שייזרק?
+\end_layout
+
+\begin_layout Standard
+תחילה נציין כי אין סיבה לזרוק את הבקבוקים אם הקרטונים הם אלה שמתקלקלים.
+ אז התשובה לשאלה היא 
+\begin_inset Quotes eld
+\end_inset
+
+אין מספיק מידע לגבי בקבוקים
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עכשיו ברצינות:
+\end_layout
+
+\begin_layout Standard
+נחשב את ההסתברות )בתפלגות בינומית( שיהיה חלב אחד מקולקל בדיוק מתוך כל ה
+\numeric on
+500
+\numeric off
+
+\begin_inset Formula 
+\[
+P\left(exactly\,1\,expired\right)=\binom{500}{1}0.01^{1}\cdot\left(1-0.01\right)^{500-1}=5\cdot\left(0.99\right)^{499}=0.033184\dots
+\]
+
+\end_inset
+
+כמו כן, קל לראות כי ההסתברות שכל החלבים יהיו טריים הינה פשוט
+\begin_inset Formula 
+\[
+P\left(none\,expired\right)=\left(1-0.99\right)^{500}=0.00657048\dots
+\]
+
+\end_inset
+
+ולכן הסכום שיהיה לכל היותר חלב אחד מקולקל
+\begin_inset Formula 
+\[
+P\left(at\,most\,1\,expired\right)=P\left(exactly\,1\,expired\right)+P\left(none\,expired\right)\approx0.033184+0.00657048=0.03475448
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בניסוח התפלגויות )עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר הקרטונים המקולקלים בבחירה(
+\begin_inset Formula 
+\[
+P\left(X\leq1\right)=P\left(X=1\right)+P\left(X=0\right)=0.03475448
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומהנוסחאות למעלה נקבל ש
+\begin_inset Formula $X\sim Bin\left(500,0.01\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מתוך 
+\begin_inset Formula $100K$
+\end_inset
+
+ אנשים המגיעים לקנות קפה, כ
+\begin_inset Formula $500$
+\end_inset
+
+ לא משלמים.
+ צופים בחשאי בהתנהגות של
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קונים.
+ מה הסתברות שלפחות אחד מהם לא משלם?
+\end_layout
+
+\begin_layout Standard
+סביר לניח שמי שלוקח קפה ולא משלם עבורו, לא נחשב קונה.
+ לא בעל החנות ולא הוא מחשיבים את אותו אדם בתור קונה.
+ לכן, אם מסתכלים על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קונים, אין סיכוי שיהיה אחד שלא ישלם.
+\end_layout
+
+\begin_layout Standard
+וברצינות:
+\end_layout
+
+\begin_layout Standard
+ניתן לחשב את המבוקש בקלות בכך שנחשדב את הסיכוי שכולם ישלמו ונחסר הסתברות
+ זו מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כדי לקבל את המשלים )שהוא כמובן, מישהו אחד אינו משלם(.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר האנשים שלא משלמים מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ אנשים 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אקראיים שנבחרו.
+\end_layout
+
+\begin_layout Standard
+תחילה נציין כי ההסתברות שאדם לא ישלם הינה 
+\begin_inset Formula $\frac{500}{100000}=0.005$
+\end_inset
+
+.
+ לכן, הסיכוי שכל ה
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ישלמו הינו 
+\begin_inset Formula $\left(1-0.005\right)^{10}=0.995^{10}\approx0.95111$
+\end_inset
+
+.
+ ולכן הסיכוי המשלים, הסיכוי שיהיה לפחות אדם אחד אשר לא ישלם על הקפה שלו
+ 
+\begin_inset Formula 
+\[
+P\left(at\,least\,one\,unpaid\right)=0.0488898695\dots
+\]
+
+\end_inset
+
+ניתן גם לחשב זאת בעזרת משתנה מקרי
+\begin_inset Formula 
+\[
+P\left(\overset{at\,least\,one\,unpaid}{\overbrace{X\geq1}}\right)=1-P\left(X=0\right)=1-\binom{10}{0}\cdot0.005^{0}\cdot0.995^{10-0}=0.0488898695\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכמובן ש
+\begin_inset Formula $X\sim Bin\left(10,0.005\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - נותנים ל
+\numeric on
+100
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סטודנטים לבחור סוג חלב.
+ כל סטודנט בוחר באקראי סוג חלב )סיכוי 
+\begin_inset Formula $0.5$
+\end_inset
+
+(.
+ מה הסיכוי ש
+\numeric on
+60
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+סטודנטים לפחות יעדיפו חלב של תנובה?
+\end_layout
+
+\begin_layout Standard
+אם נסמן 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר הסטודנטים במדגם אשר מעדיפים תנובה.
+ ניתן להסיק כי אין תלות בין בחירות הסטודנטים ולכן מדובר ב
+\numeric on
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניסויי ברנולי כאשר הצלחה בניסוי הינה בחירה של תנובה וכישלון הינו בחירה של
+ טרה.
+\end_layout
+
+\begin_layout Standard
+כלומר, עליינו למצוא בעצם 
+\begin_inset Formula $P\left(X\geq60\right)$
+\end_inset
+
+.
+ הסיכוי עבור כל 
+\begin_inset Formula $P\left(X=x\right)$
+\end_inset
+
+ הינו התפלגות בינומית 
+\begin_inset Formula $X\sim Bin\left(100,0.5\right)$
+\end_inset
+
+.
+ לכן פונקציית ההסתברות
+\begin_inset Formula 
+\[
+P\left(X\geq60\right)=\sum_{x=60}^{100}\binom{100}{x}0.5^{x}\cdot\left(1-0.5\right)^{100-x}=\sum_{x=60}^{100}\binom{100}{x}\cdot0.5^{100}=\frac{4507126451608311512292345325}{158456325028528675187087900672}\approx0.028
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
