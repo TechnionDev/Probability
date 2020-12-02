@@ -664,7 +664,7 @@ P\left(exactly\,1\,expired\right)=\binom{500}{1}0.01^{1}\cdot\left(1-0.01\right)
 כמו כן, קל לראות כי ההסתברות שכל החלבים יהיו טריים הינה פשוט
 \begin_inset Formula 
 \[
-P\left(none\,expired\right)=\left(1-0.99\right)^{500}=0.00657048\dots
+P\left(none\,expired\right)=\left(1-0.01\right)^{500}=0.00657048\dots
 \]
 
 \end_inset
@@ -688,7 +688,7 @@ P\left(at\,most\,1\,expired\right)=P\left(exactly\,1\,expired\right)+P\left(none
  מספר הקרטונים המקולקלים בבחירה(
 \begin_inset Formula 
 \[
-P\left(X\leq1\right)=P\left(X=1\right)+P\left(X=0\right)=0.03475448
+P\left(X\leq1\right)=P\left(X=1\right)+P\left(X=0\right)=0.039754...
 \]
 
 \end_inset
@@ -702,6 +702,38 @@ P\left(X\leq1\right)=P\left(X=1\right)+P\left(X=0\right)=0.03475448
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+אם אנחנו רוצים רק קירוב, נבחין כי מדובר בסדרת של המון )
+\begin_inset Formula $500>>0$
+\end_inset
+
+( ניסויי ברנולי )בחירה של חלב( עם הסתברות הצלחה )שהחלק מקולקל( קטנטן, אז
+ ניתן להשתמש בפילוג פואסון
+\begin_inset Formula 
+\[
+np=500p=5=\lambda>0
+\]
+
+\end_inset
+
+לכן, עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר הקרטונים המקולקלים )מוזר לקרוא לזה הצלחות(, 
+\begin_inset Formula 
+\[
+P\left(X\leq1\right)=P\left(X=0\right)+P\left(X=1\right)=e^{-\lambda}\cdot\left(\frac{\lambda^{0}}{0!}+\frac{\lambda^{1}}{1!}\right)=6e^{-5}\approx0.040427682..
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
 \blacksquare
@@ -941,12 +973,22 @@ P\left(X\leq1\right)=P\left(X=1\right)+P\left(X=0\right)=0.03475448
 \end_layout
 
 \begin_layout Standard
-תחילה נציין כי ההסתברות שאדם לא ישלם הינה 
+מדובר בהתפלגות היפר גאומטריל )הוצאה בלי החזרות עם מרחב מדגם קטן מתוך כמות
+ גדולה(.
+ לכן ניתן לקרב בעזרת התפלגות בינומית רגילה במקום היפר גאומטרית כאשר מניחים
+ שיש החזרות.
+\end_layout
+
+\begin_layout Standard
+לכן ההסתברות שאדם הלוקח קפה, אינו ישלם היא 
 \begin_inset Formula $\frac{500}{100000}=0.005$
 \end_inset
 
-.
- לכן, הסיכוי שכל ה
+
+\end_layout
+
+\begin_layout Standard
+לכן, הסיכוי שכל ה
 \numeric on
 10
 \family roman
@@ -1001,7 +1043,7 @@ P\left(\overset{at\,least\,one\,unpaid}{\overbrace{X\geq1}}\right)=1-P\left(X=0\
 \end_layout
 
 \begin_layout Standard
-וכמובן ש
+ניתן להבחיר כי 
 \begin_inset Formula $X\sim Bin\left(10,0.005\right)$
 \end_inset
 
@@ -1141,7 +1183,7 @@ P\left(\overset{at\,least\,one\,unpaid}{\overbrace{X\geq1}}\right)=1-P\left(X=0\
  לכן פונקציית ההסתברות
 \begin_inset Formula 
 \[
-P\left(X\geq60\right)=\sum_{x=60}^{100}\binom{100}{x}0.5^{x}\cdot\left(1-0.5\right)^{100-x}=\sum_{x=60}^{100}\binom{100}{x}\cdot0.5^{100}=\frac{4507126451608311512292345325}{158456325028528675187087900672}\approx0.028
+P\left(X\geq60\right)=\sum_{x=60}^{100}\binom{100}{x}0.5^{x}\cdot\left(1-0.5\right)^{100-x}=\sum_{x=60}^{100}\binom{100}{x}\cdot0.5^{100}=\frac{4507126451608311512292345325}{158456325028528675187087900672}\approx0.02844
 \]
 
 \end_inset
@@ -1153,6 +1195,163 @@ P\left(X\geq60\right)=\sum_{x=60}^{100}\binom{100}{x}0.5^{x}\cdot\left(1-0.5\rig
 \begin_inset Formula 
 \[
 \blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+בוחר באקראי קופסת גפרורים, ימנית או שמאלית, ומוציאים ממנה גפרור.
+ 
+\begin_inset Formula $P\left(R\right)=P\left(L\right)=0.5$
+\end_inset
+
+.
+ באופן ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ בכל קופסה 
+\begin_inset Formula $n$
+\end_inset
+
+ גפרורים.
+ בוחרים באקראי קופסאות עד שמוציאים קופסה שהתרוקנה.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - ההסתברות שבפעם הראשונה שנבחרת קופסה ריקה, מספר הגפרורים בקופסה
+ השניה 
+\begin_inset Formula $k$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $E$
+\end_inset
+
+ הקופסה שנבחרה ריקה.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $C_{k}$
+\end_inset
+
+ בקופסה שלא נבחה יש 
+\begin_inset Formula $k$
+\end_inset
+
+ גפרורים.
+\end_layout
+
+\begin_layout Standard
+כלומר, עד הבחירה הנוכחית)לא כולל( היו 
+\begin_inset Formula $2n-k$
+\end_inset
+
+ בחירות כאשר מתוכן, 
+\begin_inset Formula $n$
+\end_inset
+
+ מהבחירות של הקופסה שנבחרה בבחירה האחרונה.
+\begin_inset Formula 
+\[
+P\left(E\cap C_{k}\right)=\binom{2n-k}{n}\overset{empty\,box}{\overbrace{0.5^{n}}}\cdot\overset{k\,left\,box}{\overbrace{0.5^{n-k}}}=\binom{2n-k}{n}0.5^{2n-k}
+\]
+
+\end_inset
+
+שכן כדי שהקופסה שנבחרה תהיה ריקה ובשניה 
+\begin_inset Formula $k$
+\end_inset
+
+ גפרורים, צריך לבחור 
+\begin_inset Formula $2n-k-1$
+\end_inset
+
+ פעמים בדיוק לפני הבחירה הנוכחית, כאשר 
+\begin_inset Formula $n-1$
+\end_inset
+
+ מהבחירות הללו הן של הקופסה שנבחרה כעת )הבחירה הנוכחית תרוקן את הקופסה(,
+ ושאר הבחירות של הקופסה שנשארו בה 
+\begin_inset Formula $k$
+\end_inset
+
+ גפרורים.
+\end_layout
+
+\begin_layout Standard
+נציין כי עליינו לחשב 
+\begin_inset Formula $P\left(C_{k}\mid E\right)$
+\end_inset
+
+ )כלומר, בהינתן שבוחרים קופסה ריקה, בשניה יש 
+\begin_inset Formula $k$
+\end_inset
+
+ נותרים(.
+ אז בשביל נוסחת הסתברות מותנית, נותר לחשב את 
+\begin_inset Formula $P\left(E\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(E\right)=\sum_{\underset{choices\,before\,current}{\underbrace{i=0}}}^{2n}\binom{\overset{total\,draws}{\overbrace{i}}}{\underset{same\,as\,current\,box}{\underbrace{n}}}\cdot0.5^{n}\cdot0.5^{i-n}=\sum_{i=n}^{2n}\binom{i}{n}\cdot0.5^{i}
+\]
+
+\end_inset
+
+ולכן ההסתברות המבוקשת
+\begin_inset Formula 
+\[
+P\left(C_{k}\mid E\right)=\frac{P\left(E\cap C_{k}\right)}{P\left(E\right)}=\frac{\binom{2n-k}{n}0.5^{2n-k}}{\sum_{i=n}^{2n}\binom{i}{n}\cdot0.5^{i}}
 \]
 
 \end_inset
