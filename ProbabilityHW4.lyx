@@ -1311,14 +1311,14 @@ P\left(E\cap C_{k}\right)=\binom{2n-k}{n}\overset{empty\,box}{\overbrace{0.5^{n}
 \end_inset
 
  גפרורים, צריך לבחור 
-\begin_inset Formula $2n-k-1$
+\begin_inset Formula $2n-k$
 \end_inset
 
  פעמים בדיוק לפני הבחירה הנוכחית, כאשר 
-\begin_inset Formula $n-1$
+\begin_inset Formula $n$
 \end_inset
 
- מהבחירות הללו הן של הקופסה שנבחרה כעת )הבחירה הנוכחית תרוקן את הקופסה(,
+ מהבחירות הללו הן של הקופסה שנבחרה כעת )בבחירה הנוכחית, הקופסה כבר ריקה(,
  ושאר הבחירות של הקופסה שנשארו בה 
 \begin_inset Formula $k$
 \end_inset
@@ -1327,31 +1327,91 @@ P\left(E\cap C_{k}\right)=\binom{2n-k}{n}\overset{empty\,box}{\overbrace{0.5^{n}
 \end_layout
 
 \begin_layout Standard
-נציין כי עליינו לחשב 
-\begin_inset Formula $P\left(C_{k}\mid E\right)$
-\end_inset
-
- )כלומר, בהינתן שבוחרים קופסה ריקה, בשניה יש 
+כלומר, זו ההסתברות שסדרת בחירות עד לקופסה ריקה תתקבל עם 
 \begin_inset Formula $k$
 \end_inset
 
- נותרים(.
- אז בשביל נוסחת הסתברות מותנית, נותר לחשב את 
-\begin_inset Formula $P\left(E\right)$
-\end_inset
-
-
+ גפרורים נותרים בקופסה השניה.
 \begin_inset Formula 
 \[
-P\left(E\right)=\sum_{\underset{choices\,before\,current}{\underbrace{i=0}}}^{2n}\binom{\overset{total\,draws}{\overbrace{i}}}{\underset{same\,as\,current\,box}{\underbrace{n}}}\cdot0.5^{n}\cdot0.5^{i-n}=\sum_{i=n}^{2n}\binom{i}{n}\cdot0.5^{i}
+\blacksquare
 \]
 
 \end_inset
 
-ולכן ההסתברות המבוקשת
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - נכליל עבור הסתברות בחירה לא הוגנת עבור קופסאות )הסתברות 
+\begin_inset Formula $p$
+\end_inset
+
+ לבחור את הימנית(.
+\end_layout
+
+\begin_layout Standard
+הפעם נצטרך לפצל לשני מקרים, מקרה של הקופסה הריקה הראשונה היא הימנית, והמקרה
+ בו הראשונה הריקה היא השמאלית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{L}$
+\end_inset
+
+ ריקה ימנית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+בדיקת ערנות
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{R}$
+\end_inset
+
+ ריקה שמאלית.
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $P\left(E_{L}\right)=p$
+\end_inset
+
+.
 \begin_inset Formula 
 \[
-P\left(C_{k}\mid E\right)=\frac{P\left(E\cap C_{k}\right)}{P\left(E\right)}=\frac{\binom{2n-k}{n}0.5^{2n-k}}{\sum_{i=n}^{2n}\binom{i}{n}\cdot0.5^{i}}
+P\left(E\cap C_{k}\right)=P\left(E_{L}\cap C_{k}\right)+P\left(E_{R}\cap C_{k}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\overset{last\,right}{\overbrace{p}}\cdot\overset{which\,are\,right}{\overbrace{\binom{2n-k}{n}}}\overset{n\,from\,right\,before\,now}{\overbrace{\left(p^{n}\right)}}\overset{rest\,from\,left}{\overbrace{\left(1-p\right)^{n-k}}}+\overset{last\,left}{\overbrace{\left(1-p\right)}}\cdot\overset{which\,are\,left}{\overbrace{\binom{2n-k}{n}}}\overset{rest\,from\,right}{\overbrace{\left(p^{n-k}\right)}}\overset{n\,from\,left}{\overbrace{\left(1-p\right)^{n}}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\binom{2n-k}{n}\left(p-p^{2}\right)^{n-k}\left(p^{k+1}+\left(1-p\right)^{k+1}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
 \]
 
 \end_inset
