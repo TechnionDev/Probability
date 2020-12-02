@@ -276,8 +276,8 @@ HW4
 .
 \end_layout
 
-\begin_layout Subsection*
-סעיף א - מה ההתפלגות של 
+\begin_layout Subsection
+מה ההתפלגות של 
 \begin_inset Formula $X$
 \end_inset
 
@@ -290,10 +290,15 @@ HW4
 \end_inset
 
 .
+ ולכן ההתפלגות היא גאומטרית 
+\begin_inset Formula $X\sim Geom\left(0.8\right)$
+\end_inset
+
+.
  וידוע מההרצאה כי זה
 \begin_inset Formula 
 \[
-P\left(X=x\right)=P\left(\omega\mid X\left(\omega\right)=x\right)=P\left(A\right)\cdot\left(1-P\left(A\right)\right)^{X-1}
+P\left(X=x\right)=P\left(A\right)\cdot\left(1-P\left(A\right)\right)^{x-1}
 \]
 
 \end_inset
@@ -309,8 +314,116 @@ P\left(X=x\right)=P\left(\omega\mid X\left(\omega\right)=x\right)=P\left(A\right
 
 \end_layout
 
+\begin_layout Subsection
+מה ההתפלגות של 
+\begin_inset Formula $Y$
+\end_inset
+
+?
+\end_layout
+
 \begin_layout Standard
-סעיף ב - 
+בדומה 
+\begin_inset Formula $Y\sim Geom\left(0.6\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(Y=y\right)=0.6\cdot0.4^{y-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מה ההתפלגות של 
+\begin_inset Formula $Z$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(Z\right)=P\left(min\left\{ X,Y\right\} \right)=P\left(C\right)
+\]
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא המאורע שמישהו הצליח בקפיצה )או א או ב(.
+ ולפי הכלה והפרדה
+\begin_inset Formula 
+\[
+P\left(C\right)=P\left(A\right)+P\left(B\right)-P\left(A\cap B\right)=0.6+0.8-0.6\cdot0.8=0.92
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולפי התפלגות גאומטרית בדומה למקודם
+\begin_inset Formula 
+\[
+P\left(Z=z\right)=P\left(C\right)\cdot\left(1-P\left(C\right)\right)^{z-1}=0.92\cdot0.08^{z-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+לחשב 
+\begin_inset Formula $P\left(Z\leq2\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נחשב
+\begin_inset Formula 
+\[
+P\left(Z\leq2\right)=P\left(Z=1\right)+P\left(Z=2\right)=0.92\cdot0.08^{1-1}+0.92\cdot0.08^{2-1}=0.9936
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
