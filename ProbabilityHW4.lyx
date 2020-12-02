@@ -1419,5 +1419,849 @@ P\left(E\cap C_{k}\right)=P\left(E_{L}\cap C_{k}\right)+P\left(E_{R}\cap C_{k}\r
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נתון מרחב מדגם 
+\begin_inset Formula $\Omega=\mathbb{N}_{0}$
+\end_inset
+
+ עליו מידת הסתברות פואסונית
+\begin_inset Formula 
+\[
+P\left(X=k\right)=\frac{e^{-\lambda}\lambda^{k}}{k!}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - איזה הסתברות גבוהה יותר תחת ההתפלות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $P\left(X\geq1\right),\,P\left(X\geq2\mid X\geq1\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נחשב את הביטויים
+\begin_inset Formula 
+\[
+P\left(X\geq1\right)=1-P\left(X=0\right)=1-\frac{e^{-\lambda}\lambda^{0}}{0!}=1-e^{-\lambda}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(X\geq2\mid X\geq1\right)=\frac{P\left(X\geq2\cap X\geq1\right)}{P\left(X\geq1\right)}=\frac{P\left(X\geq2\right)}{1-e^{-\lambda}}=\frac{P\left(X\geq1\right)-P\left(X=1\right)}{1-e^{-\lambda}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1-e^{-\lambda}-e^{-\lambda}\lambda}{1-e^{-\lambda}}=1-\frac{e^{-\lambda}\lambda}{1-e^{-\lambda}}
+\]
+
+\end_inset
+
+ועכשיו מאינפי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וכאלה
+\begin_inset Formula 
+\[
+e^{-\lambda}+\lambda>1\Longleftrightarrow\lambda>1-e^{-\lambda}\overset{1>e^{-\lambda}>0}{\Longleftrightarrow}\frac{\lambda}{1-e^{-\lambda}}>1\overset{\lambda>0\Rightarrow e^{-\lambda}>0}{\Longleftrightarrow}\frac{e^{-\lambda}\lambda}{1-e^{-\lambda}}>e^{-\lambda}\Longleftrightarrow1-\frac{e^{-\lambda}\lambda}{1-e^{-\lambda}}<1-e^{-\lambda}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\begin_inset Formula 
+\[
+P\left(X\geq2\mid X\geq1\right)<P\left(X\geq1\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכדור הארץ 
+\begin_inset Formula $100M$
+\end_inset
+
+ סטודנטים.
+ ידוע כי 
+\begin_inset Formula $200K$
+\end_inset
+
+ מסטודנטים אוהדי ברצלונה אשר משחקים 
+\begin_inset Formula $DOTA$
+\end_inset
+
+ ומרכיבים משקפיים )לא נראה לי סביר אבל 
+\begin_inset Formula $o.k.$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+נניח כי אין תלות בין שלוש התכונות עבור סטודנט אקראי מהסטודנטים בכדור הארץ.
+\end_layout
+
+\begin_layout Standard
+בוחרים 
+\begin_inset Formula $1K$
+\end_inset
+
+ סטודנטים שונים.
+ נשתמש בקירוב בינומי להיפר גאומטרי ופואסוני כקירוב לבינומי.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה ההסתברות שקיים במדגם סטודנט על שלוש התכונות הללו?
+\end_layout
+
+\begin_layout Standard
+בדומה לשאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+, מדובר על התפלגות היפר גאומטרית עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר הסטודנטים מתוך ה
+\begin_inset Formula $1K$
+\end_inset
+
+ אשר להם יש את שלוש התכונות.
+ אז 
+\begin_inset Formula 
+\[
+X\sim HG\left(100M,200K,1K\right)
+\]
+
+\end_inset
+
+)לא נביא את הנוסחה לפילוג ההיפרגאומטרי שכן ביקשו קירובים וגם זה להעתיק נוסחה,
+ אני סטודנט, לא תוקי( וקל לראות כי 
+\begin_inset Formula $100M>>200K>>1K$
+\end_inset
+
+ ולכן ניתן להשתמש בהתפלגות בינומית כקירוב טוב לפונקציית ההסתברות
+\begin_inset Formula 
+\[
+X\sim Bin\left(1000,0.001\right)
+\]
+
+\end_inset
+
+עכשיו אנחנו מתבקשים לחשב
+\begin_inset Formula 
+\[
+P\left(X\geq1\right)=1-P\left(X=0\right)=1-\binom{1000}{0}\left(0.998^{1000}\right)=1-0.998^{1000}\approx0.8649
+\]
+
+\end_inset
+
+ניתן גם להשתמש בקירוב פואסוני שכן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1000>>1$
+\end_inset
+
+ וכן 
+\begin_inset Formula $np=1000\cdot0.002=2=\lambda$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(X\geq1\right)=1-P\left(X=0\right)=1-e^{-2}=1-\frac{1}{e^{2}}\approx0.8647
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הייד ל
+\begin_inset Formula $Wolfram$
+\end_inset
+
+!!!!
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי אכן מדובר בקירוב טוב )אפילו מאוד(.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - ידוע כי קיים במדגם סטודנט אחד )לפחות(, מה ההסתברות שקיים סטודנט
+ נוסף?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X\geq2\mid X\geq1\right)=\frac{P\left(X\geq2\cap X\geq1\right)}{P\left(X\geq1\right)}=\frac{P\left(X\geq1\right)-P\left(X=1\right)}{P\left(X\geq1\right)}=1-\frac{e^{-2}\cdot2}{1-e^{-2}}\approx0.68696
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+מכונה מייצרת 
+\begin_inset Formula $600$
+\end_inset
+
+ פריטים בשעה מהם נלקחים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $QA$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהינתן כי יש
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+200
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פגומים מתוך
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+600
+\numeric off
+.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מה ההסתברו למצוא לכל היותר פגום אחד ב
+\begin_inset Formula $QA$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר הפגומים ב
+\begin_inset Formula $QA$
+\end_inset
+
+.
+ נמצא 
+\begin_inset Formula $P\left(X\leq1\right)=P\left(X=1\right)+P\left(X=0\right)$
+\end_inset
+
+.
+ מדובר בהתפלגות היפרגאומטרית וניתן בקירוב )למרות שזה מאוד נתוך לוויכוח האם
+ בכלל 
+\begin_inset Formula $10<<600$
+\end_inset
+
+( לחשב לפי התפלגות בינומית
+\begin_inset Formula 
+\[
+X\sim HG\left(600,200,10\right)\Longrightarrow P\left(X=1\right)+P\left(X=0\right)=\binom{200}{1}\frac{\binom{400}{9}}{\binom{600}{10}}+\binom{200}{0}\frac{\binom{400}{10}}{\binom{600}{10}}=200\frac{\frac{400!}{9!391!}}{\frac{600!}{10!590!}}=\frac{3048575085871}{29861448656559}\approx0.10209066
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בקירוב בינומי 
+\begin_inset Formula $X\sim Bin\left(10,\frac{1}{3}\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(X=1\right)+P\left(X=0\right)=\binom{10}{1}\cdot\left(\frac{1}{3}\right)^{1}\left(\frac{2}{3}\right)^{9}+\left(\frac{2}{3}\right)^{10}=\frac{2048}{19683}\approx0.1040492
+\]
+
+\end_inset
+
+בוא נגיד שאם היו מעגלים לי מס הכנסה בקירוב כזה, כנראה הייתי מתלונן )קצת
+ אבל מתלונן(.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה ההסתברות לקבל לכל היותר שני פגומים?
+\end_layout
+
+\begin_layout Standard
+כמו בסעיף הקודם
+\begin_inset Formula 
+\[
+P\left(X\leq2\right)=\overset{disjoint}{\overbrace{P\left(X=2\right)+P\left(X\leq1\right)}}=\binom{10}{2}\cdot\left(\frac{1}{3}\right)^{2}\left(\frac{2}{3}\right)^{8}+P\left(X\leq1\right)=\frac{5888}{19683}\approx0.2991414
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - מה ההסתברות לקבל לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פגומים?
+\end_layout
+
+\begin_layout Standard
+זו כמובן ההסתברות המשלימה ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של סעיף ב.
+ שכן או שמקבלים לכל היותר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $XOR$
+\end_inset
+
+ לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+
+\begin_inset Formula 
+\[
+P\left(X\geq3\right)=1-\frac{5888}{19683}\approx0.7009
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
