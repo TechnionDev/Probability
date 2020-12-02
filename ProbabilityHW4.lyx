@@ -725,7 +725,7 @@ np=500p=5=\lambda>0
  מספר הקרטונים המקולקלים )מוזר לקרוא לזה הצלחות(, 
 \begin_inset Formula 
 \[
-P\left(X\leq1\right)=P\left(X=0\right)+P\left(X=1\right)=e^{-\lambda}\cdot\left(\frac{\lambda^{0}}{0!}+\frac{\lambda^{1}}{1!}\right)=6e^{-5}\approx0.040427682..
+P\left(X\leq1\right)=P\left(X=0\right)+P\left(X=1\right)=e^{-\lambda}\cdot\left(\frac{\lambda^{0}}{0!}+\frac{\lambda^{1}}{1!}\right)=6e^{-5}\approx0.040427682
 \]
 
 \end_inset
