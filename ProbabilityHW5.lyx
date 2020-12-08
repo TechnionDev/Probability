@@ -1140,12 +1140,7 @@ P\left(X=k\mid N=n\right)=\binom{n}{k}\cdot\left(\frac{1}{3}\right)^{k}\cdot\lef
 \end_layout
 
 \begin_layout Subsection*
-
-\numeric on
-1
-\numeric off
-.
- מהן פונקציות ההתסברות השוליות של 
+סעיף א - מהן פונקציות ההתסברות השוליות של 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1313,12 +1308,7 @@ P_{Y}\left(k\right)=P_{X}\left(k\right)=\begin{cases}
 \end_layout
 
 \begin_layout Subsection*
-
-\numeric on
-2
-\numeric off
-.
- מהי פונקציית ההסתברות המשותפת של 
+סעיף ב - מהי פונקציית ההסתברות המשותפת של 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1719,12 +1709,33 @@ P\left(X=x,Y=y\right)=\begin{cases}
 \end_layout
 
 \begin_layout Subsection*
-
-\numeric on
-3
-\numeric off
-.
- נמק האם 
+סעיף
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ג - נמק האם 
 \begin_inset Formula $X$
 \end_inset
 
@@ -1760,13 +1771,8 @@ P\left(X=0,Y=0\right)=0\neq\frac{1}{16}=\frac{2}{8}\cdot\frac{2}{8}=P\left(X=0\r
 
 \end_layout
 
-\begin_layout Standard
-
-\numeric on
-4
-\numeric off
-.
- מה ההסתברות המותנית 
+\begin_layout Subsection*
+סעיף ד - מה ההסתברות המותנית 
 \begin_inset Formula $P\left(Y=1\mid X\geq1\right)$
 \end_inset
 
@@ -1794,6 +1800,779 @@ P\left(Y=1,X\geq1\right)=P\left(Y=1,X=0\right)+P\left(Y=1,X=1\right)=\frac{1}{8}
 \begin_inset Formula 
 \[
 P\left(Y=1\mid X\geq1\right)=\frac{P\left(Y=1,X\geq1\right)}{P\left(X\geq1\right)}=\frac{3/8}{6/8}=\frac{1}{2}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ המתארים את מספר השירים העיבריים והלועזיים בהתאמה.
+ נתון )עבור 
+\begin_inset Formula $m,n\in\mathbb{N}$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+P\left(X=n,Y=m\right)=\frac{e^{-14}\cdot\left(7.14\right)^{m}\cdot\left(6.86\right)^{n-m}}{m!\left(n-m\right)!},\,0\leq m\leq n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - צ
+\begin_inset Quotes erd
+\end_inset
+
+ל את פונקציית ההסתברות השולית של 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסכום על כל הערכים של 
+\begin_inset Formula $Y$
+\end_inset
+
+ כדי לקבל את ההסתברות השולית של 
+\begin_inset Formula $X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(X=n\right)=\sum_{m=0}^{n}\frac{e^{-14}\cdot\left(7.14\right)^{m}\cdot\left(6.86\right)^{n-m}}{m!\left(n-m\right)!}=\frac{1}{e^{14}}\cdot\sum_{m=0}^{n}\frac{\left(7.14\right)^{m}\cdot\left(6.86\right)^{n-m}}{m!\left(n-m\right)!}=
+\]
+
+\end_inset
+
+נבחין כי הביטוי שבתוך הסכום מאוד מזכיר את הביטוי של התפלגות בינומית.
+ חסרים לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דברים, 
+\begin_inset Formula $n!$
+\end_inset
+
+ במונה, ושסכום מספרי הקסם שם יהיו ביחד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כלומר, נשים לב שסכום מספרי הקסם הינו 
+\begin_inset Formula $14$
+\end_inset
+
+ ולכן ניתן לחלק ב
+\begin_inset Formula $14^{m}\cdot14^{n-m}$
+\end_inset
+
+ על מנת 
+\begin_inset Quotes eld
+\end_inset
+
+לנרמל
+\begin_inset Quotes erd
+\end_inset
+
+ את המספרים הללו לגדלים מתאימים.
+ אז
+\begin_inset Formula 
+\[
+=\frac{1}{n!e^{14}}\cdot\sum_{m=0}^{n}\frac{n!}{m!\left(n-m\right)!}\cdot\frac{\left(7.14\right)^{m}\cdot\left(6.86\right)^{n-m}}{14^{m}\cdot14^{n-m}}=\frac{14^{n}}{n!e^{14}}\cdot\sum_{m=0}^{n}\binom{n}{m}\cdot\left(0.51\right)^{m}\cdot\left(0.49\right)^{n-m}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{14^{n}}{n!e^{14}}\cdot\sum_{m=0}^{n}\binom{n}{m}\cdot\left(0.51\right)^{m}\cdot\left(0.49\right)^{n-m}
+\]
+
+\end_inset
+
+קיבלנו סכום רץ של כל תוצאות 
+\begin_inset Formula $Bin\left(n,0.51\right)$
+\end_inset
+
+, וכיוון שמדובר בכל התוצאות האפשריות, ידוע שסכום זה הינו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ לכן נקבל
+\begin_inset Formula 
+\[
+P\left(X=n\right)=\frac{14^{n}}{n!\cdot e^{14}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעבור תהליך דומה עבור 
+\begin_inset Formula $P\left(Y=y\right)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(Y=m\right)=\sum_{n=m}^{\infty}\frac{e^{-14}\cdot\left(7.14\right)^{m}\cdot\left(6.86\right)^{n-m}}{m!\left(n-m\right)!}=\frac{\left(7.14\right)^{m}}{e^{14}m!}\cdot\sum_{n=m}^{\infty}\frac{\left(6.86\right)^{n-m}}{\left(n-m\right)!}\overset{\begin{array}{c}
+\lambda=6.86\\
+k=n-m
+\end{array}}{\overbrace{=}}
+\]
+
+\end_inset
+
+כמו כן, נשלים את מה שצריך קבל לקבל את הנוסחה של התפלגות פואסון
+\begin_inset Formula 
+\[
+=\frac{\left(7.14\right)^{m}e^{\lambda}}{e^{14}m!}\cdot\sum_{k=0}^{\infty}e^{-\lambda}\frac{\lambda^{k}}{\left(k\right)!}=\frac{\left(7.14\right)^{m}e^{\lambda}}{e^{14}m!}\cdot\sum_{k=0}^{\infty}e^{-\lambda}\frac{\lambda^{k}}{\left(k\right)!}
+\]
+
+\end_inset
+
+ועכשיו אפשר לראות כי ה
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ היא פשוט סכום על כל האפשרויות של התפלגות פואסון וכידוע, סכום זה מתכנס ל
+\numeric on
+1
+\numeric off
+, נקבל
+\begin_inset Formula 
+\[
+P\left(Y=m\right)=\frac{\left(7.14\right)^{m}e^{-7.14}}{m!}
+\]
+
+\end_inset
+
+כבונוס, אנחנו מזהים גם את הביטוי הזה בתור הנוסחה של התפלגות פואסון עבור
+ 
+\begin_inset Formula $\lambda=7.14$
+\end_inset
+
+ עבור 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ואם כבר מדברים על אקסטרה זיהויים, גם הנוסחה עבור 
+\begin_inset Formula $X$
+\end_inset
+
+ היא בעצם ביטוי פואסוני עם 
+\begin_inset Formula $\lambda=14$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אולי זה יהיה שימושי לנו להמשך :-(
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - חשב את הביטויים הבאים:
+\end_layout
+
+\begin_layout Standard
+נשים לב שלא הוכחנו כי המשתנים ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ולכן לא ניתן להשתמש בעובדה זו.
+\end_layout
+
+\begin_layout Subsubsection*
+תת סעיף 
+\numeric on
+1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $P\left(X=n\mid Y=m\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב לפי ההגדרה של הסתברות מותנית וכן הנוסחות שמצאנו )נניח כי לא מציבים
+ 
+\begin_inset Formula $n<m$
+\end_inset
+
+(
+\begin_inset Formula 
+\[
+P\left(X=n\mid Y=m\right)=\frac{P\left(X=n,Y=m\right)}{P\left(Y=m\right)}=\frac{\frac{e^{-14}\cdot\cancel{\left(7.14\right)^{m}}\cdot\left(6.86\right)^{n-m}}{\cancel{m!}\left(n-m\right)!}}{\frac{\cancel{\left(7.14\right)^{m}}e^{-7.14}}{\cancel{m!}}}=\frac{e^{-14}\cdot\left(6.86\right)^{n-m}}{\left(n-m\right)!\cdot e^{-7.14}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{e^{-6.86}\cdot\left(6.86\right)^{n-m}}{\left(n-m\right)!}
+\]
+
+\end_inset
+
+ונראה שאנחנו לא מפסיקים לחזור לנוסחאות פואסון.
+ איזה יופי!
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+תת סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $P\left(Y=m\mid X=n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(Y=m\mid X=n\right)=\frac{P\left(X=n,Y=m\right)}{P\left(X=n\right)}=\frac{\frac{\cancel{e^{-14}}\cdot\left(7.14\right)^{m}\cdot\left(6.86\right)^{n-m}}{m!\left(n-m\right)!}}{\frac{14^{n}\cdot\cancel{e^{-14}}}{n!}}\overset{*}{\overbrace{=}}\binom{n}{m}\cdot\left(0.51\right)^{m}\cdot\left(0.49\right)^{n-m}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+* בעזרת אותו טריק מסעיף א
+\end_layout
+
+\begin_layout Standard
+ופה אנחנו קיבלנו את הנוסחה של התפלגות בינומית 
+\begin_inset Formula $Bin\left(n,0.51\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $m$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+תת סעיך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $P\left(X-Y=k\mid Y=m\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X-Y=k\mid Y=m\right)\overset{Y=m\,given}{\overbrace{=}}=P\left(X=k+m\mid Y=m\right)\frac{P\left(X=k+m,Y=m\right)}{P\left(Y=m\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\frac{e^{-14}\cdot\cancel{\left(7.14\right)^{m}}\cdot\left(6.86\right)^{k}}{\cancel{m!}k!}}{\frac{\cancel{\left(7.14\right)^{m}}e^{-7.14}}{\cancel{m!}}}=\frac{e^{-6.86}\cdot\left(6.86\right)^{k}}{k!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula $1,2,3$
+\end_inset
+
+ פואסון!
+\end_layout
+
+\begin_layout Standard
+נ.ב.
+ רק עכשיו ראיתי שמבקשים במפורס לומר את מתפלג הביטוי, אז 
+\begin_inset Formula $here\,goes$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X-Y\mid Y=m\sim Pois\left(6.86\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+תת סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- 
+\begin_inset Formula $P\left(X-Y=k\mid X=n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדומה לסעיף הקודם
+\begin_inset Formula 
+\[
+P\left(X-Y=k\mid X=n\right)=P\left(n-Y=k\mid X=n\right)=P\left(Y=n-k\mid X=n\right)=
+\]
+
+\end_inset
+
+נשתמש שוב בטריק של הפיצול של ה
+\numeric on
+14
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+לשתי חזקות וחלוקה של מספרי הקסם
+\begin_inset Formula 
+\[
+=\frac{\frac{\cancel{e^{-14}}\cdot\left(7.14\right)^{n-k}\cdot\left(6.86\right)^{k}}{\left(n-k\right)!\left(k\right)!}}{\frac{14^{n}}{n!\cdot\cancel{e^{14}}}}=\frac{n!\cdot\left(0.51\right)^{n-k}\cdot\left(0.49\right)^{k}}{\left(n-k\right)!\left(k\right)!}=\binom{n}{k}\cdot\left(0.49\right)^{k}\cdot\left(0.51\right)^{n-k}
+\]
+
+\end_inset
+
+וזו הנוסחה של התפלגות בינומית עבור 
+\begin_inset Formula $k$
+\end_inset
+
+: 
+\begin_inset Formula $Bin\left(n,0.49\right)$
+\end_inset
+
+.
+ כלומר
+\begin_inset Formula 
+\[
+X-Y\mid X=n\sim Bin\left(n,0.49\right)
 \]
 
 \end_inset
