@@ -1,0 +1,587 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Comic Sans MS"
+\font_typewriter "default" "Linux Libertine Mono O"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics xetex
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הסתברות מ -
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+094412
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HW5
+\end_layout
+
+\begin_layout Author
+גור תלם -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+206631848
+\end_layout
+
+\begin_layout Date
+\begin_inset Formula 
+\[
+8.12.2020
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה 
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+מטילים שתי קוביות הוגנות )ניתן להניח שאנחנו לא משחקים 
+\begin_inset Formula $DND$
+\end_inset
+
+ ולקוביות יש בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פאות(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ - תוצאת הקוביה הראשונה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ - התוצאה המקסימלית.
+\end_layout
+
+\begin_layout Standard
+עלינו למצוא את ההתפלגות המשותפת של 
+\begin_inset Formula $X,Y$
+\end_inset
+
+.
+ כלומר, עלינו למצוא 
+\begin_inset Formula $P\left(X=x,Y=y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+או במילים, ההסתברות שהתוצאה המקסימלית תהיה 
+\begin_inset Formula $y$
+\end_inset
+
+ והתוצאה של הקוביה הראשונה תהיה 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נפתור בעזרת חלוקה למקרים.
+\end_layout
+
+\begin_layout Standard
+ניתן להבחין כי התוצאה המקסימלית בהכרח גדולה או שווה לתוצאה של הקוביה הראשונה
+ ולכן עבור 
+\begin_inset Formula $x>y$
+\end_inset
+
+ )או עבור ערכים מחוץ לתוצאות אפשריות של הקוביות( נקבל 
+\begin_inset Formula 
+\[
+P\left(X=x,Y=y\right)=0
+\]
+
+\end_inset
+
+כמו כן, עבור 
+\begin_inset Formula $x=y$
+\end_inset
+
+, המשמעות היא שבקוביה השניה יכולים להתקבל המספרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד 
+\begin_inset Formula $x$
+\end_inset
+
+ אבל לא מעבר.
+ לכן יש 
+\begin_inset Formula $x$
+\end_inset
+
+ הטלות כאלה מתוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+36
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטלות אפשריות.
+\end_layout
+
+\begin_layout Standard
+במקרה ש
+\begin_inset Formula $1\leq x<y\leq6$
+\end_inset
+
+ הקוביה השניה יכולה לקבל רק את הערך 
+\begin_inset Formula $y$
+\end_inset
+
+ שכן אם הערך המקסימלי גדול ממש מהקוביה הראשונה, אז הוא בהכרח הערך של הקוביה
+ השניה.
+ כלומר, יש הטלה אחת ויחידה כזו לכל 
+\begin_inset Formula $1\leq x<y\leq6$
+\end_inset
+
+ שנבחר )מתוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+36
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטלות אפשריות(.
+\end_layout
+
+\begin_layout Standard
+נסכם
+\begin_inset Formula 
+\[
+P\left(X=x,Y=y\right)=P_{X,Y}\left(x,y\right)=\begin{cases}
+x/36 & 1\leq x,y\leq6\\
+1/36 & 1\leq x<y\leq6\\
+0 & otherwise
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן גם יחסית בקלות להכליל את התשובה עבור קוביות עם 
+\begin_inset Formula $K$
+\end_inset
+
+ פאות
+\begin_inset Formula 
+\[
+P\left(X=x,Y=y\right)=P_{X,Y}\left(x,y\right)=\begin{cases}
+\frac{x}{K^{2}} & 1\leq x,y\leq K\\
+\frac{1}{K^{2}} & 1\leq x<y\leq K\\
+0 & otherwise
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
