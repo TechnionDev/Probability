@@ -583,5 +583,417 @@ P\left(X=x,Y=y\right)=P_{X,Y}\left(x,y\right)=\begin{cases}
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מספר הסועדים הוא משתנה מקרי 
+\begin_inset Formula $N$
+\end_inset
+
+ בעל התפלגות פואסון עם פרמטר 
+\begin_inset Formula $\lambda=36$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הסתברות של 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+ של סועד להינות ללא תלות במס' הסועדים ובהנחה של הסועדים האחרים.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מהי ההתפלגות של מספר האנשים שנהנו בארוחה?
+\end_layout
+
+\begin_layout Standard
+נגדיר משתנה מקרי 
+\begin_inset Formula $X$
+\end_inset
+
+ - מספר האנשים שנהנו בארוחה.
+ כאמור, 
+\begin_inset Formula $X$
+\end_inset
+
+ אינו תלוי ב
+\begin_inset Formula $N$
+\end_inset
+
+.
+ נגדיר שסועד נהנה בתור הצלחה בניסוי מתוך סדרה של ניסויי ברנולי )ו
+\begin_inset Formula $N$
+\end_inset
+
+ מספר הניסויים(.
+ לכן ניתן להשתמש בפיצול פואסון ולקבל
+\begin_inset Formula 
+\[
+X\sim Pois\left(\frac{1}{3}\cdot36\right)\Longrightarrow P_{X}\left(x\right)=e^{-12}\cdot\frac{12^{x}}{x!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מהי ההתפלגות של מספר האנשים שלא נהנו בארוחה?
+\end_layout
+
+\begin_layout Standard
+בדרך מקבילה לסעיף הקודם, רק עכשיו ההסתברות שאדם לא יהנה בארוחה )ללא תלות
+ כמובן( הינה 
+\begin_inset Formula $p=1-\frac{1}{3}=\frac{2}{3}$
+\end_inset
+
+.
+ ולכן נקבל התפלגות פואסונית עם
+\begin_inset Formula 
+\[
+\lambda=\frac{2}{3}\cdot36=24
+\]
+
+\end_inset
+
+נסמן ב
+\begin_inset Formula $Y$
+\end_inset
+
+ את מספר האנשים שלא נהנו בארוחה.
+\end_layout
+
+\begin_layout Standard
+ומכאן נקבל ש
+\begin_inset Formula 
+\[
+Y\sim Pois\left(24\right)\Longrightarrow P_{Y}\left(y\right)=e^{-24}\cdot\frac{24^{y}}{y!}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - 
+\begin_inset Formula $A$
+\end_inset
+
+ הינו המאורע ש
+\begin_inset Formula $k$
+\end_inset
+
+ אנשים בדיוק נהנו בארוחה.
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ מאורע ש
+\begin_inset Formula $j$
+\end_inset
+
+ אנשים בדיוק לא נהנו בארוחה.
+ האם המאורעות 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ תלויים?
+\end_layout
+
+\begin_layout Standard
+הסתברות המאורע 
+\begin_inset Formula $A$
+\end_inset
+
+ הינה 
+\begin_inset Formula $P_{X}\left(k\right)$
+\end_inset
+
+ ובדומה 
+\begin_inset Formula $P\left(B\right)=P_{Y}\left(j\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+התרגול הוכח כי 
+\begin_inset Formula $X$
+\end_inset
+
+ ו
+\begin_inset Formula $Y$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ולכן גם המאורעות 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ד - לאדם שנהנה, הסתברות של 
+\begin_inset Formula $3/4$
+\end_inset
+
+ להמליץ ללא תלות באחרים.
+ אדם שלא נהנה ממליץ בהסתברות 
+\begin_inset Formula $1/8$
+\end_inset
+
+ גם ללא תלות.
+ מה ההתפלגות של כמות הממליצים?
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $Z$
+\end_inset
+
+ את מספר האנשים שנהנו והמליצו.
+ וב
+\begin_inset Formula $W$
+\end_inset
+
+ לא נהנו והמליצו.
+\end_layout
+
+\begin_layout Standard
+אם נסתכל על האנשים שנהנו בתור סדרת ניסויי ברנולי )פרמטר 
+\begin_inset Formula $\lambda=12$
+\end_inset
+
+ עבור התפלגות פואסון( אז כמות הממליצים מאלה שנהנו מקבילה לשאלה בסעיף א.
+ כלומר התפלגות פואסון עם פרמטר 
+\begin_inset Formula $12\cdot\frac{3}{4}=9$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בדומה עבור 
+\begin_inset Formula $W$
+\end_inset
+
+ שהינו התפלגות פואסון עם פרמטר 
+\begin_inset Formula $24\cdot\frac{1}{8}=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ולפי שרשרת הלוגיקה, כיוון ש
+\begin_inset Formula $Z$
+\end_inset
+
+ תלוי רק בכמות האנשים שנהנו )שאינה תלויה בכמות האנשים שלא נהנו( וכן ש
+\begin_inset Formula $W$
+\end_inset
+
+ אינה תלויה בכמות האנשים שנהנו, מקבלים ש
+\begin_inset Formula $Z$
+\end_inset
+
+ ו
+\begin_inset Formula $W$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ומתפלגים פואסונית עם הפרמטרים 
+\begin_inset Formula $9$
+\end_inset
+
+ ו
+\begin_inset Formula $3$
+\end_inset
+
+ בהתאמה.
+\end_layout
+
+\begin_layout Standard
+נסמן את כמות ההמליצים ב
+\begin_inset Formula $V$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ כלומר 
+\begin_inset Formula $V=Z+W$
+\end_inset
+
+.
+ לכן מהנתונים, אנחנו יכולים להשתמש באיחוד פואסון ולקבל
+\begin_inset Formula 
+\[
+V\sim Pois\left(3+9\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ה - צ
+\begin_inset Quotes erd
+\end_inset
+
+ל פונקציית ההסתברות של כמות הנהנים בהינתן כמות הסועדים.
+\end_layout
+
+\begin_layout Standard
+כלומר, עלינו למצוא 
+\begin_inset Formula $P\left(X=k\mid N=n\right)=?$
+\end_inset
+
+.
+ כלומר, יש לנו סדרה של 
+\begin_inset Formula $n$
+\end_inset
+
+ ניסויי ברנולי עם הסתברות הצלחה )כפי שכבר הגדרנו בסעיף א, הצלחה=נהנה( של
+ 
+\begin_inset Formula $\frac{1}{3}$
+\end_inset
+
+.
+ כלומר, מדובר בהתפלגות בינומית
+\begin_inset Formula 
+\[
+X\sim Bin\left(n,\frac{1}{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X=k\mid N=n\right)=\binom{n}{k}\cdot\left(\frac{1}{3}\right)^{k}\cdot\left(\frac{2}{3}\right)^{n-k}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
