@@ -2972,7 +2972,7 @@ P\left(X_{1}=x\mid S_{n}=s\right)=\frac{P\left(X_{1}=x,S_{n}=s\right)}{P\left(S_
 
 \begin_inset Formula 
 \[
-=\cancel{e^{-\lambda_{1}}}\cdot\lambda_{1}^{x}\cdot\frac{s!\cdot\left(\sum_{i=2}^{n}\lambda_{i}\right)^{s-x}}{\cancel{e^{-\lambda_{1}}}\cdot x!\cdot\left(s-x\right)!\cdot\left(\sum_{i=1}^{n}\lambda_{i}\right)^{s-x}}=
+=\cancel{e^{-\lambda_{1}}}\cdot\lambda_{1}^{x}\cdot\frac{s!\cdot\left(\sum_{i=2}^{n}\lambda_{i}\right)^{s-x}}{\cancel{e^{-\lambda_{1}}}\cdot x!\cdot\left(s-x\right)!\cdot\left(\sum_{i=1}^{n}\lambda_{i}\right)^{s}}=
 \]
 
 \end_inset
@@ -2980,7 +2980,7 @@ P\left(X_{1}=x\mid S_{n}=s\right)=\frac{P\left(X_{1}=x,S_{n}=s\right)}{P\left(S_
 
 \begin_inset Formula 
 \[
-=\frac{s!}{x!\left(s-x\right)!}\cdot\left(\frac{\lambda_{1}}{\sum_{i=2}^{n}\lambda_{i}}\right)^{x}\cdot\frac{\left(\sum_{i=2}^{n}\lambda_{i}\right)^{s-x}}{\left(\sum_{i=1}^{n}\lambda_{i}\right)^{s-x}}=\binom{s}{x}\cdot\left(\frac{\lambda_{1}}{\sum_{i=1}^{n}\lambda_{i}}\right)^{x}\cdot\left(\frac{\sum_{i=2}^{n}\lambda_{i}}{\sum_{i=1}^{n}\lambda_{i}}\right)^{s-x}
+=\frac{s!}{x!\left(s-x\right)!}\cdot\left(\frac{\lambda_{1}}{\sum_{i=2}^{n}\lambda_{i}}\right)^{x}\cdot\frac{\left(\sum_{i=2}^{n}\lambda_{i}\right)^{s-x}}{\left(\sum_{i=1}^{n}\lambda_{i}\right)^{s-x}}=\binom{s}{x}\cdot\left(\frac{\lambda_{1}}{\sum_{i=1}^{n}\lambda_{i}}\right)^{x}\cdot\left(\frac{\sum_{i=2}^{n}\lambda_{i}}{\sum_{i=1}^{n}\lambda_{i}}\right)^{s-x}=
 \]
 
 \end_inset
@@ -2994,6 +2994,349 @@ X_{1}\mid S_{n}=n\sim Bin\left(s,\frac{\lambda_{1}}{\sum_{i=1}^{n}\lambda_{i}}\r
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+בוחרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ספרות אקראית מתוך 
+\begin_inset Formula $0,...,9$
+\end_inset
+
+.
+ יהא 
+\begin_inset Formula $X$
+\end_inset
+
+ הספרה המקסימלית שהתקבלה.
+ מצא את פונקציית ההסתברות של 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - עבור המקרה בו הבחירה עם חזרות
+\end_layout
+
+\begin_layout Standard
+תחילה נמצא את מספר הבחירות ל
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ספרות שהגדולה היא לכל היותר 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ כלומר, הספרות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ מספר הבחירות הללו הינו 
+\begin_inset Formula $\left(x+1\right)^{4}$
+\end_inset
+
+.
+ ולכן ההסתברות לבחירה כזו היא
+\begin_inset Formula 
+\[
+P\left(X\leq x\right)=\frac{\left(x+1\right)^{4}}{10^{4}}
+\]
+
+\end_inset
+
+אבל גם ידוע לנו כי
+\begin_inset Formula 
+\[
+P\left(X=x\right)=P\left(X\leq x\right)-P\left(X\leq x-1\right)=\frac{\left(x+1\right)^{4}}{10^{4}}-\frac{x^{4}}{10^{4}}=\frac{\left(x+1\right)^{4}-x^{4}}{10^{4}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - עבור בחירה ללא חזרות
+\end_layout
+
+\begin_layout Standard
+בדומה לסעיף הקודם, נחשב את מספר הבחירות ללא חזרות שהספרה הגדולה ביותר היא
+ לכל היותר 
+\begin_inset Formula $x$
+\end_inset
+
+: 
+\begin_inset Formula $\binom{x+1}{4}4!$
+\end_inset
+
+.
+ וכמובן שיש 
+\begin_inset Formula $\binom{10}{4}4!$
+\end_inset
+
+ בחירות סה
+\begin_inset Quotes erd
+\end_inset
+
+כ )ללא הגבלות של מספר גדול ביותר אבל עדיין כאשר עדיין יש חזרות(.
+ לכן ההסתברות לבחירה
+\begin_inset Formula 
+\[
+P\left(X\leq x\right)=\frac{\binom{x+1}{4}4!}{\binom{10}{4}4!}=\frac{\binom{x+1}{4}}{\binom{10}{4}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ועכשיו שוב עם אותו הטריק
+\begin_inset Formula 
+\[
+P\left(X=x\right)=P\left(X\leq x\right)-P\left(X\leq x-1\right)=\frac{\binom{x+1}{4}-\binom{x}{4}}{\binom{10}{4}}
+\]
+
+\end_inset
+
+לחילופין, ניתן לחשב ישירות את ההסתברות 
+\begin_inset Formula $P\left(X=x\right)$
+\end_inset
+
+.
+ ניתן להפריד למקרים זרים כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא הספרה המקסימלית, עבור כל מקרה, ניתן לבחור את ה
+\begin_inset Formula $3$
+\end_inset
+
+ ספרות האחרות מהספרות הקטנות 
+\series bold
+ממש
+\series default
+ מ
+\begin_inset Formula $x$
+\end_inset
+
+ )אי אפשר לבחור שוב את 
+\begin_inset Formula $x$
+\end_inset
+
+ כי אין חזרות(.
+ כלומר עבור בחירה כזו יש 
+\begin_inset Formula $\binom{x}{3}$
+\end_inset
+
+ בחירות לספרות האחרות.
+\end_layout
+
+\begin_layout Standard
+עכשיו נותר לסדר את הספרות.
+ לזה כמובן יש 
+\begin_inset Formula $4!$
+\end_inset
+
+ אפשרויות.
+ ניתן לסכם
+\begin_inset Formula 
+\[
+P\left(X=x\right)=\frac{\binom{x}{3}4!}{\frac{10!}{6!}}=\frac{\binom{x}{3}4!}{5040}
+\]
+
+\end_inset
+
+ניתן לצמצם עוד קצת אם רוצים אבל בעיניי זה מיותר.
 \begin_inset Formula 
 \[
 \blacksquare
