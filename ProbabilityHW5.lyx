@@ -2595,7 +2595,302 @@ X-Y\mid X=n\sim Bin\left(n,0.49\right)
 
 \end_layout
 
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula $X_{i},1\leq i\leq n$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת המתפלגים 
+\begin_inset Formula $X_{i}\sim Pois\left(\lambda_{i}\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\lambda_{i}>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - נגדיר מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $S_{n}=\sum_{i=1}^{n}X_{i}$
+\end_inset
+
+.
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל שלכל 
+\begin_inset Formula $n\geq1$
+\end_inset
+
+ שלם מתקיים 
+\begin_inset Formula $S_{n}\sim Pois\left(\sum_{i=1}^{n}\lambda_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תיקון קל: אסור להשתמש ב
+\begin_inset Formula $n$
+\end_inset
+
+ כמו שאנחנו מתבקשים בשאלה כי האות הזו תפוסה כבר בשביל לציין את ה
+\begin_inset Formula $n$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ הב
+\begin_inset Quotes erd
+\end_inset
+
+ת שלנו.
+ אז נשתמש ב
+\begin_inset Formula $k$
+\end_inset
+
+ במקום.
+\end_layout
+
+\begin_layout Standard
+נוכיח את הטענה באינדוקציה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+בסיס 
+\begin_inset Formula $k=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{1}=\sum_{i=1}^{1}X_{i}=X_{i}
+\]
+
+\end_inset
+
+וזה כמובן מתפלג כמוקש )
+\begin_inset Formula $\sum_{i=1}^{1}\lambda_{i}=\lambda_{i}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+נניח כי הטענה נכונה עבור 
+\begin_inset Formula $k$
+\end_inset
+
+, נוכיח עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{k+1}=X_{k+1}+S_{k}=X_{k+1}+\sum_{i=1}^{k}X_{i}
+\]
+
+\end_inset
+
+ולפי טענה מהשיעורים 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ ו
+\begin_inset Formula $X_{k+1}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת שכן 
+\begin_inset Formula $S_{k}$
+\end_inset
+
+ מורכב מביטוי שאינו כולל את 
+\begin_inset Formula $X_{k+1}$
+\end_inset
+
+.
+ לכן נוכל להשתמש באיחוד פואסון ולקבל ש
+\begin_inset Formula $S_{k+1}=X_{k+1}+S_{k}$
+\end_inset
+
+ מתפלג פואסונית עם פרמטר 
+\begin_inset Formula $\lambda_{k+1}+\sum_{i=1}^{k}\lambda_{i}=\sum_{i=1}^{k+1}\lambda_{i}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S_{k+1}\sim Pois\left(\sum_{i=1}^{k+1}\lambda_{i}\right)
+\]
+
+\end_inset
+
+כמבוקש.
+ כלומר, סיימנו את צעד הסגור של האינדוקציה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - נפריך את הטענה 
+\begin_inset Formula $V=2X_{1}+X_{2}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ, אז 
+\begin_inset Formula $V\sim Pois\left(2\lambda_{1}+\lambda_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה 
+\begin_inset Formula $V\sim Pois\left(2\lambda_{1}+\lambda_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבדוק במקרה ש
+\begin_inset Formula $X_{1}=X_{2}=0$
+\end_inset
+
+.
+ לכן גם 
+\begin_inset Formula $V=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula 
+\[
+P\left(V=0\right)=e^{-\left(2\lambda_{1}+\lambda_{2}\right)}\cdot\frac{\left(2\lambda_{1}+\lambda_{2}\right)^{0}}{0!}=e^{-\left(2\lambda_{1}+\lambda_{2}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל
+\begin_inset Formula 
+\[
+P\left(X_{1}=0,X_{2}=0\right)=P\left(X_{1}=0\right)\cdot P\left(X_{2}=0\right)=e^{-\lambda_{1}}\cdot\frac{\lambda_{1}^{0}}{0!}\cdot e^{-\lambda_{2}}\cdot\frac{\lambda_{2}^{0}}{0!}=e^{-\lambda_{1}}\cdot e^{-\lambda_{2}}=e^{-\left(\lambda_{1}+\lambda_{2}\right)}
+\]
+
+\end_inset
+
+בגלל שמ
+\begin_inset Quotes erd
+\end_inset
+
+מ פואסוני לא יכול לקבל ערכים שליליים אנחנו גם יכולים לומר כי 
+\begin_inset Formula $X_{1}=X_{2}=0\Leftrightarrow V=0$
+\end_inset
+
+.
+ ולכן הנוסחאות צריכות להתלכד.
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $\lambda_{1}\neq0$
+\end_inset
+
+ ולכן נקבל סתירה
+\begin_inset Formula 
+\[
+e^{-\left(\lambda_{1}+\lambda_{2}\right)}\neq e^{-\left(2\lambda_{1}+\lambda_{2}\right)}
+\]
+
+\end_inset
+
+כלומר, שהנחת השלילה אינה מתקיימת.
+ ובזו הפרכנו את הטענה.
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
 
 \end_layout
 
