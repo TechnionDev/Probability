@@ -2894,5 +2894,115 @@ e^{-\left(\lambda_{1}+\lambda_{2}\right)}\neq e^{-\left(2\lambda_{1}+\lambda_{2}
 
 \end_layout
 
+\begin_layout Subsection*
+סעיף ג - כיצד מתפלג 
+\begin_inset Formula $X_{1}\mid S_{n}=s$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נחשב את הביטוי )עבור ערכים בת
+\begin_inset Quotes erd
+\end_inset
+
+ה(
+\begin_inset Formula 
+\[
+P\left(X_{1}=x\mid S_{n}=s\right)=\frac{P\left(X_{1}=x,S_{n}=s\right)}{P\left(S_{n}=s\right)}=\frac{P\left(X_{1}=x,\sum_{i=2}^{n}X_{i}=s-x\right)}{P\left(S_{n}=s\right)}=
+\]
+
+\end_inset
+
+אבל קיבלנו הסכום מ
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ים הוא ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ב
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ שכן זה אינו בא לידיי ביטוי בביטוי הסכום.
+ ולכן ניתן לפתוח את ההסתברות המשותפת למכפלה
+\begin_inset Formula 
+\[
+=\frac{P\left(X_{1}=x\right)\cdot P\left(\sum_{i=2}^{n}X_{i}=s-x\right)}{P\left(S_{n}=s\right)}=e^{-\lambda_{1}}\cdot\frac{\lambda_{1}^{x}}{x!}\cdot\frac{e^{-\sum_{i=2}^{n}\lambda_{i}}\cdot\frac{\left(\sum_{i=2}^{n}\lambda_{i}\right)^{s-x}}{\left(s-x\right)!}}{e^{-\sum_{i=1}^{n}\lambda_{i}}\cdot\frac{\left(\sum_{i=1}^{n}\lambda_{i}\right)^{s}}{s!}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\cancel{e^{-\lambda_{1}}}\cdot\lambda_{1}^{x}\cdot\frac{s!\cdot\left(\sum_{i=2}^{n}\lambda_{i}\right)^{s-x}}{\cancel{e^{-\lambda_{1}}}\cdot x!\cdot\left(s-x\right)!\cdot\left(\sum_{i=1}^{n}\lambda_{i}\right)^{s-x}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{s!}{x!\left(s-x\right)!}\cdot\left(\frac{\lambda_{1}}{\sum_{i=2}^{n}\lambda_{i}}\right)^{x}\cdot\frac{\left(\sum_{i=2}^{n}\lambda_{i}\right)^{s-x}}{\left(\sum_{i=1}^{n}\lambda_{i}\right)^{s-x}}=\binom{s}{x}\cdot\left(\frac{\lambda_{1}}{\sum_{i=1}^{n}\lambda_{i}}\right)^{x}\cdot\left(\frac{\sum_{i=2}^{n}\lambda_{i}}{\sum_{i=1}^{n}\lambda_{i}}\right)^{s-x}
+\]
+
+\end_inset
+
+כלומר, קיבלנו את נוסחת הבינום
+\begin_inset Formula 
+\[
+X_{1}\mid S_{n}=n\sim Bin\left(s,\frac{\lambda_{1}}{\sum_{i=1}^{n}\lambda_{i}}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
