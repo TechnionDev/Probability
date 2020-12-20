@@ -573,6 +573,264 @@ P\left(X=3\right)=\binom{7}{3}P\left(R\right)^{3}\cdot\left(1-P\left(R\right)\ri
 
 \end_inset
 
+בדרך פחות קומבינטורית ויותר הסתברותית.
+ נסמן 
+\begin_inset Formula $Y$
+\end_inset
+
+ מספר הימים עם תחזית שמש.
+ 
+\begin_inset Formula $Z$
+\end_inset
+
+ מספר הימים עם תחזית מעונן חלקית.
+ ועכשיו לפי התפלגות מולטינומית
+\begin_inset Formula 
+\[
+P\left(X=3,Y=2,Z=2\right)=\frac{7!}{3!2!2!}\cdot0.3^{3}\cdot0.6^{3}\cdot0.1^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מה ההסתברות שהוא יחזה גשם ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ימים בהינתן שהוא חזה מעונן חלקית יותר מפעמיים?
+\end_layout
+
+\begin_layout Standard
+כלומר, יש לחשב
+\begin_inset Formula 
+\[
+P\left(X=3\mid Z=2\right)=\frac{P\left(X=3,Z=2\right)}{P\left(Z=2\right)}=\frac{P\left(X=3,Z=2,Y=2\right)}{P\left(Z=2\right)}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{0.020412}{\binom{7}{2}\cdot0.1^{2}\cdot0.9^{5}}\approx0.16460905
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מה ההסתברות שהוא יחזה גשם ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ימים בהינתן שלא חזה מעונן חלקית יותר מפעמיים )כלומר, לכל היותר פעמיים מעונן
+ חלקית(?
+\end_layout
+
+\begin_layout Standard
+כלומר, יש לחשב
+\begin_inset Formula 
+\[
+P\left(X=3\mid Z\leq2\right)=\frac{P\left(X=3,Z\leq2\right)}{\binom{7}{2}\cdot0.1^{2}\cdot0.9^{5}+\binom{7}{1}\cdot0.1\cdot0.9^{6}+0.9^{7}}=\frac{P\left(X=3,Z=0\right)+P\left(X=3,Z=1\right)+P\left(X=3,Z=2\right)}{0.9743085}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\frac{7!}{3!4!0!}\cdot0.3^{3}\cdot0.6^{4}\cdot0.1^{0}+\frac{7!}{3!3!1!}\cdot0.3^{3}\cdot0.6^{3}\cdot0.1^{1}+\frac{7!}{3!2!2!}\cdot0.3^{3}\cdot0.6^{2}\cdot0.1^{2}}{0.9743085}=\frac{0.224532}{0.9743085}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=0.\overline{230452674897119341563786008}\,\left(Repeating\,decimal\right)
+\]
+
+\end_inset
+
 
 \begin_inset Formula 
 \[
