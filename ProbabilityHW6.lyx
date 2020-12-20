@@ -587,7 +587,7 @@ P\left(X=3\right)=\binom{7}{3}P\left(R\right)^{3}\cdot\left(1-P\left(R\right)\ri
  ועכשיו לפי התפלגות מולטינומית
 \begin_inset Formula 
 \[
-P\left(X=3,Y=2,Z=2\right)=\frac{7!}{3!2!2!}\cdot0.3^{3}\cdot0.6^{3}\cdot0.1^{3}
+P\left(X=3,Y=2,Z=2\right)=\frac{7!}{3!2!2!}\cdot0.3^{3}\cdot0.6^{2}\cdot0.1^{2}
 \]
 
 \end_inset
@@ -832,6 +832,593 @@ P\left(X=3\mid Z\leq2\right)=\frac{P\left(X=3,Z\leq2\right)}{\binom{7}{2}\cdot0.
 \end_inset
 
 
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+צפרדע קופצת למעלה או נשארת במקום בכל דקה.
+ למעלה בהסתברות של 
+\begin_inset Formula $\frac{1}{4}$
+\end_inset
+
+.
+ החלטות הקפיצה אינן תלויות.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מה תוחלת זמן השהיה של הצפרדע בשלב
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+?
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $X$
+\end_inset
+
+ הזמן שהצפרדע נשראת ב
+\begin_inset Formula $0$
+\end_inset
+
+.
+ אנחנו בשלב הזה של הקורס שאנחנו זורקים דברים באוויר בלי הוכחה כי אנחנו ילדים
+ גדולים כבר שיודעים לזהות התפלגות גאומטרית
+\begin_inset Formula 
+\[
+P\left(X=x\right)=\left(1-\frac{1}{4}\right)^{x-1}\cdot\frac{1}{4}
+\]
+
+\end_inset
+
+ולכן התוחלת של 
+\begin_inset Formula $X$
+\end_inset
+
+ הינה
+\begin_inset Formula 
+\[
+E\left(X\right)=\frac{1}{\frac{1}{4}}=4
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מהי תוחלת מספר השלב בו תמצא הצפרדע לאחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דק?
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $Y$
+\end_inset
+
+ את השלב בו נמצאת הצפרדע אחרי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דק.
+ מדובר בעצם בהתפלגות בינומית )זוכרים את הנימוק של ילדים גדולים וזה?(
+\begin_inset Formula 
+\[
+P\left(Y=y\right)=\binom{10}{y}\left(\frac{1}{4}\right)^{y}\left(\frac{3}{4}\right)^{10-y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למרות שהנוסחה של 
+\begin_inset Formula $p_{Y}$
+\end_inset
+
+לא באמת מעניינת אותנו, כבר שכחתי מה שאלו ואין לי כוח למחוק אז אני פשוט אכתוב
+ גם את התשובה: לפי ההרצאה, התוחלת של התפלגות בינומית היא 
+\begin_inset Formula $np$
+\end_inset
+
+.
+ כלומר, עבור 
+\begin_inset Formula $n=10,p=\frac{1}{4}$
+\end_inset
+
+ אנחנו נקבל 
+\begin_inset Formula 
+\[
+E\left(Y\right)=10\cdot\frac{1}{4}=2.5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - מהי תוחלת הזמן השהיה הכוללת של הצפרדע בשני השלבים התחתונים של הסולם
+ )
+\numeric on
+0
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+1
+\numeric off
+(?
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $Z$
+\end_inset
+
+ הזמן )בדקות( שהצפרדע שלנו נשאר בשלבים 
+\begin_inset Formula $0$
+\end_inset
+
+ ו
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אנו יודעים מהסעיף הראשון שהצפרדע שוהה בשלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בממוצע 
+\begin_inset Formula $4$
+\end_inset
+
+ דק.
+ כלומר התוחלת של 
+\begin_inset Formula $X$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $4$
+\end_inset
+
+
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כיוון שאין תלות בין החלטות הצפרדע, גם התוחלת של זמן השהיה בשלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ היא 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $4$
+\end_inset
+
+
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+אפשר לסכום ולקבל ש
+\begin_inset Formula $E\left(Z\right)=8$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר גם בעזרת התפלגות בינומית שלילית, נגדיר שהצפרדע קפצה למעלה בתור כישלון.
+ כלומר, אנחנו עוצרים אחרי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כשלונות.
+ לכן מדובר בהתפלגות בינומית שלילית עם 
+\begin_inset Formula $r=2,p=0.25$
+\end_inset
+
+.
+ כלומר, התוחלת היא )לפי שנלמד בשיער(
+\begin_inset Formula 
+\[
+E\left(Z\right)=\frac{2}{0.25}=8
+\]
+
+\end_inset
+
+וכמה מפתיע זה להגיע לאותה תוצאה?
 \begin_inset Formula 
 \[
 \blacksquare
