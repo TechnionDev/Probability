@@ -366,7 +366,7 @@ HW6
 ?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 מדובר בהתפלגות בינומית.
  עבור 
 \begin_inset Formula $X$
@@ -381,14 +381,6 @@ P\left(X=3\right)=\binom{7}{3}P\left(R\right)^{3}\cdot\left(1-P\left(R\right)\ri
 \end_inset
 
  
-\begin_inset Formula 
-\[
-\blacksquare
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection*
@@ -426,7 +418,7 @@ P\left(X=3\right)=\binom{7}{3}P\left(R\right)^{3}\cdot\left(1-P\left(R\right)\ri
 הנותרים?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 בדומה לנוסחה של התפלגות בינומית, נבחר
 \family roman
 \series medium
@@ -593,14 +585,6 @@ P\left(X=3,Y=2,Z=2\right)=\frac{7!}{3!2!2!}\cdot0.3^{3}\cdot0.6^{2}\cdot0.1^{2}
 \end_inset
 
 
-\begin_inset Formula 
-\[
-\blacksquare
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection*
@@ -690,7 +674,7 @@ P\left(X=3,Y=2,Z=2\right)=\frac{7!}{3!2!2!}\cdot0.3^{3}\cdot0.6^{2}\cdot0.1^{2}
 ימים בהינתן שהוא חזה מעונן חלקית יותר מפעמיים?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 כלומר, יש לחשב
 \begin_inset Formula 
 \[
@@ -703,14 +687,6 @@ P\left(X=3\mid Z=2\right)=\frac{P\left(X=3,Z=2\right)}{P\left(Z=2\right)}=\frac{
 \begin_inset Formula 
 \[
 =\frac{0.020412}{\binom{7}{2}\cdot0.1^{2}\cdot0.9^{5}}\approx0.16460905
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\blacksquare
 \]
 
 \end_inset
@@ -806,7 +782,7 @@ P\left(X=3\mid Z=2\right)=\frac{P\left(X=3,Z=2\right)}{P\left(Z=2\right)}=\frac{
  חלקית(?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 כלומר, יש לחשב
 \begin_inset Formula 
 \[
@@ -827,14 +803,6 @@ P\left(X=3\mid Z\leq2\right)=\frac{P\left(X=3,Z\leq2\right)}{\binom{7}{2}\cdot0.
 \begin_inset Formula 
 \[
 =0.\overline{230452674897119341563786008}\,\left(Repeating\,decimal\right)
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\blacksquare
 \]
 
 \end_inset
@@ -916,7 +884,7 @@ P\left(X=3\mid Z\leq2\right)=\frac{P\left(X=3,Z\leq2\right)}{\binom{7}{2}\cdot0.
 ?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נגדיר 
 \begin_inset Formula $X$
 \end_inset
@@ -943,14 +911,6 @@ P\left(X=x\right)=\left(1-\frac{1}{4}\right)^{x-1}\cdot\frac{1}{4}
 \begin_inset Formula 
 \[
 E\left(X\right)=\frac{1}{\frac{1}{4}}=4
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\blacksquare
 \]
 
 \end_inset
@@ -1016,7 +976,7 @@ E\left(X\right)=\frac{1}{\frac{1}{4}}=4
 דק?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נסמן ב
 \begin_inset Formula $Y$
 \end_inset
@@ -1087,7 +1047,7 @@ P\left(Y=y\right)=\binom{10}{y}\left(\frac{1}{4}\right)^{y}\left(\frac{3}{4}\rig
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 למרות שהנוסחה של 
 \begin_inset Formula $p_{Y}$
 \end_inset
@@ -1106,14 +1066,6 @@ P\left(Y=y\right)=\binom{10}{y}\left(\frac{1}{4}\right)^{y}\left(\frac{3}{4}\rig
 \begin_inset Formula 
 \[
 E\left(Y\right)=10\cdot\frac{1}{4}=2.5
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\blacksquare
 \]
 
 \end_inset
@@ -1159,7 +1111,7 @@ E\left(Y\right)=10\cdot\frac{1}{4}=2.5
 (?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נסמן 
 \begin_inset Formula $Z$
 \end_inset
@@ -1175,7 +1127,7 @@ E\left(Y\right)=10\cdot\frac{1}{4}=2.5
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 אנו יודעים מהסעיף הראשון שהצפרדע שוהה בשלב
 \family roman
 \series medium
@@ -1275,7 +1227,7 @@ E\left(Y\right)=10\cdot\frac{1}{4}=2.5
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 כיוון שאין תלות בין החלטות הצפרדע, גם התוחלת של זמן השהיה בשלב
 \family roman
 \series medium
@@ -1340,7 +1292,7 @@ E\left(Y\right)=10\cdot\frac{1}{4}=2.5
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 אפשר לסכום ולקבל ש
 \begin_inset Formula $E\left(Z\right)=8$
 \end_inset
@@ -1348,7 +1300,7 @@ E\left(Y\right)=10\cdot\frac{1}{4}=2.5
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 אפשר גם בעזרת התפלגות בינומית שלילית, נגדיר שהצפרדע קפצה למעלה בתור כישלון.
  כלומר, אנחנו עוצרים אחרי
 \family roman
@@ -1419,14 +1371,6 @@ E\left(Z\right)=\frac{2}{0.25}=8
 \end_inset
 
 וכמה מפתיע זה להגיע לאותה תוצאה?
-\begin_inset Formula 
-\[
-\blacksquare
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section*
@@ -1786,7 +1730,7 @@ E\left(Z\right)=\frac{2}{0.25}=8
 סעיף א - מה התוחלת של מספר הקומה הגבוהה ביותר אליה תגיע המעלית?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נסמן ב
 \begin_inset Formula $X$
 \end_inset
@@ -1813,14 +1757,6 @@ E\left(X\right)=\sum_{k=1}^{\infty}P\left(X\geq k\right)=\sum_{k=1}^{\infty}\lef
 \begin_inset Formula 
 \[
 =9.632571463867
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-\blacksquare
 \]
 
 \end_inset
@@ -2118,11 +2054,11 @@ A_{i}=\overset{choose\,empty\,floors}{\overbrace{\binom{10}{i}}}\cdot\underset{u
 סעיף א - מה ההסתברות שבגרף המקרי שלנו לא יהיו כלל משולשים?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נחשב זאת בעזרת הכלה והפרדה.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 ב
 \numeric on
 4
@@ -2232,21 +2168,13 @@ P\left(A_{1}^{c},A_{2}^{c},A_{3}^{c},A_{4}^{c}\right)=\frac{41}{2^{6}}=0.640625
 \end_inset
 
 
-\begin_inset Formula 
-\[
-\blacksquare
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection*
 סעיף ב - מה תוחלת מספר המשולשים בגרף?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נחשב את תוחלת מספר המשולשים בגרף.
  נסמן ב
 \begin_inset Formula $I_{A_{i}}$
@@ -2259,7 +2187,7 @@ P\left(A_{1}^{c},A_{2}^{c},A_{3}^{c},A_{4}^{c}\right)=\frac{41}{2^{6}}=0.640625
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נסמן 
 \begin_inset Formula $X$
 \end_inset
@@ -2299,14 +2227,6 @@ E\left(X\right)=\sum_{i=1}^{4}\frac{1}{8}=0.5
 \end_inset
 
 
-\begin_inset Formula 
-\[
-\blacksquare
-\]
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section*
@@ -2341,7 +2261,182 @@ E\left(X\right)=\sum_{i=1}^{4}\frac{1}{8}=0.5
 \end_layout
 
 \begin_layout Standard
+ברוך ומשה מטילים שוב ושוב קובייה הוגנת.
+ הטלות ב
+\begin_inset Quotes erd
+\end_inset
 
+ת.
+\end_layout
+
+\begin_layout Standard
+כל אחד יכול לעזוב את המשחק בכל שלב שירצה, ללא תלות בעזיבה של השחקן השני.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - ברוף אומר שהוא יפסיק לשחק כאשר תתקבל הספרה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+ מה התוחלת של כמות ההטלות עד שברוף יפסיק לשחק?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $X$
+\end_inset
+
+ מספר ההטלות עד שמתקבל 
+\begin_inset Formula $6$
+\end_inset
+
+.
+ כלומר.
+ 
+\begin_inset Formula $6$
+\end_inset
+
+ זה הצלחה ומשהו ששונה מ
+\begin_inset Formula $6$
+\end_inset
+
+ הוא כישלון.
+ כלומר מדובר בהתפלגות גיאומטרית עם פרמטר 
+\begin_inset Formula $\frac{1}{6}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ולכן 
+\begin_inset Formula $E\left(X\right)=\frac{1}{\frac{1}{6}}=6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - משה אומר שהוא יפסיק לשחק כאשר תתקבל בפעם השלישית ספרה זוגית.
+ מה התוחלת של כמות ההטלות עד שמשה יפסיק לשחק?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מספר ההטלות עד שמתקבל מספר זוגי בפעם השלישית.
+ בדומה לקודם, הצלחה היא ב
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מהמקרים.
+ וכיוון שמדובר על הצלחה שלישית.
+ מדובר בהתפלגות בינומית שלילית עם סיכוי הצלחה 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $3$
+\end_inset
+
+ הצלחות.
+ ולכן לפי תוחלת של התפלגות בינומית שלילית
+\begin_inset Formula 
+\[
+E\left(Y\right)=\frac{3}{\frac{1}{2}}=6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת החליטו השניים כי יטילו את הקובייה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים בלבד.
 \end_layout
 
 \end_body
