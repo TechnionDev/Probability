@@ -1471,7 +1471,152 @@ E\left(Z\right)=\frac{2}{0.25}=8
 \end_layout
 
 \begin_layout Subsection*
-סעיף א - חשב את התוחלת של מספר של זוגות של אחדים העוקבים
+סעיף א - מה התוחלת של מספר של זוגות של אחדים העוקבים?
+\end_layout
+
+\begin_layout Proof
+יש 
+\begin_inset Formula $n-1$
+\end_inset
+
+ זוגות אחדים אפשריים.
+ החל מהזוג 
+\begin_inset Formula $\left(1,2\right),\dots,\left(n-1,n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ההסתברות שזוג האחדים במקומות 
+\begin_inset Formula $\left(k,k+1\right)$
+\end_inset
+
+ קיים בסדרה )עבור 
+\begin_inset Formula $1\leq k\leq n-1$
+\end_inset
+
+( הינו 
+\begin_inset Formula $p^{2}$
+\end_inset
+
+ שכן נאמר לנו שההסתברות בין מקומות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ את המאורע שהזוג במקום 
+\begin_inset Formula $\left(i,i+1\right)$
+\end_inset
+
+ הוא זוג אחדים.
+ אינדיקטור 
+\begin_inset Formula $I_{A_{i}}$
+\end_inset
+
+ ש
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ מתקיים.
+ ולכן
+\begin_inset Formula 
+\[
+E\left(I_{A_{i}}\right)=P\left(A_{i}\right)=p^{2}
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $X$
+\end_inset
+
+ מספר הזוגות של אחדים עוקבים.
+\end_layout
+
+\begin_layout Proof
+ולפי לינאריות )באינדוקציה(
+\begin_inset Formula 
+\[
+E\left(X\right)=E\left(\sum_{i=1}^{n-1}I_{A_{i}}\right)=\sum_{i=1}^{n-1}E\left(I_{A_{i}}\right)=\left(n-1\right)\cdot p^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה התוחלת של מספר הרצפים )כלומר, מספר הקטעים( בעלי אותו ערך?
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+את המאורע שהסיבית ה
+\begin_inset Formula $i$
+\end_inset
+
+ שונה מהסיבית ה
+\begin_inset Formula $i+1$
+\end_inset
+
+ )כלומר, 
+\begin_inset Formula $i$
+\end_inset
+
+ היא הסיבית האחרונה ברצף(.
+ האינדיקטור 
+\begin_inset Formula $I_{B_{i}}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אשר מסמן האם המאורע 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ מתקיים.
+ אבל
+\begin_inset Formula 
+\[
+E\left(I_{B_{i}}\right)=P\left(B_{i}\right)=p\left(1-p\right)+\left(1-p\right)p=2p\left(1-p\right)=2p-2p^{2}
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מספר הרצפים.
+\end_layout
+
+\begin_layout Proof
+ולכן לפי לינראיות שוב ניתן לסכום ולקבל
+\begin_inset Formula 
+\[
+E\left(Y\right)=E\left(\sum_{i=1}^{n-1}I_{B_{i}}+1\right)=\sum_{i=1}^{n-1}E\left(I_{B_{i}}\right)+1=\left(n-1\right)\cdot\left(2p-2p^{2}\right)+1
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -3195,6 +3340,185 @@ E\left(1\cdot I_{M}+I_{B}\right)=1\cdot E\left(I_{M}\right)+E\left(I_{B}\right)=
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוונים אחרים לפתרונות:
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+ב
+\end_layout
+
+\begin_layout Standard
+נסמן מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $I_{A_{i}}$
+\end_inset
+
+ אינדיקטור ש
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ התרחש.
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $Y$
+\end_inset
+
+ את מספר הקומות בהן לא נפתחת הדלת.
+ נרצה לחשב 
+\begin_inset Formula $P\left(Y=y\right)$
+\end_inset
+
+, כלומר, הסיכוי שיהיו בדיוק 
+\begin_inset Formula $y$
+\end_inset
+
+ קומות בהן המעלית לא תעצור.
+\end_layout
+
+\begin_layout Standard
+ניתן לפתור שאלה זו בצורה יחסית קלה אם נעבור לקומבינטוריקה )יוחאי אמר שמותר(.
+ נסמן 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ את כמות הבחירות של אנשים של קומות שונות כך שבדיוק 
+\begin_inset Formula $i$
+\end_inset
+
+ קומות לא ייבחרו )אפשר להתיחס לאנשים כזהים, כי באמת משמעות מי הולך לאן(
+\begin_inset Formula 
+\[
+A_{i}=\overset{choose\,empty\,floors}{\overbrace{\binom{10}{i}}}\cdot\underset{unordered\,choices\,with\,repetitions\,12\,from\,10\,with\,at\,least\,1\,from\,each}{\underbrace{\binom{12-\left(10-i\right)+\left(10-i\right)-1}{12-\left(10-i\right)}}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\binom{10}{i}\cdot\binom{11}{2+i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שהחסרנו בכמות הבחירה את כמות הקומות שבוודאות יורדים בהם אנשים, כלומר,
+ מ
+\numeric on
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הבחירות, לקחנו מראש את הכמות שצריך, אחת לכל קומה שבוודאות יורדים בה אנשים.
+ את השאר יש לחלק בין אותן קומות )כלומר, מחלקים את השארית, את האנשים הנוספים
+ שיורדים בכל קומה(.
+\end_layout
+
+\begin_layout Standard
+אנחנו יודעים איך לחשב מספר בחירות עם חזרות מקומבי.
+\end_layout
+
+\begin_layout Standard
+סה
+\begin_inset Quotes erd
+\end_inset
+
+כ יש 
+\begin_inset Formula $\binom{12+10-1}{12}=\binom{21}{12}$
+\end_inset
+
+ חלוקות שונות של אנשים לקומות השונות.
+\end_layout
+
+\begin_layout Standard
+אז סה
+\begin_inset Quotes erd
+\end_inset
+
+כ התוחלת תהיה
+\begin_inset Formula 
+\[
+\sum_{i=0}^{9}i\cdot\frac{A_{i}}{\binom{21}{12}}=\sum_{i=0}^{9}i\cdot\frac{\binom{10}{i}\cdot\binom{11}{2+i}}{\binom{21}{12}}=\frac{30}{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלתי אבל תשובה שונה ואני לא בטוח למה.
+ אני מרגיש שזה כן כיוון נכון, לראות כמה אפשרויות יש לכ
 \end_layout
 
 \end_body
