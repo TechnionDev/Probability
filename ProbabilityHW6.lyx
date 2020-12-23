@@ -1429,5 +1429,920 @@ E\left(Z\right)=\frac{2}{0.25}=8
 
 \end_layout
 
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+בסדרת ביטים אקראית באורך 
+\begin_inset Formula $n$
+\end_inset
+
+, כל ביט הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהסתברות 
+\begin_inset Formula $p$
+\end_inset
+
+ בלי תלות באחרים.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - חשב את התוחלת של מספר של זוגות של אחדים העוקבים
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+נתון בניין בן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קומות.
+\end_layout
+
+\begin_layout Standard
+הקומה התחתונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)קרקע(.
+\end_layout
+
+\begin_layout Standard
+שאר הקומות מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+איש נכנסים למעלית )לא תקני מבחינת התו הסגול( בקומת קרקע ובוחרים באחקראי
+ באופן ב
+\begin_inset Quotes erd
+\end_inset
+
+ת קומות לרדת בהן.
+ הסתברות שווה לכל קומה )כלומר 
+\begin_inset Formula $\frac{1}{10}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מה התוחלת של מספר הקומה הגבוהה ביותר אליה תגיע המעלית?
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $X$
+\end_inset
+
+ את הקומה הגבוהה ביותר שהמעלית הגיע אליה.
+ ברור ש
+\begin_inset Formula $X$
+\end_inset
+
+ נתמך בקבוצה 
+\begin_inset Formula $\left\{ 0,1,2,3,4,5,...\right\} $
+\end_inset
+
+.
+ לכןכ
+\begin_inset Formula 
+\[
+E\left(X\right)=\sum_{k=1}^{\infty}P\left(X\geq k\right)=\sum_{k=1}^{\infty}\left(1-P\left(X<k\right)\right)=\sum_{k=1}^{\infty}\left(1-\overset{all\,of\,the\,12\,chose<k}{\overbrace{\left(\frac{k-1}{10}\right)^{12}}}\right)=\sum_{k=1}^{10}\left(1-\left(\frac{k-1}{10}\right)^{12}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=9.632571463867
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה תוחלת כמות הקומות השונות בהן לא תפתח הדלת?
+\end_layout
+
+\begin_layout Standard
+נסמן ב
+\begin_inset Formula $Y$
+\end_inset
+
+ את מספר הקומות בהן לא נפתחת הדלת.
+ נרצה לחשב 
+\begin_inset Formula $P\left(Y=y\right)$
+\end_inset
+
+, כלומר, הסיכוי שיהיו בדיוק 
+\begin_inset Formula $y$
+\end_inset
+
+ קומות בהן המעלית לא תעצור.
+\end_layout
+
+\begin_layout Standard
+ניתן לפתור שאלה זו בצורה יחסית קלה אם נעבור לקומבינטוריקה )יוחאי אמר שמותר(.
+ נסמן 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ את כמות הבחירות של אנשים של קומות שונות כך שבדיוק 
+\begin_inset Formula $i$
+\end_inset
+
+ קומות לא ייבחרו )אפשר להתיחס לאנשים כזהים, כי באמת משמעות מי הולך לאן(
+\begin_inset Formula 
+\[
+A_{i}=\overset{choose\,empty\,floors}{\overbrace{\binom{10}{i}}}\cdot\underset{unordered\,choices\,with\,repetitions\,12\,from\,10\,with\,at\,least\,1\,from\,each}{\underbrace{\binom{12-\left(10-i\right)+\left(10-i\right)-1}{12-\left(10-i\right)}}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\binom{10}{i}\cdot\binom{11}{2+i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שהחסרנו בכמות הבחירה את כמות הקומות שבוודאות יורדים בהם אנשים, כלומר,
+ מ
+\numeric on
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הבחירות, לקחנו מראש את הכמות שצריך, אחת לכל קומה שבוודאות יורדים בה אנשים.
+ את השאר יש לחלק בין אותן קומות )כלומר, מחלקים את השארית, את האנשים הנוספים
+ שיורדים בכל קומה(.
+\end_layout
+
+\begin_layout Standard
+אנחנו יודעים איך לחשב מספר בחירות עם חזרות מקומבי.
+\end_layout
+
+\begin_layout Standard
+סה
+\begin_inset Quotes erd
+\end_inset
+
+כ יש 
+\begin_inset Formula $\binom{12+10-1}{12}=\binom{21}{12}$
+\end_inset
+
+ חלוקות שונות של אנשים לקומות השונות.
+\end_layout
+
+\begin_layout Standard
+אז סה
+\begin_inset Quotes erd
+\end_inset
+
+כ התוחלת תהיה
+\begin_inset Formula 
+\[
+\sum_{i=0}^{9}i\cdot\frac{A_{i}}{\binom{21}{12}}=\sum_{i=0}^{9}i\cdot\frac{\binom{10}{i}\cdot\binom{11}{2+i}}{\binom{21}{12}}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+בונים גרף מקרי על ארבעה קודקודים 
+\begin_inset Formula $v_{1},v_{2},v_{3},v_{4}$
+\end_inset
+
+.
+ כל שני קודקודים מחוברים ביניהם ע
+\begin_inset Quotes erd
+\end_inset
+
+י צלע בהסתברות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת של 
+\begin_inset Formula $0.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+משולש הוא קבוצה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים שונים כך שכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהם מחוברים ע
+\begin_inset Quotes erd
+\end_inset
+
+י צלע.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מה ההסתברות שבגרף המקרי שלנו לא יהיו כלל משולשים?
+\end_layout
+
+\begin_layout Standard
+נחשב זאת בעזרת הכלה והפרדה.
+\end_layout
+
+\begin_layout Standard
+ב
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קודקודים יש 
+\begin_inset Formula $\binom{4}{3}=4$
+\end_inset
+
+ משולשים שונים אפשריים.
+ לפי קומבי, 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ היא התכונה שהמשולש ה
+\begin_inset Formula $i$
+\end_inset
+
+ נמצא בגרף.
+ ועכשיו ל
+\begin_inset Formula $W$
+\end_inset
+
+ים
+\begin_inset Formula 
+\[
+W\left(0\right)=2^{6}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W\left(1\right)=\binom{4}{1}\cdot2^{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W\left(2\right)=\binom{4}{2}\cdot2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W\left(3\right)=\binom{4}{3}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+W\left(4\right)=1
+\]
+
+\end_inset
+
+ולכן על ידי הכלה והפרדה, יהיו לנו
+\begin_inset Formula 
+\[
+W\left(0\right)-W\left(1\right)+W\left(2\right)+W\left(3\right)-W\left(4\right)=41
+\]
+
+\end_inset
+
+גרפים ללא משולשים כלל.
+ כלומר, שמתוך 
+\begin_inset Formula $2^{6}$
+\end_inset
+
+ גרפים פשוטים אפשריים, ההסתברות לגרף ללא משולשים היא
+\begin_inset Formula 
+\[
+P\left(A_{1}^{c},A_{2}^{c},A_{3}^{c},A_{4}^{c}\right)=\frac{41}{2^{6}}=0.640625
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה תוחלת מספר המשולשים בגרף?
+\end_layout
+
+\begin_layout Standard
+נחשב את תוחלת מספר המשולשים בגרף.
+ נסמן ב
+\begin_inset Formula $I_{A_{i}}$
+\end_inset
+
+ את האינדיקטור שהתרחש 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $X$
+\end_inset
+
+ את מספר המשולשים בגרף, כלומר, את מספר המאורעות 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ שהתרחשו.
+ ולכן
+\begin_inset Formula 
+\[
+E\left(X\right)=\sum_{i=1}^{4}P\left(A_{i}\right)
+\]
+
+\end_inset
+
+אבל ידוע לנו כי ההסתברות שמשולש 
+\begin_inset Formula $i$
+\end_inset
+
+ קיים בגרף הינה 
+\begin_inset Formula $P\left(A_{i}\right)=\frac{1}{2^{3}}=\frac{1}{8}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ ולכן
+\begin_inset Formula 
+\[
+E\left(X\right)=\sum_{i=1}^{4}\frac{1}{8}=0.5
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\blacksquare
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
