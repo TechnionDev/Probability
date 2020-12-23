@@ -2439,5 +2439,665 @@ E\left(Y\right)=\frac{3}{\frac{1}{2}}=6
 פעמים בלבד.
 \end_layout
 
+\begin_layout Subsection*
+סעיף ג - ברוך היה רוצה להתחתן עם הספרה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+ הוא רוצה לדעת כמה כלות יהיו לו )כן, אני ממגדר את הספרה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+, כן, החלטתי שהיא גם הטרוסקסואלית, וכן גם ברוך להחלטתי הטרוסקסואל(.
+ כלומר, מה התוחלת של הספרה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Z$
+\end_inset
+
+ מספר הפעמים שהתקבלה הספרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+ ההטלות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ולכן מדובר בהתפלגות בינומית עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ניסויים ופרמטר סיכוי הצלחה 
+\begin_inset Formula $\frac{1}{6}$
+\end_inset
+
+.
+ ולכן התוחלת היא בהכרח 
+\begin_inset Formula 
+\[
+E\left(Z\right)=10\cdot\frac{1}{6}=1.6\overline{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ד - הצלחה מבחינתו של ברוך מוגדרת כאשר הספרה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מתקבלת
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים בדיוק.
+ הצלחה מבחינת משה היא כאשר התקבלו בדיוק
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים ספרות זוגיות.
+ מה התוחלת מספר ההצלחות ב
+\numeric on
+10
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטלות?
+\end_layout
+
+\begin_layout Proof
+נחשב את התוחלת של הצלחה עבור ברוך ועבור משה בנפרד.
+ נתחיל עם ברוך.
+\end_layout
+
+\begin_layout Proof
+נניח כי הצלחה נבדקת רק לאחר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ההטלות.
+ כלומר, אם התקבל ה
+\numeric on
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ה
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בהטלה ה
+\numeric on
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואז לא התקבלו יותר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+ים, הכוונה שהייתה הצלחה אחת עבור ברוך ולא הצלחה בכל הטלה שלאחריה היו בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+ 
+\numeric on
+6
+\numeric off
+ים.
+\end_layout
+
+\begin_layout Proof
+אם נסמן מאורע 
+\begin_inset Formula $B$
+\end_inset
+
+ הצלחה של ברוך ואינדיקטור 
+\begin_inset Formula $I_{B}$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula 
+\[
+P\left(B\right)=E\left(I_{B}\right)=\binom{10}{5}\left(\frac{1}{6}\right)^{5}\left(\frac{5}{6}\right)^{5}=0.01302381...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נסמן מאורע 
+\begin_inset Formula $M$
+\end_inset
+
+ הצלחה של משה ואינדיקטור 
+\begin_inset Formula $I_{M}$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+E\left(I_{M}\right)=P\left(M\right)=\binom{10}{5}\left(\frac{1}{2}\right)^{5}\left(\frac{1}{2}\right)^{5}=\binom{10}{5}0.5^{10}=0.24609375
+\]
+
+\end_inset
+
+ומלינאריות נקבל
+\begin_inset Formula 
+\[
+E\left(1\cdot I_{M}+I_{B}\right)=1\cdot E\left(I_{M}\right)+E\left(I_{B}\right)=0.25911756\dots
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
