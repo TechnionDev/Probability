@@ -810,6 +810,13 @@ P\left(X=3\mid Z\leq2\right)=\frac{P\left(X=3,Z\leq2\right)}{\binom{7}{2}\cdot0.
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 שאלה
 \family roman
@@ -1373,6 +1380,13 @@ E\left(Z\right)=\frac{2}{0.25}=8
 וכמה מפתיע זה להגיע לאותה תוצאה?
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 שאלה
 \family roman
@@ -1614,6 +1628,13 @@ E\left(I_{B_{i}}\right)=P\left(B_{i}\right)=p\left(1-p\right)+\left(1-p\right)p=
 E\left(Y\right)=E\left(\sum_{i=1}^{n-1}I_{B_{i}}+1\right)=\sum_{i=1}^{n-1}E\left(I_{B_{i}}\right)+1=\left(n-1\right)\cdot\left(2p-2p^{2}\right)+1
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -2125,6 +2146,13 @@ E\left(Z\right)=E\left(\sum_{i=1}^{10}I_{B_{i}}\right)=\sum_{i=1}^{10}E\left(I_{
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 שאלה
 \family roman
@@ -2467,6 +2495,13 @@ E\left(X\right)=\sum_{i=1}^{4}P\left(A_{i}\right)
 E\left(X\right)=\sum_{i=1}^{4}\frac{1}{8}=0.5
 \]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
