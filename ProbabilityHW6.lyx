@@ -1768,45 +1768,43 @@ E\left(X\right)=\sum_{k=1}^{\infty}P\left(X\geq k\right)=\sum_{k=1}^{\infty}\lef
 סעיף ב - מה תוחלת כמות הקומות השונות בהן לא תפתח הדלת?
 \end_layout
 
-\begin_layout Standard
-נסמן ב
-\begin_inset Formula $Y$
-\end_inset
-
- את מספר הקומות בהן לא נפתחת הדלת.
- נרצה לחשב 
-\begin_inset Formula $P\left(Y=y\right)$
-\end_inset
-
-, כלומר, הסיכוי שיהיו בדיוק 
-\begin_inset Formula $y$
-\end_inset
-
- קומות בהן המעלית לא תעצור.
-\end_layout
-
-\begin_layout Standard
-ניתן לפתור שאלה זו בצורה יחסית קלה אם נעבור לקומבינטוריקה )יוחאי אמר שמותר(.
- נסמן 
+\begin_layout Proof
+המאורע 
 \begin_inset Formula $A_{i}$
 \end_inset
 
- את כמות הבחירות של אנשים של קומות שונות כך שבדיוק 
+ משמעותו שהמעלית לא עוצרת בקומה 
 \begin_inset Formula $i$
 \end_inset
 
- קומות לא ייבחרו )אפשר להתיחס לאנשים כזהים, כי באמת משמעות מי הולך לאן(
+ )לכל 
+\begin_inset Formula $1\leq i\leq10$
+\end_inset
+
+(.
 \begin_inset Formula 
 \[
-A_{i}=\overset{choose\,empty\,floors}{\overbrace{\binom{10}{i}}}\cdot\underset{unordered\,choices\,with\,repetitions\,12\,from\,10\,with\,at\,least\,1\,from\,each}{\underbrace{\binom{12-\left(10-i\right)+\left(10-i\right)-1}{12-\left(10-i\right)}}}=
+E\left(I_{A_{i}}\right)=P\left(A_{i}\right)=\left(\frac{9}{10}\right)^{12}=0.2824295365
 \]
 
 \end_inset
 
+נסמן 
+\begin_inset Formula $Y$
+\end_inset
 
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מספר הקומות שהמעלית לא נפתחה בהן.
+\end_layout
+
+\begin_layout Proof
+ומלינאריות התוחלת אנחנו נקבל
 \begin_inset Formula 
 \[
-=\binom{10}{i}\cdot\binom{11}{2+i}
+E\left(Y\right)=E\left(\sum_{i=1}^{10}I_{A_{i}}\right)=\sum_{i=1}^{10}E\left(I_{A_{i}}\right)=10\cdot0.2824295365=2.824295365
 \]
 
 \end_inset
@@ -1814,11 +1812,133 @@ A_{i}=\overset{choose\,empty\,floors}{\overbrace{\binom{10}{i}}}\cdot\underset{u
 
 \end_layout
 
-\begin_layout Standard
-נשים לב שהחסרנו בכמות הבחירה את כמות הקומות שבוודאות יורדים בהם אנשים, כלומר,
- מ
+\begin_layout Subsection*
+סעיף ג - מה תוחלת כמות הקומות השונות שירדו בהן
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
 \numeric on
-12
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אנשים בדיוק?
+\end_layout
+
+\begin_layout Proof
+בדומה לסעיף הקודם, 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ המאורע שבקומה 
+\begin_inset Formula $i$
+\end_inset
+
+ ירדו בדיוק שני אנשים.
+\end_layout
+
+\begin_layout Proof
+מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $I_{B_{i}}$
+\end_inset
+
+ אינדיקטור אם 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ מתקיים.
+\begin_inset Formula 
+\[
+E\left(I_{B_{i}}\right)=P\left(B_{i}\right)=\binom{12}{2}\cdot\left(\frac{1}{10}\right)^{2}\cdot\left(\frac{9}{10}\right)^{8}
+\]
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $Z$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ את מספר הקומות בהן ירדו בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
 \family roman
 \series medium
 \shape up
@@ -1845,36 +1965,14 @@ A_{i}=\overset{choose\,empty\,floors}{\overbrace{\binom{10}{i}}}\cdot\underset{u
 \uwave default
 \noun default
 \color inherit
-הבחירות, לקחנו מראש את הכמות שצריך, אחת לכל קומה שבוודאות יורדים בה אנשים.
- את השאר יש לחלק בין אותן קומות )כלומר, מחלקים את השארית, את האנשים הנוספים
- שיורדים בכל קומה(.
+אנשים.
 \end_layout
 
-\begin_layout Standard
-אנחנו יודעים איך לחשב מספר בחירות עם חזרות מקומבי.
-\end_layout
-
-\begin_layout Standard
-סה
-\begin_inset Quotes erd
-\end_inset
-
-כ יש 
-\begin_inset Formula $\binom{12+10-1}{12}=\binom{21}{12}$
-\end_inset
-
- חלוקות שונות של אנשים לקומות השונות.
-\end_layout
-
-\begin_layout Standard
-אז סה
-\begin_inset Quotes erd
-\end_inset
-
-כ התוחלת תהיה
+\begin_layout Proof
+ובגלל לינראריות
 \begin_inset Formula 
 \[
-\sum_{i=0}^{9}i\cdot\frac{A_{i}}{\binom{21}{12}}=\sum_{i=0}^{9}i\cdot\frac{\binom{10}{i}\cdot\binom{11}{2+i}}{\binom{21}{12}}=
+E\left(Z\right)=E\left(\sum_{i=1}^{10}I_{B_{i}}\right)=\sum_{i=1}^{10}E\left(I_{B_{i}}\right)=10\cdot\binom{12}{2}\cdot\left(\frac{1}{10}\right)^{2}\cdot\left(\frac{9}{10}\right)^{8}=2.841083586
 \]
 
 \end_inset
