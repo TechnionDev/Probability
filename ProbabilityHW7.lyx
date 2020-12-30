@@ -1612,5 +1612,900 @@ j,i\,different\,rooms
  מאשר את התשובה.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $40\%$
+\end_inset
+
+ קונים של חוברות חדו
+\begin_inset Quotes erd
+\end_inset
+
+א )סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $25\%$
+\end_inset
+
+ קונים של חוברות אלגברה )סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $20\%$
+\end_inset
+
+ קונים של חוברות הסתברות )סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $15\%$
+\end_inset
+
+ קונים של חוברות אחרות )סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+(
+\end_layout
+
+\begin_layout Standard
+לקוח מסוג 
+\begin_inset Formula $i$
+\end_inset
+
+ קונה 
+\begin_inset Formula $Y_{i}\sim Geo\left(\frac{1}{2^{i}}\right)$
+\end_inset
+
+ חוברות ללא תלות בלקוחות האחרים.
+ הלקוחות שומרים על התו הסגור ונכנסים לחנות אחד אחד.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ ומ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $T_{k}$
+\end_inset
+
+ הוא מספר החוברות וסוג של הלקוח ה
+\begin_inset Formula $k$
+\end_inset
+
+, בהתאמה.
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $E\left(X_{k}\mid T_{k}=i\right)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $E\left(X_{k}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כלומר, מה כמות החוברות שקנה לקוח 
+\begin_inset Formula $k$
+\end_inset
+
+ בהינתן הסוג שלו וכמו כן, אם לא נתון הסוג שלו.
+\end_layout
+
+\begin_layout Proof
+לפי תוחלת של התפלגות גיאומטרית 
+\begin_inset Formula 
+\[
+E\left(X_{k}\mid T_{k}=i\right)=2^{i}
+\]
+
+\end_inset
+
+ועכשיו לפי נוסחת ההחלקה והגדרת תוחלת ישירה
+\begin_inset Formula 
+\[
+E\left(X_{k}\right)=E\left(E\left(X_{k}\mid T_{k}=i\right)\right)=\sum_{i=1}^{4}2^{i}\cdot P\left(T_{k}=i\right)=2\cdot0.4+4\cdot0.25+8\cdot0.2+16\cdot0.15=5.8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה תוחלת מספר החוברות שנמכרו לשלושת הלקוחות הראשונים?
+\end_layout
+
+\begin_layout Proof
+כלומר, מה 
+\begin_inset Formula $X_{1}+X_{2}+X_{3}$
+\end_inset
+
+.
+ אבל גילינו שהתוחלת של כל לקוח, ללא קשר לאיזה מספר לקוח הוא, היא מספר קבוע
+ )שזה הגיוני כי אין תלות בין הלקוחות הריי(
+\begin_inset Formula 
+\[
+E\left(X_{2}+X_{2}+X_{3}\right)=E\left(X_{1}\right)+E\left(X_{2}\right)+E\left(X_{3}\right)=3\cdot5.8=17.4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - מה התוחלת של מספר חוברות האלגברה שנמכרו עד שנכנס בפעם הראשונה לקוח
+ מסוג 
+\begin_inset Formula $3$
+\end_inset
+
+ לחנות?
+\end_layout
+
+\begin_layout Proof
+נשים לב כי מעניין אותנו רק לקוחות שקונים חוברות אלגברה )סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+( ולקוחות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+ כלומר, ההסתברות היחסית לכניסה של לקוח מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אם ידוע שנכנסים רק לקוחות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא 
+\begin_inset Formula 
+\[
+P\left(T_{k}=2\mid T_{k}=2,3\right)=\frac{5}{9}
+\]
+
+\end_inset
+
+כלומר מדובר בהתפלגות גאומטרית כאשר כניסה של לקוח מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ נחשבת להצלחה.
+ כלומר פרמטר 
+\begin_inset Formula $\frac{4}{9}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ כמות הלקוחות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד שנכנס לקוח מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+התוחלת של 
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+היא 
+\begin_inset Formula $E\left(C_{2}\right)=\frac{9}{4}-1=\frac{5}{4}$
+\end_inset
+
+ )התפלגות גיאומטרית של כמות הלקוחות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ עד לקוח מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כולל פחות הלקוח האחרון שאינו מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+(.
+\end_layout
+
+\begin_layout Proof
+כמו כן, תוחלת כמות החוברות שלקוח מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קונה הינה 
+\begin_inset Formula $E\left(Y_{2}\right)=2^{2}=4$
+\end_inset
+
+.
+ כיוון ש
+\begin_inset Formula $C_{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $Y_{2}$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת )שכן כמות החוברות לא תלויה בכמות הלקוחות מהנתון(, אז נקבל ש
+\begin_inset Formula 
+\[
+E\left(C_{2}\cdot Y_{2}\right)=E\left(C_{2}\right)\cdot E\left(Y_{2}\right)=5
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
