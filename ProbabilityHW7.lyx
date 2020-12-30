@@ -453,7 +453,7 @@ E\left(Y\mid X=x\right)=\sum_{y=x+1}^{n}y\cdot P\left(Y=y\mid X=x\right)=\sum_{y
  צריך שוב לחשב את התוחלות.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נחשב הסתברות תחילה עבור המקרה ש
 \begin_inset Formula $x\neq y$
 \end_inset
@@ -461,7 +461,7 @@ E\left(Y\mid X=x\right)=\sum_{y=x+1}^{n}y\cdot P\left(Y=y\mid X=x\right)=\sum_{y
 :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 \begin_inset Formula 
 \[
 P\left(X=x\mid Y=y\right)=\frac{P\left(X=x,Y=y\right)}{P\left(Y=y\right)}=\frac{2\frac{1}{\cancel{n^{2}}}}{\frac{y}{\cancel{n}}\cdot\frac{y}{\cancel{n}}-\frac{y-1}{\cancel{n}}\cdot\frac{y-1}{\cancel{n}}}=\frac{2}{y^{2}-\left(y-1\right)^{2}}=
@@ -480,7 +480,7 @@ P\left(X=x\mid Y=y\right)=\frac{P\left(X=x,Y=y\right)}{P\left(Y=y\right)}=\frac{
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 התווסף לנו מקרה נוסף, המקרה בו 
 \begin_inset Formula $x=y$
 \end_inset
@@ -505,15 +505,43 @@ E\left(X\mid Y=y\right)=y\cdot\frac{1}{2y-1}+\sum_{y=1}^{y-1}x\cdot\frac{2}{2y-1
 
 \end_layout
 
-\begin_layout Standard
-ובצורה אנלוגית )עבור 
+\begin_layout Proof
+ובצורה אנלוגית נחשב 
+\begin_inset Formula $P\left(Y=y\mid X=x\right)$
+\end_inset
+
+ )עבור 
 \begin_inset Formula $x\neq y$
 \end_inset
 
 (:
 \begin_inset Formula 
 \[
-P\left(Y=y\mid X=x\right)=\frac{P\left(Y=y,X=x\right)}{P\left(X=x\right)}=\frac{2\cancel{\frac{1}{n^{2}}}}{\frac{\left(n-x+1\right)^{2}-\left(n-x\right)^{2}}{\cancel{n^{2}}}}=\frac{1}{2n-2x+1}
+P\left(Y=y\mid X=x\right)=\frac{P\left(Y=y,X=x\right)}{P\left(X=x\right)}=\frac{2\cancel{\frac{1}{n^{2}}}}{\frac{\left(n-x+1\right)^{2}-\left(n-x\right)^{2}}{\cancel{n^{2}}}}=\frac{2}{2n-2x+1}
+\]
+
+\end_inset
+
+ועבור 
+\begin_inset Formula $x=y$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(Y=x\mid X=x\right)=\frac{1}{2n-2x+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ועכשיו לתוחלת
+\begin_inset Formula 
+\[
+E\left(Y\mid X=x\right)=x\cdot\frac{1}{2n-2x+1}+\frac{2}{2n-2x+1}\cdot\sum_{y=x+1}^{n}y=x\cdot\frac{1}{2n-2x+1}+\frac{\cancel{2}}{2n-2x+1}\cdot\frac{\left(n+x+1\right)\cdot\left(n-x\right)}{\cancel{2}}=\frac{n^{2}-x^{2}+n}{2n-2x+1}
 \]
 
 \end_inset
@@ -653,6 +681,375 @@ P\left(Y=y\mid X=x\right)=\frac{P\left(Y=y,X=x\right)}{P\left(X=x\right)}=\frac{
 \end_inset
 
  קוביות.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - 
+\begin_inset Formula $X$
+\end_inset
+
+ סכום הספרות שהתקבלו בכל ההטלות בשלב השני של הניסוי.
+ חשב 
+\begin_inset Formula $E\left(X\mid N=n\right)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $E\left(X\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתחיל מחישוב 
+\begin_inset Formula $E\left(X\mid N=n\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+P\left(X=x\mid N=n\right)=\frac{P\left(X=x,N=n\right)}{P\left(N=n\right)}=\frac{}{\left(\frac{5}{6}\right)^{n-1}\frac{1}{6}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+בוחרים ספרות דצימליות בצורה בלתי תלויה אחת אחרי השניה.
+ מפסיקים אחרי שכל ספרה מופיע לפחות פעם אחת.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מה תוחלת אורך הסדרה?
+\end_layout
+
+\begin_layout Proof
+נסמן מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $X$
+\end_inset
+
+ אורך הסדרה.
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ המיצג את מספר הההגרלות אחרי שכבר יצאו 
+\begin_inset Formula $i$
+\end_inset
+
+ ספרות שונות, עד לקבלת ספרה חדשה.
+ לכן
+\begin_inset Formula 
+\[
+P\left(Y_{i}=y\right)=\left(\frac{i}{10}\right)^{y}\cdot\frac{10-i}{10}
+\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $9\geq i\geq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לכן, התוחלת של 
+\begin_inset Formula $X$
+\end_inset
+
+ הינה סכום התוחלות של 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ ועוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)עבור הספרה הראשונה(
+\begin_inset Formula 
+\[
+E\left(X\right)=1+\sum_{i=1}^{9}E\left(Y_{i}\right)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+* השתמשנו פה בלינאריות של תוחלת.
+\end_layout
+
+\begin_layout Proof
+לפי התוחלת של התפלגות גאומטרית
+\begin_inset Formula 
+\[
+=1+\sum_{i=1}^{9}\frac{10}{10-i}=\frac{7381}{252}\approx29.2897
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור כל ספרה 
+\begin_inset Formula $d$
+\end_inset
+
+ שהתקבלה בסדרה, מטילים סדרת הטלות מטבע עם סיכוי 
+\begin_inset Formula $\frac{1}{d+1}$
+\end_inset
+
+ לקבל 
+\begin_inset Formula $H$
+\end_inset
+
+.
+ כאשר מתקבל 
+\begin_inset Formula $H$
+\end_inset
+
+, עוצרים וממשיכים לסדרה הבאה.
+ כל ההטלות ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה תוחלת מספר הטלות המטבע בסה
+\begin_inset Quotes erd
+\end_inset
+
+כ בסדרה?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ היא הספרה ה
+\begin_inset Formula $i$
+\end_inset
+
+ שהתקבלה בסדרת הספרות.
+ נסמן מ
+\begin_inset Quotes erd
+\end_inset
+
+מים 
+\begin_inset Formula $Z_{i}$
+\end_inset
+
+ כמות ההטלות עבור הספרה ה
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ שהתקבלה.
+ מההגדרה קל לראות בנקל כי מדובר בהתפלגות גיאומטרית עבור 
+\begin_inset Formula $Z_{i}$
+\end_inset
+
+ עם פרמטר 
+\begin_inset Formula $\frac{1}{d_{i}+1}$
+\end_inset
+
+.
+ לכן עבור הספרה 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ התוחלת היא 
+\begin_inset Formula $d_{i}+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לכן, אם ידוע לנו אורך הסדרה, התוחלת של כמות הטלות המטבע )נסמן מ
+\begin_inset Quotes erd
+\end_inset
+
+מ 
+\begin_inset Formula $T=Total\,tosses$
+\end_inset
+
+( 
+\begin_inset Formula 
+\[
+E\left(T\mid X=x\right)=\sum_{i=1}^{x}E\left(Z_{i}\right)
+\]
+
+\end_inset
+
+עכשיו נשתמש בנוסחת ההחלקה
+\begin_inset Formula 
+\[
+E\left(Z_{i}\right)=E\left(E\left(Z_{i}\mid d_{i}\right)\right)=E\left(d_{i}+1\right)=E\left(d_{i}\right)+1=5.5
+\]
+
+\end_inset
+
+ולכן נוכל לקבל
+\begin_inset Formula 
+\[
+E\left(T\mid X=x\right)=\sum_{i=1}^{x}E\left(Z_{i}\right)=\sum_{i=1}^{x}5.5=5.5x
+\]
+
+\end_inset
+
+ושוב נוסחת ההחלקה
+\begin_inset Formula 
+\[
+E\left(T\right)=E\left(E\left(T\mid X=x\right)\right)=E\left(5.5x\right)=5.5\cdot\frac{7381}{252}\approx161.093
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
 \end_layout
 
 \end_body
