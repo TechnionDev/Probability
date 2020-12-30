@@ -1325,8 +1325,291 @@ E\left(f\left(Z\right)\right)=n\cdot2^{n-1}
 5
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
+\begin_inset Formula $n$
+\end_inset
 
+ זוגות משובצים ל
+\begin_inset Formula $n$
+\end_inset
+
+ חדשים.
+ חולקו 
+\begin_inset Formula $2n$
+\end_inset
+
+ כרטיסים לחדרים באופן אקראי )טעויות קורות(, ללא קשר לחדרים בשיבוץ.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ שהוא מספר האורחים שקיבלו כרטיס הפותח את דלת חדרם.
+\end_layout
+
+\begin_layout Proof
+נחשב 
+\begin_inset Formula $E\left(X\right)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $E\left(X^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אינדיקטור 
+\begin_inset Formula $I_{i}$
+\end_inset
+
+ משמעו שהאורח ה
+\begin_inset Formula $i$
+\end_inset
+
+ קיבל מפתח שפותח את חדרו )כאשר 
+\begin_inset Formula $1\leq i\leq2n$
+\end_inset
+
+(.
+ לכן
+\begin_inset Formula 
+\[
+X=\sum_{i=1}^{2n}I_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+והתוחלת ניתנת לחישוב
+\begin_inset Formula 
+\[
+E\left(X\right)=\sum_{i=1}^{2n}1\cdot P\left(I_{i}=1\right)=\sum_{i=1}^{2n}\frac{2}{2n}=\sum_{i=1}^{2n}\frac{1}{n}=2
+\]
+
+\end_inset
+
+ועתה נחשב 
+\begin_inset Formula $E\left(X^{2}\right)$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+E\left(X^{2}\right)=E\left(\sum_{i=1}^{2n}I_{i}\cdot\sum_{i=1}^{2n}I_{i}\right)=E\left(\sum_{i=1}^{2n}\sum_{j=1}^{2n}I_{j}\cdot I_{i}\right)=
+\]
+
+\end_inset
+
+המעבר האחרון כיוון שמדובר באינדיקטורים שמקבלים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ ועכשיו מלינאריות של תוחלת
+\begin_inset Formula 
+\[
+=\sum_{i=1}^{2n}\sum_{j=1}^{2n}E\left(I_{j}\cdot I_{i}\right)=
+\]
+
+\end_inset
+
+ עכשיו ניתן להפריד למקרים
+\begin_inset Formula 
+\[
+=\sum_{i=1}^{2n}E\left(I_{i}^{2}\right)+\sum_{1\leq i\neq j\leq2n}E\left(I_{i}\cdot I_{j}\right)=2+\sum_{1\leq i\neq j\leq2n}P\left(I_{i}=1,I_{j}=1\right)=
+\]
+
+\end_inset
+
+לפי תוחלת של אינדיקטורים.
+ ועכשיו שוב נפצל למקרים )כאשר 
+\begin_inset Formula $i,j$
+\end_inset
+
+ באותו חדר או בחדרים שונים(
+\begin_inset Formula 
+\[
+=2+\sum_{\begin{array}{c}
+1\leq i\neq j\leq2n\\
+j,i\,same\,room
+\end{array}}P\left(I_{i}=1,I_{j}=1\right)+\sum_{\begin{array}{c}
+1\leq i\neq j\leq2n\\
+j,i\,different\,rooms
+\end{array}}P\left(I_{i}=1,I_{j}=1\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2+\sum_{\begin{array}{c}
+1\leq i\neq j\leq2n\\
+j,i\,same\,room
+\end{array}}\frac{2}{2n}\cdot\frac{1}{2n-1}+\sum_{\begin{array}{c}
+1\leq i\neq j\leq2n\\
+j,i\,different\,rooms
+\end{array}}\frac{2}{2n}\cdot\frac{2}{2n-1}=
+\]
+
+\end_inset
+
+עכשיו נותר לספור כמה צמדים 
+\begin_inset Formula $i,j$
+\end_inset
+
+ יש שבחדרים שונים ושבאותו חדר.
+ צמדים שבאותו חדר יש כמובן 
+\begin_inset Formula $n$
+\end_inset
+
+ לפי הגדרת השאלה.
+ צמדים שלא באותו חדר יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\left(2n\right)^{2}-2n-2n$
+\end_inset
+
+ )האפשרויות לבחור אנשים עם חזרות פחות הזוגות העצמיים פחות הזוגות שבאותו
+ חדר(.
+ ולכן ניתן לקבל
+\begin_inset Formula 
+\[
+=2+2n\cdot\frac{2}{2n}\cdot\frac{1}{2n-1}+\left(\left(2n\right)^{2}-4n\right)\cdot\frac{2}{2n}\cdot\frac{2}{2n-1}=2+\frac{2}{2n-1}+\left(4n-4\right)\cdot\frac{2}{2n-1}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2+\left(4n-3\right)\cdot\frac{2}{2n-1}=\frac{2\left(2n-1\right)+2\cdot\left(4n-3\right)}{2n-1}=\frac{4n-2+8n-6}{2n-1}=\frac{12n-6-2}{2n-1}=\frac{2}{2n-1}+6
+\]
+
+\end_inset
+
+ ואפילו 
+\begin_inset Formula $wolfram\,alpha$
+\end_inset
+
+ מאשר את התשובה.
 \end_layout
 
 \end_body
