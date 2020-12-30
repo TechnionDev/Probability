@@ -549,6 +549,13 @@ E\left(Y\mid X=x\right)=x\cdot\frac{1}{2n-2x+1}+\frac{2}{2n-2x+1}\cdot\sum_{y=x+
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 שאלה
 \family roman
@@ -700,20 +707,129 @@ E\left(Y\mid X=x\right)=x\cdot\frac{1}{2n-2x+1}+\frac{2}{2n-2x+1}\cdot\sum_{y=x+
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
+כלומר, אם ידוע שבשלב הראשון הוטלו 
+\begin_inset Formula $N$
+\end_inset
+
+ קוביות, אז בשלב השני הוטלו עוד 
+\begin_inset Formula $N$
+\end_inset
+
+ קוביות.
+ בשלב הראשון אנחנו מטילים בהתפלגות גיאומטרית כאשר הצלחה היא קבלה של המספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+ כלומר, התפלגות גיאומטרית עם פרמטר 
+\begin_inset Formula $\frac{1}{6}$
+\end_inset
+
+.
+ ולכן התוחלת של כמות ההטלות היא 
+\begin_inset Formula $E\left(N\right)=6$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
 נתחיל מחישוב 
 \begin_inset Formula $E\left(X\mid N=n\right)$
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Proof
+נחשב את התוחלת של הספרה של קוביה כלשהי.
+ נסמן 
+\begin_inset Formula $D_{i}$
+\end_inset
+
+הספרה על הקוביה ה
+\begin_inset Formula $i$
+\end_inset
+
+
 \begin_inset Formula 
 \[
-P\left(X=x\mid N=n\right)=\frac{P\left(X=x,N=n\right)}{P\left(N=n\right)}=\frac{}{\left(\frac{5}{6}\right)^{n-1}\frac{1}{6}}
+E\left(D_{i}\right)=3.5
+\]
+
+\end_inset
+
+)כבר חישבנו והוכחנו זאת בהרצאה באחת הדוגמות(.
+\end_layout
+
+\begin_layout Proof
+ידוע כי 
+\begin_inset Formula 
+\[
+X=\sum_{i=1}^{N}D_{i}=3.5N
+\]
+
+\end_inset
+
+ ולכן, לפי לינאריות של תוחלת
+\begin_inset Formula 
+\[
+E\left(X\mid N=n\right)=\sum_{i=1}^{n}E\left(D_{i}\right)=3.5n
+\]
+
+\end_inset
+
+ ומנוסחת ההחלקה, אנחנו נקבל
+\begin_inset Formula 
+\[
+E\left(X\right)=E\left(E\left(X\mid N\right)\right)=E\left(3.5N\right)=3.5\cdot6=21
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מספר הפעמים שיצאה 
+\begin_inset Formula $i$
+\end_inset
+
+ בשלב השני.
 \end_layout
 
 \begin_layout Standard
