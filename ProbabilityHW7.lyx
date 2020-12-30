@@ -1,0 +1,659 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Comic Sans MS"
+\font_typewriter "default" "Linux Libertine Mono O"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics xetex
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הסתברות מ -
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+094412
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HW7
+\end_layout
+
+\begin_layout Author
+גור תלם -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+206631848
+\end_layout
+
+\begin_layout Date
+\begin_inset Formula 
+\[
+29.12.2020
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה 
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+בכד 
+\begin_inset Formula $n$
+\end_inset
+
+ כדורים ממוספרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ עד 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+מוציאים באקראי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ללא החזרה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ הערך הימינימלי מבין שתי ההוצאות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ הערך המקסימלי.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - חשב את 
+\begin_inset Formula $E\left(X\mid Y=y\right)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $E\left(Y\mid X=x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נתחיל עם 
+\begin_inset Formula $E\left(X\mid Y=y\right)$
+\end_inset
+
+.
+ כלומר, צריך לחשב את התוחלת של 
+\begin_inset Formula $X$
+\end_inset
+
+ בהינתן ערך מקסימלי כלשהו.
+\end_layout
+
+\begin_layout Proof
+לכן
+\begin_inset Formula 
+\[
+E\left(X\mid Y=y\right)=\sum_{x=1}^{y-1}x\cdot P\left(X=x\mid Y=y\right)=\sum_{x=1}^{y-1}x\cdot\frac{P\left(X=x,Y=y\right)}{P\left(Y=y\right)}=\sum_{x=1}^{y-1}x\cdot\frac{P\left(\left\{ first=x,second=y\right\} \cup\left\{ first=y,second=x\right\} \right)}{P\left(Y\leq y\right)-P\left(Y\leq y-1\right)}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+כיוון ש
+\begin_inset Formula $X\neq Y$
+\end_inset
+
+ תמיד )כי מדובר בשליפה ללא החזרה( אז אנחנו נקבל ש:
+\begin_inset Formula 
+\[
+=\sum_{x=1}^{y-1}x\cdot\frac{P\left(\left\{ first=x,second=y\right\} \right)+P\left(\left\{ first=y,second=x\right\} \right)}{\frac{y}{n}\cdot\frac{y-1}{n-1}-\frac{y-1}{n}\cdot\frac{y-2}{n-1}}=\sum_{x=1}^{y-1}x\cdot\frac{2\cdot\cancel{\frac{1}{n}}\cdot\cancel{\frac{1}{n-1}}}{\frac{y}{\cancel{n}}\cdot\frac{y-1}{\cancel{n-1}}-\frac{y-1}{\cancel{n}}\cdot\frac{y-2}{\cancel{n-1}}}=\sum_{x=1}^{y-1}x\cdot\frac{2}{y\cdot\left(y-1\right)-\left(y-2\right)\cdot\left(y-1\right)}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+=\sum_{x=1}^{y-1}x\cdot\frac{\cancel{2}}{\left(\cancel{y-y}+\cancel{2}\right)\cdot\left(y-1\right)}=\frac{1}{y-1}\cdot\sum_{x=1}^{y-1}x=\frac{\left(y\cancel{-1+1}\right)\cancel{\left(y-1\right)}}{2\cancel{\left(y-1\right)}}=\frac{y}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נעבוד ל
+\begin_inset Formula $E\left(Y\mid X=x\right)$
+\end_inset
+
+.
+ כלומר לחשב את התוחלת של 
+\begin_inset Formula $Y$
+\end_inset
+
+ בהינתן שידוע מה הערך המינימלי.
+\end_layout
+
+\begin_layout Proof
+לכן
+\begin_inset Formula 
+\[
+E\left(Y\mid X=x\right)=\sum_{y=x+1}^{n}y\cdot P\left(Y=y\mid X=x\right)=\sum_{y=x+1}^{n}y\cdot\frac{P\left(Y=y,X=x\right)}{P\left(X=x\right)}=\sum_{y=x+1}^{n}y\cdot\frac{2\cdot\frac{1}{n}\cdot\frac{1}{n-1}}{\frac{n-x+1}{n}\cdot\frac{n-x}{n-1}-\frac{n-x}{n}\cdot\frac{n-x-1}{n-1}}=\frac{1}{n-x}\cdot\frac{\left(n+x+1\right)\cdot\left(n-x-1\right)}{2}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{\cancel{n-x}}\cdot\frac{\cancel{\left(n-x\right)}\cdot\left(n+x+1\right)}{2}=\frac{n+x+1}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מוציאים עם החזרות.
+ צריך שוב לחשב את התוחלות.
+\end_layout
+
+\begin_layout Standard
+נחשב הסתברות תחילה עבור המקרה ש
+\begin_inset Formula $x\neq y$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(X=x\mid Y=y\right)=\frac{P\left(X=x,Y=y\right)}{P\left(Y=y\right)}=\frac{2\frac{1}{\cancel{n^{2}}}}{\frac{y}{\cancel{n}}\cdot\frac{y}{\cancel{n}}-\frac{y-1}{\cancel{n}}\cdot\frac{y-1}{\cancel{n}}}=\frac{2}{y^{2}-\left(y-1\right)^{2}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{2}{2y-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התווסף לנו מקרה נוסף, המקרה בו 
+\begin_inset Formula $x=y$
+\end_inset
+
+ שלא היה אפשרי בסעיף א.
+ נחשב את את ההסתברות במקרה זה:
+\begin_inset Formula 
+\[
+P\left(X=y\mid Y=y\right)=\frac{P\left(X=y,Y=y\right)}{P\left(Y=y\right)}=\frac{2\frac{1}{\cancel{n^{2}}}}{\frac{y}{\cancel{n}}\cdot\frac{y}{\cancel{n}}-\frac{y-1}{\cancel{n}}\cdot\frac{y-1}{\cancel{n}}}=\frac{1}{2y-1}
+\]
+
+\end_inset
+
+ולכן התוחלת
+\begin_inset Formula 
+\[
+E\left(X\mid Y=y\right)=y\cdot\frac{1}{2y-1}+\sum_{y=1}^{y-1}x\cdot\frac{2}{2y-1}=\frac{1}{2y-1}\cdot\left(y+2\cdot\frac{\left(1+y-1\right)\cdot\left(y-1\right)}{2}\right)=\frac{y^{2}}{2y-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובצורה אנלוגית )עבור 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+(:
+\begin_inset Formula 
+\[
+P\left(Y=y\mid X=x\right)=\frac{P\left(Y=y,X=x\right)}{P\left(X=x\right)}=\frac{2\cancel{\frac{1}{n^{2}}}}{\frac{\left(n-x+1\right)^{2}-\left(n-x\right)^{2}}{\cancel{n^{2}}}}=\frac{1}{2n-2x+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מבצעים ניסוי עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שלבים.
+ מטילים קוביה הוגנת עד שמתקבלת הספרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N$
+\end_inset
+
+ מספר ההטלות בשלב הראשון.
+\end_layout
+
+\begin_layout Standard
+בשלב השני מטילים 
+\begin_inset Formula $N$
+\end_inset
+
+ קוביות.
+\end_layout
+
+\end_body
+\end_document
