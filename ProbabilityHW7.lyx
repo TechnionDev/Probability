@@ -830,6 +830,329 @@ E\left(X\right)=E\left(E\left(X\mid N\right)\right)=E\left(3.5N\right)=3.5\cdot6
 \end_inset
 
  בשלב השני.
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $E\left(Y_{i}\mid N=n\right)$
+\end_inset
+
+ ואת 
+\begin_inset Formula $E\left(Y_{i}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+כיוון שהקוביה הוגנתת התוחלת וכיוון שכבר אמרנו שתוחלת כמות ההטלות בשלב השני
+ הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שכן הכמות שווה לכמות ההטלות בשלב הראשון.
+ נסמן 
+\begin_inset Formula $I_{k}$
+\end_inset
+
+ אינדיקטור שבהטלה ה
+\begin_inset Formula $k$
+\end_inset
+
+ בשלב השני יצא 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+לכן התוחלת של 
+\begin_inset Formula 
+\[
+Y_{i}=\sum_{k=1}^{N}I_{k}
+\]
+
+\end_inset
+
+לכן מלינאריות התוחלת נקבל
+\begin_inset Formula 
+\[
+E\left(Y_{i}\mid N=n\right)=\sum_{k=1}^{n}E\left(I_{k}\right)=\frac{1}{6}n
+\]
+
+\end_inset
+
+מהוגנות הקוביה.
+ ומנוסחת ההחלקה, אנחנו נקבל
+\begin_inset Formula 
+\[
+E\left(Y_{i}\right)=E\left(E\left(Y_{i}\mid N\right)\right)=E\left(\frac{1}{6}N\right)=\frac{1}{6}\cdot E\left(N\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - בשלב השני של הניסוי, מקבלים נק' עבור הטלה עם תוצאה זוגית ו
+\numeric on
+2
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות עבור הטלה עם תוצאה א
+\begin_inset Quotes erd
+\end_inset
+
+ז.
+ מה התוחלת של סכום הנקודות?
+\end_layout
+
+\begin_layout Proof
+הקוביה הוגנת ויש את המספרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כולל, כלומר, בדיוק חצי מהם זוגיים וחצי א
+\begin_inset Quotes erd
+\end_inset
+
+ז.
+ כלומר, השאלה שקולה להטלת מטבע 
+\begin_inset Formula $H$
+\end_inset
+
+=זוגי ו
+\begin_inset Formula $T$
+\end_inset
+
+=א
+\begin_inset Quotes erd
+\end_inset
+
+ז.
+ ושואלים מה התוחלת של 
+\begin_inset Formula $2T+H$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $H$
+\end_inset
+
+ הינו כמות הפלי ו
+\begin_inset Formula $T$
+\end_inset
+
+ הינו כמות העץ.
+\end_layout
+
+\begin_layout Proof
+מתכונת הלינאריות של תוחלת
+\begin_inset Formula 
+\[
+E\left(2T+H\right)=2\cdot E\left(T\right)+E\left(H\right)
+\]
+
+\end_inset
+
+אבל ההתפלגויות הן בינומיות עם פרמטר 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ ועם 
+\begin_inset Formula $N$
+\end_inset
+
+ הטלות.
+ לפי אי תלות ונוסחת ההחלקה, נקבל
+\begin_inset Formula 
+\[
+E\left(2T+H\right)=E\left(2\cdot E\left(T\mid N\right)+E\left(H\mid N\right)\right)=E\left(2\cdot\frac{1}{2}\cdot N+\frac{1}{2}\cdot N\right)=2\cdot\frac{1}{2}\cdot6+\frac{1}{2}\cdot6=6+3=9
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
