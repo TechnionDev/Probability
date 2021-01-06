@@ -5,6 +5,34 @@
 \save_transient_properties true
 \origin unavailable
 \textclass heb-article
+\begin_preamble
+\usepackage{tikz} 
+\usepackage{pgfplots}
+\usepackage{fontspec}
+\usetikzlibrary{shadows}
+
+\tikzset{%
+  testbox/.style={
+    rectangle, 
+    rounded corners, 
+    draw=black,
+    fill=blue!20, 
+    inner sep=10pt, 
+    drop shadow={fill=black, opacity=.4}
+  },
+  titlebox/.style={
+    fill=gray!20, 
+    text=black!80, 
+    draw=black
+  },
+  hebrew text/.style={
+    align=right,
+    font=\hebrewfont,
+    execute at begin node={\luatextextdir TRT}
+  }
+}
+\end_preamble
+\options tikz
 \use_default_options true
 \maintain_unincluded_children false
 \language hebrew
@@ -464,6 +492,588 @@ Var\left(R\right)=Var\left(5X-3n\right)=5^{2}\cdot Var\left(X\right)=25\cdot np\
 \noun default
 \color inherit
 2
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - צ
+\begin_inset Quotes erd
+\end_inset
+
+ל את 
+\begin_inset Formula $c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+מאילוצים של פונקציית הצפיפות ושטח משלולש
+\begin_inset Formula 
+\[
+P\left(-\infty<X<\infty\right)=1=\int_{-\infty}^{\infty}f_{X}\left(x\right)dx=\frac{2c\cdot2c}{2}+\frac{4c\cdot4c}{2}=2c^{2}+8c^{2}=10c^{2}\Longrightarrow c=\frac{1}{\sqrt{10}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - צ
+\begin_inset Quotes erd
+\end_inset
+
+ל את 
+\begin_inset Formula $F_{X}\left(t\right)$
+\end_inset
+
+עבור ערכי 
+\begin_inset Formula $t$
+\end_inset
+
+ הבאים: 
+\begin_inset Formula $0,c,2c,4c,6c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נחשב
+\begin_inset Formula 
+\[
+F_{X}\left(t\right)=\int_{-\infty}^{t}f_{X}\left(x\right)dx
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+F_{X}\left(0\right)=0,\,F_{X}\left(c\right)=c^{2},\,F_{X}\left(2c\right)=2c^{2},\,F_{X}\left(4c\right)=2c^{2}+4c^{2},\,F_{X}\left(6c\right)=10c^{2}
+\]
+
+\end_inset
+
+ואחרי הצבה של 
+\begin_inset Formula $c$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{X}\left(0\right)=0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{X}\left(c\right)=0.1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{X}\left(2c\right)=0.2
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{X}\left(4c\right)=0.6
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{X}\left(6c\right)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- צייר את ההתפלגות המצטברת 
+\begin_inset Formula $F_{X}\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+ניתן לראות בסרטוט שהפונקציה מורכבת מקטעים לינאריים והשיפוע קל מאוד לחישוב
+\begin_inset Formula 
+\[
+f_{X}\left(x\right)=\begin{cases}
+0 & x<0\\
+2x & 0<x\leq c\\
+4c-2x & c<x\leq2c\\
+2x-4c & 2c<x\leq4c\\
+12c-2x & 4c<x\leq6c\\
+0 & 6c<x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ועל ידי אינטגרציה בחלקים
+\begin_inset Formula 
+\[
+F_{X}\left(t\right)=\int_{-\infty}^{t}\begin{cases}
+0 & x<0\\
+2x & 0<x\leq c\\
+4c-2x & c<x\leq2c\\
+2x-4c & 2c<x\leq4c\\
+12c-2x & 4c<x\leq6c\\
+0 & 6c<x
+\end{cases}=\int_{0}^{t}\begin{cases}
+0 & x<0\\
+2x & 0<x\leq c\\
+4c-2x & c<x\leq2c\\
+2x-4c & 2c<x\leq4c\\
+12c-2x & 4c<x\leq6c\\
+0 & 6c<x
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{cases}
+0 & x<0\\
+x^{2} & 0<x\leq c\\
+4cx-x^{2}-\frac{c\cdot4c}{2} & c<x\leq2c\\
+x^{2}-4cx+\frac{4c\cdot2c}{2}+0.2 & 2c<x\leq4c\\
+12cx-x^{2}-\frac{4c\cdot4c}{2}-\frac{c\cdot4c}{2}-\frac{8c\cdot4c}{2} & 4c<x\leq6c\\
+1 & 6c<x
+\end{cases}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\begin{cases}
+0 & x<0\\
+x^{2} & 0<x\leq c\\
+4cx-x^{2}-0.2 & c<x\leq2c\\
+x^{2}-4cx+0.4+0.2 & 2c<x\leq4c\\
+12cx-x^{2}-0.8-0.2-1.6 & 4c<x\leq6c\\
+1 & 6c<x
+\end{cases}=\begin{cases}
+0 & x<0\\
+x^{2} & 0<x\leq c\\
+4cx-x^{2}-0.2 & c<x\leq2c\\
+x^{2}-4cx+0.6 & 2c<x\leq4c\\
+12cx-x^{2}-2.6 & 4c<x\leq6c\\
+1 & 6c<x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+הקפיצות בחישובים נובעות על ידי חלוקה של השטחים למשולשים וחישוב של השטח שלהם.
+ כל פעם מחסרים את השטח העודף )שנוצר אם הפונקציה הייתה ממשיכה עד ה
+\numeric on
+
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\numeric off
+( או מוסיפים את השטח החסר )במידה והפונקציה יורדת מתחת לציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ אילו הייתה ממשיכה עד ה
+\begin_inset Formula $x=0$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+ולכן הפונקציה נראית כך
+\end_layout
+
+\begin_layout Proof
+\noindent
+
+\lang english
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Preview
+
+\begin_layout Standard
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+def
+\backslash
+c{1/sqrt(10)}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{12cm}{4cm}{% 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=1.5]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[ymax=1.1,xmax=3.3, samples=1024]
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot[domain=-0.5:0, black, ultra thick] (x,0);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot[domain=0:
+\backslash
+c, ultra thick] (x,x*x);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot[domain=
+\backslash
+c:2*
+\backslash
+c, black, ultra thick] (x,4*
+\backslash
+c*x-x*x-0.2);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot[domain=2*
+\backslash
+c:4*
+\backslash
+c, ultra thick] (x,x*x-4*
+\backslash
+c*x+0.6);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot[domain=4*
+\backslash
+c:6*
+\backslash
+c, black, ultra thick] (x,12*
+\backslash
+c*x-x*x-2.6);
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+addplot[domain=6*
+\backslash
+c:3.3, black, ultra thick] (x,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+התפלגות מצטברת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ד - דור דוגם ערך מההתפלגות הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל.
+ אם 
+\begin_inset Formula $x<2c$
+\end_inset
+
+ אז הוא מקבל 
+\begin_inset Formula $10$
+\end_inset
+
+ ש
+\begin_inset Quotes erd
+\end_inset
+
+ח.
+ אם 
+\begin_inset Formula $2c\leq x<6c$
+\end_inset
+
+ אז הוא משלם 
+\begin_inset Formula $5$
+\end_inset
+
+ ש
+\begin_inset Quotes erd
+\end_inset
+
+ח ומקבל את הערך שהוגרל כפול
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $10$
+\end_inset
+
+.
+ מה תוחלת הסכום אותו קיבל דור ב
+\begin_inset Formula $100$
+\end_inset
+
+ דגימות?
+\end_layout
+
+\begin_layout Proof
+כלומר, פונקציית הרווח הינה
+\begin_inset Formula 
+\[
+g\left(x\right)=\begin{cases}
+10 & 0\leq x<2c\\
+10x-5 & 2c\leq x<6c
+\end{cases}
+\]
+
+\end_inset
+
+כזכור
+\begin_inset Formula 
+\[
+f_{X}\left(x\right)=\begin{cases}
+0 & x<0\\
+2x & 0<x\leq c\\
+4c-2x & c<x\leq2c\\
+2x-4c & 2c<x\leq4c\\
+12c-2x & 4c<x\leq6c\\
+0 & 6c<x
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+לכן, לפי תוחלת של פונקציה של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציף
+\begin_inset Formula 
+\[
+E\left(g\left(x\right)\right)=\int_{-\infty}^{\infty}g\left(x\right)\cdot f_{X}\left(x\right)dx=\int_{0}^{6c}\begin{cases}
+20x & 0\leq x\leq c\\
+40c-20x & c<x<2c\\
+\left(10x-5\right)\left(2x-4c\right) & 2c\leq x\leq4c\\
+\left(10x-5\right)\left(12c-2x\right) & 4c<x\leq6c
+\end{cases}dx=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\left.\begin{cases}
+10x^{2} & 0\leq x\leq c\\
+40cx-10x^{2} & c<x<2c\\
+\left(\left(20-20x\right)c+\frac{20x^{2}}{3}-5x\right)x & 2c\leq x\leq4c\\
+\left(\left(60x-60\right)c+\left(5-\frac{20}{3}x\right)x\right)x & 4c<x\leq6c
+\end{cases}\right|_{0}^{6c}=10c^{2}+10c^{2}+\frac{20}{3}c^{2}\left(-3+20c\right)+\frac{20}{3}c^{2}\left(-3+28c\right)=16\cdot\sqrt{0.4}-2
+\]
+
+\end_inset
+
+אבל מדובר ב
+\numeric on
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הטלות מטבע, וביחד עם לינאריות של תוחלת נקבל
+\begin_inset Formula 
+\[
+E\left(100g\left(x\right)\right)=100E\left(g\left(x\right)\right)\approx811.92885125
+\]
+
+\end_inset
+
+ 
 \end_layout
 
 \end_body
