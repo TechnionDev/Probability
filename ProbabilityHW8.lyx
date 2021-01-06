@@ -1073,7 +1073,345 @@ E\left(100g\left(x\right)\right)=100E\left(g\left(x\right)\right)\approx811.9288
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
  
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+מטילים מטבע הוגן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים.
+ 
+\begin_inset Formula $X$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מספר הפעמים שנצפה הרצף 
+\begin_inset Formula $HTTH$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מספר הפעמים 
+\begin_inset Formula $HTTT$
+\end_inset
+
+ )אמממ מה? למה הנתון הזה קיים בכלל?(
+\end_layout
+
+\begin_layout Standard
+מה התוחלת והשונות של 
+\begin_inset Formula $X$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $I_{i}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אינדקטור שבמקום ה
+\begin_inset Formula $i$
+\end_inset
+
+ הייתה התחלה של רצף.
+ כמובן ש
+\begin_inset Formula $I_{i}=0$
+\end_inset
+
+ אם ה
+\begin_inset Formula $i>5$
+\end_inset
+
+ או 
+\begin_inset Formula $i<0$
+\end_inset
+
+ )שכן רק מהמקום ה
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד ה
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ כולל 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אפשר להתחיל רצף שייכנס ב
+\numeric on
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ההטלות(.
+\end_layout
+
+\begin_layout Proof
+לכן
+\begin_inset Formula 
+\[
+X=\sum_{i=0}^{4}I_{i}
+\]
+
+\end_inset
+
+ולכן לפי הקסם הזה של תוחלת שאפשר להכניס את התוחלת פנימה בלי לעשות החלה והפרדה
+\begin_inset Formula 
+\[
+E\left(X\right)=E\left(\sum_{i=0}^{4}I_{i}\right)=\sum_{i=0}^{4}E\left(I_{i}\right)=\sum_{i=0}^{4}P\left(I_{i}\right)=\sum_{i=0}^{4}0.5^{4}=0.3125
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נחשב את השונות
+\begin_inset Formula 
+\[
+Var\left(X\right)=E\left(\left(\sum_{i=0}^{4}I_{i}\right)^{2}\right)-\left(E\left(\sum_{i=0}^{4}I_{i}\right)\right)^{2}=E\left(I_{0}I_{3}+I_{0}I_{4}+I_{1}I_{4}+\sum_{i=0}^{4}I_{i}\right)-0.3125^{2}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=E\left(I_{0}I_{3}\right)+E\left(I_{3}I_{0}\right)+E\left(I_{0}I_{4}\right)+E\left(I_{4}I_{0}\right)+E\left(I_{1}I_{4}\right)+E\left(I_{4}I_{1}\right)+\sum_{i=0}^{4}E\left(I_{i}\right)-0.3125^{2}=\frac{4}{2^{8}}+\frac{2}{2^{8}}+\frac{4}{2^{8}}+0.3125-0.3125^{2}
+\]
+
+\end_inset
+
+ולבסוף
+\begin_inset Formula 
+\[
+Var\left(X\right)=0.25390625
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
