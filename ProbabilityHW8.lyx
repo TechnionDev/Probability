@@ -231,7 +231,7 @@ HW8
 \begin_layout Date
 \begin_inset Formula 
 \[
-04.01.2021
+06.01.2021
 \]
 
 \end_inset
@@ -1442,7 +1442,7 @@ Var\left(X\right)=0.25390625
 סעיף א - מה התוחלת והשונות של מרחק החץ ממרכז המטרה עבור אליס ובוב )בנפרד(?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 עבור אליס השאלה קלה
 \begin_inset Formula 
 \[
@@ -1452,6 +1452,10 @@ E\left(X\right)=\frac{0+R}{2}=0.5R
 \end_inset
 
 
+\end_layout
+
+\begin_layout Proof
+כיוון שההתפלגות יוניפורמית
 \begin_inset Formula 
 \[
 Var\left(X\right)=\frac{R^{2}}{12}
@@ -1460,7 +1464,538 @@ Var\left(X\right)=\frac{R^{2}}{12}
 \end_inset
 
 עכשיו נחשב עבור בוב.
- כ
+ כאמור, פה יש התפלגות יוניפורמית על השטח ולא על הרדיוס.
+ לכן, פונקציית ההסתברות )של סיכוי לפגוע בתוך רדיוס 
+\begin_inset Formula $r$
+\end_inset
+
+ מהמרכז( המצטברת כפונקציה של הרדיוס
+\begin_inset Formula 
+\[
+F_{Y}\left(y\right)=\frac{\overset{area\,within\,radius\,of\,r}{\overbrace{\pi y^{2}}}}{\underset{circle\,area}{\underbrace{\pi R}}}=\frac{y^{2}}{R^{2}}
+\]
+
+\end_inset
+
+ועל ידי גזירה של זו, ניתן לקבל את פונק' הצפיפות
+\begin_inset Formula 
+\[
+f_{Y}\left(y\right)=\frac{2y}{R^{2}}
+\]
+
+\end_inset
+
+והתוחלת היא
+\begin_inset Formula 
+\[
+E\left(Y\right)=\int_{-\infty}^{\infty}y\cdot f_{Y}\left(y\right)dy=\int_{0}^{R}y\cdot f_{Y}\left(y\right)dy=\left.\frac{2y^{3}}{3R^{2}}\right|_{0}^{R}=\frac{2R^{3}}{3R^{2}}=\frac{2}{3}R
+\]
+
+\end_inset
+
+והשונות הינה )לפי הגדרה(
+\begin_inset Formula 
+\[
+Var\left(Y\right)=E\left(Y^{2}\right)-E\left(Y\right)^{2}=\int_{0}^{R}y^{2}\cdot f_{Y}\left(y\right)dy-\frac{4}{9}R^{2}=\left.\frac{2y^{4}}{4R^{2}}\right|_{0}^{R}-\frac{4}{9}R^{2}=\frac{18}{36}R^{2}-\frac{16}{36}R^{2}=\frac{1}{18}R^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - המטרה עכשיו מחולקת לדיסקיות שוות שטח.
+ הדיסקיות שוות נקודה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות, תלוי ברדיוסן.
+ מה התוחלת והשונות של הניקוד של בוב בכל זריקה?
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $S$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ הניקוד.
+\end_layout
+
+\begin_layout Proof
+כיוון שמדובר בהתפלגות יוניפורמית )כי הדיסקיות שוות שטח( אז מדובר ב
+\begin_inset Formula 
+\[
+E\left(S\right)=\frac{1+10}{2}=5.5
+\]
+
+\end_inset
+
+לכן התוחלת עבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זריקות )מלינאריות של תוחלת(
+\begin_inset Formula 
+\[
+E\left(5S\right)=5\cdot5.5=27.5
+\]
+
+\end_inset
+
+והשונות
+\end_layout
+
+\begin_layout Proof
+והשונות הינה )מלינאריות של תוחלת(
+\begin_inset Formula 
+\[
+Var\left(S\right)=E\left(S^{2}\right)-E\left(S\right)^{2}=\sum_{1\leq s\leq10}s^{2}P\left(S=s\right)-30.25=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{10}\cdot\sum_{1\leq s\leq10}s^{2}-30.25=38.5-30.25=8.25
+\]
+
+\end_inset
+
+ אבל כל זריקה מתבצעת בנפרד, ובשונות, לעומת תוחלת, זה משנה אם מדובר בזריקה
+ הראשונה או הזריקה השניה.
+ לכן, נצטרך לאנדקס את 
+\begin_inset Formula $S$
+\end_inset
+
+ ככה שיהיה אחד לכל זריקה 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $1\leq i\leq5$
+\end_inset
+
+ ונקבל
+\begin_inset Formula 
+\[
+Var\left(\sum_{i=1}^{5}S_{i}\right)=\sum_{i=1}^{5}Var\left(S_{i}\right)
+\]
+
+\end_inset
+
+אבל אנחנו כבר יודעים מה השונות של כל 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ ולכן
+\begin_inset Formula 
+\[
+\sum_{i=1}^{5}Var\left(S_{i}\right)=\sum_{i=1}^{5}8.25=41.25
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - בוב השתפר )מי ידע ש
+\begin_inset Formula $practice\,makes\,perfecrt$
+\end_inset
+
+(.
+ פונק' הצפיפות של מרחק החצים מהמרכז עבור בוב הינה
+\end_layout
+
+\begin_layout Subsection*
+\begin_inset Formula 
+\[
+f_{R_{3}}\left(r\right)=\begin{cases}
+c-\frac{cr^{2}}{R^{2}} & r\in\left[0,R\right]\\
+0 & else
+\end{cases}
+\]
+
+\end_inset
+
+מה 
+\begin_inset Formula $c$
+\end_inset
+
+? מה התוחלת והשונות של 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Proof
+אני לא בטוח מה הכוונה פה ב
+\begin_inset Formula $R_{3}$
+\end_inset
+
+, אני מניח שמדובר על מ
+\begin_inset Quotes erd
+\end_inset
+
+מ? אבל למה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בעצם? בקיצור, אני פשוט אניח שה
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+זה מספר קסם, להבא, צריך לעשות 
+\begin_inset Formula $define$
+\end_inset
+
+ ב
+\begin_inset Formula $header\,file$
+\end_inset
+
+ או שזה הורדה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נקודות במבוא למדמח )אני לא באמת יודע כמה מורידים פה, לא עשיתי את הקורס פה
+ בטכניון(.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+1=\int_{-\infty}^{\infty}f_{R_{3}}\left(r\right)dr=\int_{0}^{R}f_{R_{3}}\left(r\right)dr=\left.cr-\frac{cr^{3}}{3R^{2}}\right|_{0}^{R}=cR-\frac{cR^{3}}{3R^{2}}-0=\frac{2}{3}cR
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+c=\frac{3}{2R}
+\]
+
+\end_inset
+
+לכן התוחלת של 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E\left(R_{3}\right)=\int_{0}^{R}rf_{R_{3}}\left(r\right)dr=\int_{0}^{R}\frac{3}{2R}r-\frac{3r^{3}}{2R^{3}}dr=\left.\frac{3}{4R}r^{2}-\frac{3r^{4}}{8R^{3}}\right|_{0}^{R}=\frac{3}{4R}R^{2}-\frac{3R^{4}}{8R^{3}}=\left(\frac{3}{4}-\frac{3}{8}\right)R=\frac{3}{8}R
+\]
+
+\end_inset
+
+והשונות של 
+\begin_inset Formula $R_{3}$
+\end_inset
+
+ היא
+\begin_inset Formula 
+\[
+Var\left(R_{3}\right)=E\left(R_{3}^{2}\right)-E\left(R_{3}\right)^{2}=\int_{0}^{R}\frac{3}{2R}r^{2}-\frac{3r^{4}}{2R^{3}}dr-\left(\frac{3}{8}R\right)^{2}=\left.\frac{1}{2R}r^{3}-\frac{3r^{5}}{5\cdot2R^{3}}\right|_{0}^{R}-\left(\frac{3}{8}R\right)^{2}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{2\cancel{R}}R^{3}-\frac{3R^{5}}{5\cdot2\cancel{R^{3}}}-\left(\frac{3}{8}R\right)^{2}=0.5R^{2}-0.3R^{2}-\left(\frac{3}{8}R\right)^{2}=0.059375R
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
