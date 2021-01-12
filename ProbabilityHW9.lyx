@@ -239,8 +239,251 @@ HW8
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
 \begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $X\sim N\left(\mu,\sigma^{2}\right)$
+\end_inset
+
+.
+ מה ההסתברות ש
+\begin_inset Formula $X$
+\end_inset
+
+ יסטה מתוחלתו בלפחות:
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - סטיית תקן אחת?
+\end_layout
+
+\begin_layout Proof
+ננרמל 
+\begin_inset Formula $Z=\frac{X-\mu}{\sigma}\sim N\left(0,1\right)$
+\end_inset
+
+.
+ נניח כי 
+\begin_inset Formula $\sigma\geq0$
+\end_inset
+
+ )כמידה והיה קטן מ
+\begin_inset Formula $0$
+\end_inset
+
+ היה אפשר לרשום 
+\begin_inset Formula $-\sigma$
+\end_inset
+
+ בכל הפתרון והכל היה זהה(.
+\end_layout
+
+\begin_layout Proof
+ובמונחים של 
+\begin_inset Formula $X$
+\end_inset
+
+: 
+\begin_inset Formula $X=\sigma Z+\mu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+המשמעות ש
+\begin_inset Formula $X$
+\end_inset
+
+ יסטה בלפחות 
+\begin_inset Formula $a$
+\end_inset
+
+ סטיות תקן אחת הינה
+\begin_inset Formula 
+\[
+P\left(\left|X-\mu\right|>a\sqrt{\sigma^{2}}\right)=1-P\left(-a\sigma\leq X-\mu\leq a\sigma\right)
+\]
+
+\end_inset
+
+נשים לב שאין משמעות ככ לאי שיוויון חזק או חלש שכן ההסתברות לנקודה ספציפית
+ הינה כמעט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ נמשיך
+\begin_inset Formula 
+\[
+=1-P\left(-a\sigma\leq\sigma Z\cancel{+\mu-\mu}\leq a\sigma\right)=1-P\left(-a\leq Z\leq a\right)=1-P\left(-a\leq Z\leq a\right)=1-\left(2\Phi\left(a\right)-1\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=2-2\Phi\left(a\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נציב 
+\begin_inset Formula $a=1,2,3$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+2-2\Phi\left(1\right)\approx2-2\cdot0.841244746=0.317510508
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - שתי סטיות תקן?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+2-2\Phi\left(2\right)\approx2-2\cdot0.97724986805182=0.04550026389636
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - שלוש סטיות תקן?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+2-2\Phi\left(3\right)\approx2-2\cdot0.9986501019683699=0.0026997960632602
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -574,6 +817,177 @@ P\left(Z>z\right)=P\left(\bigcap_{i\in A}X_{i}>z\right)=
 \begin_inset Formula 
 \[
 P\left(Z>z\right)=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $X\sim Uni\left(a,b\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $Y\sim exp\left(\lambda\right)$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת.
+ מה הצפיפות של 
+\begin_inset Formula $Z=Y-X$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ מתפלג יוניפורמית ולכן 
+\begin_inset Formula $-X$
+\end_inset
+
+ מתפלג יוניפורמית 
+\begin_inset Formula $-X\sim Uni\left(-b,-a\right)$
+\end_inset
+
+ )שיקוף סביב ה
+\begin_inset Formula $0$
+\end_inset
+
+(.
+ נגדיר 
+\begin_inset Formula $T=-X$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $Z=Y+T$
+\end_inset
+
+.
+ מנוסחת הקונבולוציה:
+\begin_inset Formula 
+\[
+f_{Z}\left(z\right)=f_{Y+T}\left(z\right)=\int_{-\infty}^{\infty}f_{Y}\left(y\right)f_{T}\left(z-y\right)dy=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $z-y\in\left[-b,-a\right]$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $z+a\leq y$
+\end_inset
+
+ וגם 
+\begin_inset Formula $y\leq z+b$
+\end_inset
+
+ )כדי שהצפיפות היוני תהה שונה מ
+\numeric on
+0
+\numeric off
+(.
+\end_layout
+
+\begin_layout Standard
+כמו כן, הצפיפות האקספו תהיה שונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עבור 
+\begin_inset Formula $y\geq0$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $m=\max\left\{ z+a,0\right\} \leq y\leq z+b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=\int_{m}^{z+b}\lambda e^{-\lambda y}\cdot\frac{1}{-a-\left(-b\right)}dy=\frac{1}{a-b}\int_{m}^{z+b}-\lambda e^{-\lambda y}\cdot dy=\frac{1}{a-b}\left(e^{-\lambda\left(z+b\right)}-e^{-\lambda m}\right)
 \]
 
 \end_inset
