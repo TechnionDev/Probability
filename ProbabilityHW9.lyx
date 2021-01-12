@@ -1,0 +1,585 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass heb-article
+\begin_preamble
+\usepackage{tikz} 
+\usepackage{pgfplots}
+\usepackage{fontspec}
+\usetikzlibrary{shadows}
+
+\tikzset{%
+  testbox/.style={
+    rectangle, 
+    rounded corners, 
+    draw=black,
+    fill=blue!20, 
+    inner sep=10pt, 
+    drop shadow={fill=black, opacity=.4}
+  },
+  titlebox/.style={
+    fill=gray!20, 
+    text=black!80, 
+    draw=black
+  },
+  hebrew text/.style={
+    align=right,
+    font=\hebrewfont,
+    execute at begin node={\luatextextdir TRT}
+  }
+}
+\end_preamble
+\options tikz
+\use_default_options true
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "Arial"
+\font_sans "default" "Comic Sans MS"
+\font_typewriter "default" "Linux Libertine Mono O"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics xetex
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1.5cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הסתברות מ -
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+094412
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+HW8
+\end_layout
+
+\begin_layout Author
+גור תלם -
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+206631848
+\end_layout
+
+\begin_layout Date
+\begin_inset Formula 
+\[
+06.01.2021
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - כיצד מתפלג 
+\begin_inset Formula $Y$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $Y$
+\end_inset
+
+ מתפלג גיאומטרית.
+ שכן 
+\begin_inset Formula 
+\[
+P\left(Y=y\right)=P\left(y-1<X\leq y\right)=P\left(X>y-1,X\leq y\right)=P\left(X\leq y\mid X>y-1\right)\cdot P\left(X>y-1\right)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+השתמשנו בנוסחת בייס )היה אפשר גם לעשות חיסור הסתברויות ולהגיע כנראה לאותה
+ תוצאה 
+\begin_inset Formula $P\left(y-1<X\leq y\right)=P\left(X\leq y\right)-P\left(X<y-1\right)$
+\end_inset
+
+(.
+\begin_inset Formula 
+\[
+=\left(1-P\left(X>y\mid X>y-1\right)\right)\cdot e^{-\lambda\left(y-1\right)}=\left(1-P\left(X>1\right)\right)\cdot e^{-\lambda\left(y-1\right)}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+השתמשנו פה בתכונת חוסר זיכרון של מ
+\begin_inset Quotes erd
+\end_inset
+
+מ רציף מתפלג אקספוננציאלית.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+=\left(1-e^{-\lambda}\right)\cdot e^{-\lambda\left(y-1\right)}=\left(1-\frac{1}{e^{\lambda}}\right)\cdot\left(\frac{1}{e^{\lambda}}\right)^{y-1}
+\]
+
+\end_inset
+
+כלומר, ש
+\begin_inset Formula $Y$
+\end_inset
+
+ מתפלג גאומטרית עם פרמטר 
+\begin_inset Formula $p=1-e^{-\lambda}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - דני חישב כי התוחלת של 
+\begin_inset Formula $Y$
+\end_inset
+
+ היא 
+\begin_inset Formula $2$
+\end_inset
+
+.
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל את 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+אבל לפי החישוב שלנו, התוחלת של 
+\begin_inset Formula $Y$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ מתפלג גאומטרית היא
+\begin_inset Formula 
+\[
+E\left(Y\right)=\frac{1}{1-e^{-\lambda}}=2\Longrightarrow e^{-\lambda}=\frac{1}{2}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+\lambda=-\ln0.5\approx0.69314718056
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - עכשיו יש 
+\begin_inset Formula $2$
+\end_inset
+
+ קווי אוטובוס שמאחרים בהתפלגויות 
+\begin_inset Formula $exp\left(\lambda_{1}\right),exp\left(\lambda_{2}\right)$
+\end_inset
+
+ בהתאמה )כמובן בלתי תלוי(.
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $Z$
+\end_inset
+
+ את כמות הזמן שדני מחכה בתחנה.
+ נסמן 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ את האיחור של קו האוטובוס 
+\begin_inset Formula $i$
+\end_inset
+
+ )שמתפלג 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+נגדיר קבוצת אינדקסים )סופית( 
+\begin_inset Formula $A$
+\end_inset
+
+ הקבוצה של האינדקסים של כל הקווים )במקרה שלנו רק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קווים(.
+\end_layout
+
+\begin_layout Proof
+משמעות הדבר שדני עדיין מחכה בתחנה אחרי 
+\begin_inset Formula $z$
+\end_inset
+
+ היא שכל האוטובוסים מאחרים לפחות 
+\begin_inset Formula $z$
+\end_inset
+
+.
+ לכן
+\begin_inset Formula 
+\[
+P\left(Z>z\right)=P\left(\bigcap_{i\in A}X_{i}>z\right)=
+\]
+
+\end_inset
+
+עתה נעבור למקרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קווים כדי לשמור על פשטות הפתרון )ניתן להמשיך גם עם הקו של כמות סופית כלשהי
+ של קווים אבל למה בעצם?(.
+\begin_inset Formula 
+\[
+=P\left(X_{1}>z\cap X_{2}>z\right)=P\left(X_{1}>z\cap X_{2}>z\right)=P\left(X_{1}>z\right)\cdot P\left(X_{2}>z\right)=e^{-\lambda_{1}z}\cdot e^{-\lambda_{2}z}=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
+\]
+
+\end_inset
+
+כלומר, מצאנו את המבוקש
+\begin_inset Formula 
+\[
+P\left(Z>z\right)=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
