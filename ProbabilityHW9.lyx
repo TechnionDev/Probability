@@ -450,6 +450,49 @@ P\left(\left|X-\mu\right|>a\sqrt{\sigma^{2}}\right)=1-P\left(-a\sigma\leq X-\mu\
 \begin_layout Section*
 שאלה
 \family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נניח שגובה גבר אקראי מתפלג 
+\begin_inset Formula $M\sim N\left(178.4,7.6^{2}\right)$
+\end_inset
+
+ ושל אישה 
+\begin_inset Formula $W\sim N\left(164.7,7.1^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Remarks
+הערת הפותר: אני רק רוצה לומר שהתקופה הזו גם ככה מדכאת, להזכיר לי שכמעט
+\family roman
 \series medium
 \shape up
 \size normal
@@ -475,11 +518,532 @@ P\left(\left|X-\mu\right|>a\sqrt{\sigma^{2}}\right)=1-P\left(-a\sigma\leq X-\mu\
 \uwave default
 \noun default
 \color inherit
-3
+95%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהגברים בעולם גבוהים ממני זה לא עוזר )אני מקבל בונוס שחישבתי איזה אחוזון
+ אני?(.
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - מה ההסתברות שגבר בגובה לפחות 
+\begin_inset Formula $190$
+\end_inset
+
+? מה ההסתברות שאישה?
+\end_layout
+
+\begin_layout Proof
+אז אתחיל בלומר שההסתברות שאישה היא 
+\begin_inset Formula $0.496$
+\end_inset
+
+ נכון לאחוזי הנשים בעולם )אני צוחק על עצמי, אתם ניסחתם את השאלה סבבה(.
+\end_layout
+
+\begin_layout Proof
+אבל ידוע כי 
+\begin_inset Formula $Z_{M}=\frac{M-178.4}{7.6}\Longrightarrow M=7.6Z_{M}+178.4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ובדומה 
+\begin_inset Formula $Z_{W}=\frac{W-164.7}{7.1}\Longrightarrow W=7.1Z_{W}+164.7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+כמובן שה
+\begin_inset Formula $Z$
+\end_inset
+
+ים הם בעצם אותו משתנה 
+\begin_inset Formula $Z$
+\end_inset
+
+ שכן מדובר באותה התפלגות עם אותם פרמטרים.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+P\left(M>190\right)=P\left(7.6Z_{M}+178.4>190\right)=P\left(7.6Z_{M}>11.6\right)=P\left(Z_{M}>\frac{116}{76}\right)=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+אבל 
+\begin_inset Formula $Z_{M}$
+\end_inset
+
+ כבר מתפלג נורמלית סטנדרטית ולכן
+\begin_inset Formula 
+\[
+=1-P\left(Z_{M}\leq\frac{116}{76}\right)=1-\Phi\left(\frac{116}{76}\right)\approx1-0.9365=0.0635
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ובאופן דומה
+\begin_inset Formula 
+\[
+P\left(W>190\right)=1-\Phi\left(\frac{253}{71}\right)\approx1-0.99982=0.00018=1.8\cdot10^{-4}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה הסטייה מהתוחלת בה נמצאים
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+90%
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהגברים?
+\end_layout
+
+\begin_layout Proof
+כלומר, נמצא את 
+\begin_inset Formula $m$
+\end_inset
+
+ המקיים
+\begin_inset Formula 
+\[
+P\left(M\in\left[178.4-m,178.4+m\right]\right)=0.9
+\]
+
+\end_inset
+
+אבל מהחישובים בסעיף הקודם
+\begin_inset Formula 
+\[
+=P\left(178.4-m\leq M\leq178.4+m\right)=P\left(\cancel{178.4}-m\leq7.6Z_{M}+\cancel{178.4}\leq\cancel{178.4}+m\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=P\left(-m\leq7.6Z_{M}\leq m\right)=P\left(-\frac{m}{7.6}\leq Z_{M}\leq\frac{m}{7.6}\right)=2\Phi\left(\frac{m}{7.6}\right)-1=0.9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ולכן 
+\begin_inset Formula 
+\[
+\Phi\left(\frac{m}{7.6}\right)=0.95
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ועכשיו לפי הטבלה המטופשת או חישוב דרך הנוסחה ההפוכה
+\begin_inset Formula 
+\[
+\frac{m}{7.6}\approx1.64485
+\]
+
+\end_inset
+
+ומכאן
+\begin_inset Formula 
+\[
+m\approx12.50086
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+כלומר,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+90%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהגברים בגובה של לכל היותר 
+\begin_inset Formula $m\approx12.5$
+\end_inset
+
+ ס
+\begin_inset Quotes erd
+\end_inset
+
+מ מהממוצע )שהוא כאמור 
+\begin_inset Formula $178.4$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - אותו דבר עבור נשים.
+\end_layout
+
+\begin_layout Proof
+כלומר, נמצא את 
+\begin_inset Formula $m$
+\end_inset
+
+ המקיים
+\begin_inset Formula 
+\[
+P\left(M\in\left[164.7-m,164.7+m\right]\right)=0.9
+\]
+
+\end_inset
+
+אבל מהחישובים בסעיף הקודם
+\begin_inset Formula 
+\[
+=P\left(164.7-m\leq M\leq164.7+m\right)=P\left(\cancel{164.7}-m\leq7.1Z+\cancel{164.7}\leq\cancel{164.7}+m\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=P\left(-m\leq7.1Z_{M}\leq m\right)=P\left(-\frac{m}{7.1}\leq Z_{M}\leq\frac{m}{7.1}\right)=2\Phi\left(\frac{m}{7.1}\right)-1=0.9
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ולכן 
+\begin_inset Formula 
+\[
+\Phi\left(\frac{m}{7.1}\right)=0.95
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ועכשיו לפי הטבלה המטופשת או חישוב דרך הנוסחה ההפוכה
+\begin_inset Formula 
+\[
+\frac{m}{7.1}\approx1.64485
+\]
+
+\end_inset
+
+ומכאן
+\begin_inset Formula 
+\[
+m\approx11.678435
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+כלומר,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+90%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהמהנשים בגובה של לכל היותר 
+\begin_inset Formula $m\approx11.678435$
+\end_inset
+
+ ס
+\begin_inset Quotes erd
+\end_inset
+
+מ מהממוצע )שהוא כאמור 
+\begin_inset Formula $164.7$
+\end_inset
+
+(.
+\end_layout
+
+\begin_layout Proof
+אגב, נשים לב שלא משנה פה מה התוחלת והתוצאה תלויה רק בסטיית התקן.
+ שזה הגיוני, כי ה
+\begin_inset Formula $\mu$
+\end_inset
+
+ רק מזיזה לנו את הגרם של ההתפלגות ימינה ושמאלה אבל לא 
+\begin_inset Quotes eld
+\end_inset
+
+מותחת
+\begin_inset Quotes erd
+\end_inset
+
+ אותו.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ד - נתונה התכונה 
+\begin_inset Formula $X\sim N\left(\mu_{x},\sigma_{x}^{2}\right),Y\sim N\left(\mu_{y},\sigma_{y}^{2}\right)$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת אז 
+\begin_inset Formula $X-Y\sim X\sim N\left(\mu_{x}-\mu_{y},\sigma_{x}^{2}+\sigma_{y}^{2}\right)$
+\end_inset
+
+.
+ מה ההסתברות שגובה אישה אקראית גדול מזה של גבר אקראי?
+\end_layout
+
+\begin_layout Proof
+כלומר, עבור 
+\begin_inset Formula $X=W,Y=M$
+\end_inset
+
+, אנחנו רוצים למצוא 
+\begin_inset Formula $G=X-Y>0$
+\end_inset
+
+.
+ עכשיו, מהתכונה, אנחנו יודעים איך מתפלג 
+\begin_inset Formula $G$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+G\sim N\left(164.7-178.4,7.1^{2}+7.6^{2}\right)
+\]
+
+\end_inset
+
+ובקירוב טוב
+\begin_inset Formula 
+\[
+G\sim N\left(-13.7,10.4^{2}\right)
+\]
+
+\end_inset
+
+ועכשיו, אנחנו רוצים לראות מתי 
+\begin_inset Formula $G>0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P\left(G>0\right)=1-P\left(G\leq0\right)=1-\Phi\left(\frac{0-\left(-13.7\right)}{10.4}\right)\approx1-0.90612=0.09388
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-
+אפילו לאישה אקראית יש סיכוי טוב יותר להיות גבוהה יותר מגבר אקראי מאשר שאני
+ אהיה גבוהה מגבר אקראי.
 \end_layout
 
 \begin_layout Standard
@@ -808,7 +1372,7 @@ P\left(Z>z\right)=P\left(\bigcap_{i\in A}X_{i}>z\right)=
  של קווים אבל למה בעצם?(.
 \begin_inset Formula 
 \[
-=P\left(X_{1}>z\cap X_{2}>z\right)=P\left(X_{1}>z\cap X_{2}>z\right)=P\left(X_{1}>z\right)\cdot P\left(X_{2}>z\right)=e^{-\lambda_{1}z}\cdot e^{-\lambda_{2}z}=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
+=P\left(X_{1}>z\cap X_{2}>z\right)=P\left(X_{1}>z\right)\cdot P\left(X_{2}>z\right)=e^{-\lambda_{1}z}\cdot e^{-\lambda_{2}z}=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
 \]
 
 \end_inset
