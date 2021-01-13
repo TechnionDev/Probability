@@ -1492,8 +1492,8 @@ P\left(Y=y\right)=P\left(y-1<X\leq y\right)=P\left(X>y-1,X\leq y\right)=P\left(X
 \end_layout
 
 \begin_layout Proof
-השתמשנו בנוסחת בייס )היה אפשר גם לעשות חיסור הסתברויות ולהגיע כנראה לאותה
- תוצאה 
+השתמשנו בנוסחת הסתברות מותנית )היה אפשר גם לעשות חיסור הסתברויות ולהגיע
+ כנראה לאותה תוצאה 
 \begin_inset Formula $P\left(y-1<X\leq y\right)=P\left(X\leq y\right)-P\left(X<y-1\right)$
 \end_inset
 
