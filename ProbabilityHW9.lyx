@@ -1041,9 +1041,392 @@ P\left(G>0\right)=1-P\left(G\leq0\right)=1-\Phi\left(\frac{0-\left(-13.7\right)}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 אפילו לאישה אקראית יש סיכוי טוב יותר להיות גבוהה יותר מגבר אקראי מאשר שאני
  אהיה גבוהה מגבר אקראי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $10\%$
+\end_inset
+
+ מהאוכלוסיית התיישים הם לבנים.
+\end_layout
+
+\begin_layout Standard
+אורך זקן תייש שחור 
+\begin_inset Formula $B\sim exp\left(0.125\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אורך זקן תייש לבן 
+\begin_inset Formula $W\sim exp\left(0.25\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף א - אחוז התיישים שזקנם
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+1
+\numeric off
+.
+ ארוך מ
+\begin_inset Formula $4$
+\end_inset
+
+ ס
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+\end_layout
+
+\begin_layout Proof
+נתחיל בלבדוק את אחוז התיישים הלבנים שזקנם ארוך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מ
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ס
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+\begin_inset Formula 
+\[
+P\left(W>4\right)=e^{-0.25\cdot4}=\frac{1}{e}\approx0.3678794412
+\]
+
+\end_inset
+
+ועכשיו לאחוז התיישים השחורים
+\begin_inset Formula 
+\[
+P\left(B>4\right)=e^{-0.125\cdot4}=\frac{1}{\sqrt{e}}\approx0.60653065971
+\]
+
+\end_inset
+
+אבל אוכלוסיית התיישים הכוללת מורכבת מ
+\begin_inset Formula $10\%$
+\end_inset
+
+ לבנים והשאר שחורים.
+ ולכן נעשה ממוצע משוקלל
+\begin_inset Formula 
+\[
+0.1\cdot P\left(W>4\right)+0.9\cdot P\left(B>4\right)\approx0.582665537859
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+פה אנחנו הנחנו הנחה כבדה שאוכלוסיית התיישים מורכבת אך ורק מתיישים שהם שחורים
+ בלבד או לבנים בלבד.
+ ואז מדובר בקבוצות משלימות )ובעצם יש פה הסתברות מותנית במסווה(.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\numeric on
+2
+\numeric off
+.
+ ארוך מ
+\begin_inset Formula $10$
+\end_inset
+
+ ס
+\begin_inset Quotes erd
+\end_inset
+
+מ
+\end_layout
+
+\begin_layout Proof
+נחשב את אחוז התיישים עם זקן קצר מ
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ס
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+\end_layout
+
+\begin_layout Proof
+הפעם לא נסווה את ההסתברות המותנית )סתם בשביל הגיוון(.
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $L$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אורך זקן של תייש כלשהו )לבן או שחור(.
+ כמו כן, נסמן 
+\begin_inset Formula $I_{W}$
+\end_inset
+
+ מ
+\begin_inset Quotes erd
+\end_inset
+
+מ אינדיקטור האם התייש לבן.
+\end_layout
+
+\begin_layout Proof
+לכן 
+\begin_inset Formula 
+\[
+P\left(L\leq10\right)=P\left(L<10\mid I_{W}'\right)\cdot P\left(I_{W}'\right)+P\left(L<10\mid I_{W}\right)\cdot P\left(I_{W}\right)=0.9\cdot P\left(B<10\right)+0.1\cdot P\left(W<10\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=0.9\cdot\int_{0}^{10}0.125e^{-0.125b}db+0.1\cdot\int_{0}^{10}0.25e^{-0.25w}dw=-\left(0.9\cdot\left.e^{-0.125b}\right|_{b=0}^{10}+0.1\cdot\left.e^{-0.25w}\right|_{w=0}^{10}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=-\left(0.9e^{-1.25}-0.9+0.1e^{-2.5}-0.1\right)=1-0.9e^{-1.25}-0.1e^{-2.5}\approx0.733937182963439
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ב - מה פונקציית ההתפלגות המצטברת של אורך זקן תיש שנבחר מקרית? מה פונקציית
+ הצפיפות?
+\end_layout
+
+\begin_layout Proof
+בדומה לחישובים מקודם
+\begin_inset Formula 
+\[
+F_{L}\left(l\right)=P\left(L\leq l\right)=0.9\cdot P\left(B\leq l\right)+0.1\cdot P\left(W\leq l\right)=0.9\cdot\left(1-e^{-0.125l}\right)+0.1\cdot\left(1-e^{-0.25l}\right)=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=1-\left(0.9e^{-0.125l}+0.1e^{-0.25l}\right)
+\]
+
+\end_inset
+
+וכדי למצוא את הצפיפות, אנחנו יכולים פשוט לגזור
+\begin_inset Formula 
+\[
+f_{L}\left(l\right)=0.1125\cdot e^{-0.125l}+0.025e^{-0.25l}
+\]
+
+\end_inset
+
+וכמובן שכל זה בתחום 
+\begin_inset Formula $l\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection*
+סעיף ג - נתון שלתייש זקן ארוך מ
+\begin_inset Formula $5$
+\end_inset
+
+ ס
+\begin_inset Quotes erd
+\end_inset
+
+מ.
+ מה ההסתברות שהוא ארוך מ
+\begin_inset Formula $10$
+\end_inset
+
+ ס
+\begin_inset Quotes erd
+\end_inset
+
+מ?
+\end_layout
+
+\begin_layout Proof
+נחשב ישירות
+\begin_inset Formula 
+\[
+P\left(L>10\mid L>5\right)=\frac{P\left(L>10,L>5\right)}{P\left(L>5\right)}=\frac{P\left(L>10\right)}{P\left(L>5\right)}=\frac{1-F_{L}\left(10\right)}{1-F_{L}\left(5\right)}=\frac{0.9e^{-0.125\cdot10}+0.1e^{-0.25\cdot10}}{0.9e^{-0.125\cdot5}+0.1e^{-0.25\cdot5}}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\approx0.521297487308419535
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+סעיף ד - האם התפלגות אורך הזקן של תיש מקיימת את תכונת חוסר הזיכרון?
+\end_layout
+
+\begin_layout Proof
+ניתן לראות כי הדבר אינו מתקיים.
+ כי אחרת היינו מצפים שהביטוי
+\begin_inset Formula 
+\[
+P\left(L>5\right)=0.9e^{-0.125\cdot5}+0.1e^{-0.25\cdot5}\approx0.51038576535311
+\]
+
+\end_inset
+
+יהיה שווה לתוצאה הקודמת.
+ וזה כמובן לא מתקיים )ראה את התוצאה הקודמת(.
 \end_layout
 
 \begin_layout Standard
