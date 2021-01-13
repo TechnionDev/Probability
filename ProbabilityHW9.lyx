@@ -1942,5 +1942,158 @@ f_{Z}\left(z\right)=f_{Y+T}\left(z\right)=\int_{-\infty}^{\infty}f_{Y}\left(y\ri
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Proof
+יהיו 
+\begin_inset Formula $X_{i}\sim exp\left(\lambda_{i}\right)$
+\end_inset
+
+ ב
+\begin_inset Quotes erd
+\end_inset
+
+ת כאשר 
+\begin_inset Formula $i\in\left\{ 1,2,3\right\} $
+\end_inset
+
+.
+ צ
+\begin_inset Quotes erd
+\end_inset
+
+ל 
+\begin_inset Formula $P\left(X_{1}<X_{2}<X_{3}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+המשתנים ב
+\begin_inset Quotes erd
+\end_inset
+
+ת ולכן הצפיפות המשותפת היא 
+\begin_inset Formula 
+\[
+f_{X_{1},X_{2},X_{3}}\left(x,y,z\right)=f_{X_{1}}\left(x\right)\cdot f_{X_{2}}\left(y\right)\cdot f_{X_{3}}\left(z\right)=\begin{cases}
+\lambda_{1}\lambda_{2}\lambda_{3}e^{-\lambda_{1}x}e^{-\lambda_{2}y}e^{-\lambda_{3}z} & x,y,z\geq0\\
+0 & ow
+\end{cases}
+\]
+
+\end_inset
+
+ולכן
+\begin_inset Formula 
+\[
+P\left(X_{1}<X_{2}<X_{3}\right)=\int_{0}^{\infty}\int_{x}^{\infty}\int_{y}^{\infty}\lambda_{1}\lambda_{2}\lambda_{3}e^{-\left(\lambda_{1}x+\lambda_{2}y+\lambda_{3}z\right)}dzdydx=
+\]
+
+\end_inset
+
+נוציא קבועים ביחס לכל אינטגרל
+\begin_inset Formula 
+\[
+=\int_{0}^{\infty}\lambda_{1}e^{-\lambda_{1}x}\int_{x}^{\infty}\lambda_{2}e^{-\lambda_{2}y}\int_{y}^{\infty}\lambda_{3}e^{-\lambda_{3}z}dzdydx=\int_{0}^{\infty}\lambda_{1}e^{-\lambda_{1}x}\int_{x}^{\infty}\lambda_{2}e^{-\lambda_{2}y}\left(e^{-\lambda_{3}y}\right)dydx=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+ועכשיו בעזרת התבנית הידועה של אינטגרל של אקספוננט המון פעמים עד שנקבל תשובה
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\[
+=\int_{0}^{\infty}\lambda_{1}e^{-\lambda_{1}x}\frac{\lambda_{2}}{\lambda_{2}+\lambda_{3}}\int_{x}^{\infty}\left(\lambda_{2}+\lambda_{3}\right)e^{-\left(\lambda_{2}+\lambda_{3}\right)y}dydx=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\int_{0}^{\infty}\lambda_{1}e^{-\lambda_{1}x}\frac{\lambda_{2}}{\lambda_{2}+\lambda_{3}}e^{-\left(\lambda_{2}+\lambda_{3}\right)x}dx=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\lambda_{1}\lambda_{2}}{\lambda_{2}+\lambda_{3}}\int_{0}^{\infty}e^{-\left(\lambda_{1}+\lambda_{2}+\lambda_{3}\right)x}dx=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\lambda_{1}\lambda_{2}}{\left(\lambda_{2}+\lambda_{3}\right)\cdot\left(\lambda_{1}+\lambda_{2}+\lambda_{3}\right)}\int_{0}^{\infty}\left(\lambda_{1}+\lambda_{2}+\lambda_{3}\right)e^{-\left(\lambda_{1}+\lambda_{2}+\lambda_{3}\right)x}dx=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\lambda_{1}\lambda_{2}}{\left(\lambda_{2}+\lambda_{3}\right)\cdot\left(\lambda_{1}+\lambda_{2}+\lambda_{3}\right)}\cdot e^{-\left(\lambda_{1}+\lambda_{2}+\lambda_{3}\right)\cdot0}=
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{\lambda_{1}\lambda_{2}}{\left(\lambda_{2}+\lambda_{3}\right)\cdot\left(\lambda_{1}+\lambda_{2}+\lambda_{3}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
