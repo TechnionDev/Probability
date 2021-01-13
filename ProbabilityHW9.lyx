@@ -1584,6 +1584,22 @@ E\left(Y\right)=\frac{1}{1-e^{-\lambda}}=2\Longrightarrow e^{-\lambda}=\frac{1}{
 
 \end_layout
 
+\begin_layout Proof
+והתוחלת של 
+\begin_inset Formula $X$
+\end_inset
+
+ הינה
+\begin_inset Formula 
+\[
+E\left(X\right)=\frac{1}{\lambda}\approx1.4426950409
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 סעיף ג - עכשיו יש 
 \begin_inset Formula $2$
@@ -1771,6 +1787,14 @@ P\left(Z>z\right)=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
 
 \end_layout
 
+\begin_layout Proof
+כלומר, שהזמן אותו דני מחכה, מתפלג אקספו עם פרמטר 
+\begin_inset Formula $\lambda_{1}+\lambda_{2}$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
@@ -1809,7 +1833,7 @@ P\left(Z>z\right)=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
 5
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 נתון 
 \begin_inset Formula $X\sim Uni\left(a,b\right)$
 \end_inset
@@ -1830,7 +1854,7 @@ P\left(Z>z\right)=e^{-\left(\lambda_{1}+\lambda_{2}\right)z}
 ?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 \begin_inset Formula $X$
 \end_inset
 
@@ -1868,7 +1892,7 @@ f_{Z}\left(z\right)=f_{Y+T}\left(z\right)=\int_{-\infty}^{\infty}f_{Y}\left(y\ri
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 אבל 
 \begin_inset Formula $z-y\in\left[-b,-a\right]$
 \end_inset
@@ -1889,7 +1913,7 @@ f_{Z}\left(z\right)=f_{Y+T}\left(z\right)=\int_{-\infty}^{\infty}f_{Y}\left(y\ri
 (.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 כמו כן, הצפיפות האקספו תהיה שונה מ
 \numeric on
 0
@@ -1931,7 +1955,7 @@ f_{Z}\left(z\right)=f_{Y+T}\left(z\right)=\int_{-\infty}^{\infty}f_{Y}\left(y\ri
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Proof
 \begin_inset Formula 
 \[
 =\int_{m}^{z+b}\lambda e^{-\lambda y}\cdot\frac{1}{-a-\left(-b\right)}dy=\frac{1}{a-b}\int_{m}^{z+b}-\lambda e^{-\lambda y}\cdot dy=\frac{1}{a-b}\left(e^{-\lambda\left(z+b\right)}-e^{-\lambda m}\right)
@@ -1939,7 +1963,22 @@ f_{Z}\left(z\right)=f_{Y+T}\left(z\right)=\int_{-\infty}^{\infty}f_{Y}\left(y\ri
 
 \end_inset
 
+אז נסכם
+\begin_inset Formula 
+\[
+f_{Z}\left(z\right)=\begin{cases}
+\frac{1}{a-b}\left(e^{-\lambda\left(z+b\right)}-e^{-\lambda m}\right) & z\geq-b\\
+0 & ow
+\end{cases}
+\]
 
+\end_inset
+
+כאשר 
+\begin_inset Formula $m=\max\left\{ z+a,0\right\} $
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
